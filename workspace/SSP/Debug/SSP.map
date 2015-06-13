@@ -1,0 +1,589 @@
+Archive member included because of file (symbol)
+
+/home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+                              ./src/ssp.o (GPIOSetBitValue)
+/home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(system_LPC11Uxx.o)
+                              ./src/ssptest.o (SystemCoreClockUpdate)
+/home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+                              ./src/ssptest.o (UARTInit)
+/usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv6-m/libcr_c.a(__weak__main.o)
+                              ./src/cr_startup_lpc11u.o (__main)
+/usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv6-m/libcr_eabihelpers.a(division.o)
+                              /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(system_LPC11Uxx.o) (__aeabi_uidiv)
+
+Allocating common symbols
+Common symbol       size              file
+
+UARTBuffer          0x40              /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+dest_addr           0x10              ./src/ssptest.o
+src_addr            0x10              ./src/ssptest.o
+UARTStatus          0x4               /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+
+Discarded input sections
+
+ .text          0x00000000        0x0 ./src/cr_startup_lpc11u.o
+ .data          0x00000000        0x0 ./src/cr_startup_lpc11u.o
+ .bss           0x00000000        0x0 ./src/cr_startup_lpc11u.o
+ .text          0x00000000        0x0 ./src/ssp.o
+ .data          0x00000000        0x0 ./src/ssp.o
+ .bss           0x00000000        0x0 ./src/ssp.o
+ .text          0x00000000        0x0 ./src/ssptest.o
+ .data          0x00000000        0x0 ./src/ssptest.o
+ .bss           0x00000000        0x0 ./src/ssptest.o
+ .text.SSP_LoopbackTest
+                0x00000000       0xc0 ./src/ssptest.o
+ .text          0x00000000        0x0 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+ .data          0x00000000        0x0 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+ .bss           0x00000000        0x0 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+ .text.NVIC_EnableIRQ
+                0x00000000       0x2c /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+ .text.NVIC_ClearPendingIRQ
+                0x00000000       0x34 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+ .text.GPIOInit
+                0x00000000       0x30 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+ .text.GPIOSetFlexInterrupt
+                0x00000000      0x228 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+ .rodata.GPIOSetFlexInterrupt
+                0x00000000       0x20 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+ .text.GPIOFlexIntEnable
+                0x00000000       0x74 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+ .text.GPIOFlexIntDisable
+                0x00000000       0x74 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+ .text.GPIOFlexIntStatus
+                0x00000000       0x2c /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+ .text.GPIOFlexIntClear
+                0x00000000       0x34 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+ .text.GPIOSetGroupedInterrupt
+                0x00000000      0x100 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+ .text.GPIOGetPinValue
+                0x00000000       0x5c /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+ .text          0x00000000        0x0 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(system_LPC11Uxx.o)
+ .data          0x00000000        0x0 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(system_LPC11Uxx.o)
+ .bss           0x00000000        0x0 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(system_LPC11Uxx.o)
+ .text          0x00000000        0x0 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+ .data          0x00000000        0x0 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+ .bss           0x00000000        0x0 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+ .text.uart_set_divisors
+                0x00000000      0x14c /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+ .text.print_string
+                0x00000000       0x3c /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+ .text.get_key  0x00000000       0x50 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+ .text          0x00000000        0x0 /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv6-m/libcr_c.a(__weak__main.o)
+ .data          0x00000000        0x0 /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv6-m/libcr_c.a(__weak__main.o)
+ .bss           0x00000000        0x0 /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv6-m/libcr_c.a(__weak__main.o)
+ .text          0x00000000        0x0 /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv6-m/libcr_eabihelpers.a(division.o)
+ .data          0x00000000        0x0 /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv6-m/libcr_eabihelpers.a(division.o)
+ .bss           0x00000000        0x0 /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv6-m/libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_idivmod
+                0x00000000        0x6 /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv6-m/libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_uldivmod
+                0x00000000       0x5a /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv6-m/libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_ldivmod
+                0x00000000       0x32 /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv6-m/libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_ldiv0
+                0x00000000        0x2 /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv6-m/libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_idivq31+15
+                0x00000000      0x188 /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv6-m/libcr_eabihelpers.a(division.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+MFlash32         0x00000000         0x00008000         xr
+RamLoc4          0x10000000         0x00001000         xrw
+RamUsb2          0x20004000         0x00000800         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ./src/cr_startup_lpc11u.o
+LOAD ./src/ssp.o
+LOAD ./src/ssptest.o
+LOAD /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a
+LOAD /home/patrick/school/ddl_3360/workspace/CMSISv2p00_LPC11Uxx/Debug/libCMSISv2p00_LPC11Uxx.a
+START GROUP
+LOAD /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv6-m/libcr_c.a
+LOAD /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv6-m/libcr_eabihelpers.a
+END GROUP
+                0x00008000                __top_MFlash32 = 0x8000
+                0x10001000                __top_RamLoc4 = 0x10001000
+                0x20004800                __top_RamUsb2 = 0x20004800
+
+.text           0x00000000     0x18a0
+ FILL mask 0xff
+                0x00000000                __vectors_start__ = ABSOLUTE (.)
+ *(.isr_vector)
+ .isr_vector    0x00000000       0xc0 ./src/cr_startup_lpc11u.o
+                0x00000000                g_pfnVectors
+                0x000000c0                . = ALIGN (0x4)
+                0x000000c0                __section_table_start = .
+                0x000000c0                __data_section_table = .
+                0x000000c0        0x4 LONG 0x18a0 LOADADDR (.data)
+                0x000000c4        0x4 LONG 0x10000000 ADDR (.data)
+                0x000000c8        0x4 LONG 0x8 SIZEOF (.data)
+                0x000000cc        0x4 LONG 0x18a0 LOADADDR (.data_RAM2)
+                0x000000d0        0x4 LONG 0x20004000 ADDR (.data_RAM2)
+                0x000000d4        0x4 LONG 0x0 SIZEOF (.data_RAM2)
+                0x000000d8                __data_section_table_end = .
+                0x000000d8                __bss_section_table = .
+                0x000000d8        0x4 LONG 0x10000008 ADDR (.bss)
+                0x000000dc        0x4 LONG 0x118 SIZEOF (.bss)
+                0x000000e0        0x4 LONG 0x20004000 ADDR (.bss_RAM2)
+                0x000000e4        0x4 LONG 0x0 SIZEOF (.bss_RAM2)
+                0x000000e8                __bss_section_table_end = .
+                0x000000e8                __section_table_end = .
+ *(.after_vectors*)
+ .after_vectors
+                0x000000e8       0x80 ./src/cr_startup_lpc11u.o
+                0x000000e8                NMI_Handler
+                0x000000ec                HardFault_Handler
+                0x000000f0                SVC_Handler
+                0x000000f4                PendSV_Handler
+                0x000000f8                SysTick_Handler
+                0x000000fc                data_init
+                0x0000010e                bss_init
+                0x00000120                ResetISR
+                0x00000164                TIMER16_0_IRQHandler
+                0x00000164                TIMER32_0_IRQHandler
+                0x00000164                TIMER32_1_IRQHandler
+                0x00000164                IntDefaultHandler
+                0x00000164                USBWakeup_IRQHandler
+                0x00000164                TIMER16_1_IRQHandler
+                0x00000164                USB_FIQHandler
+                0x00000164                ADC_IRQHandler
+                0x00000164                USB_IRQHandler
+                0x00000164                BOD_IRQHandler
+                0x00000164                I2C_IRQHandler
+                0x00000164                WDT_IRQHandler
+                0x00000164                FMC_IRQHandler
+ *(.text*)
+ .text.NVIC_EnableIRQ
+                0x00000168       0x2c ./src/ssp.o
+ .text.SSP0_IRQHandler
+                0x00000194       0x68 ./src/ssp.o
+                0x00000194                SSP0_IRQHandler
+ .text.SSP1_IRQHandler
+                0x000001fc       0x68 ./src/ssp.o
+                0x000001fc                SSP1_IRQHandler
+ .text.SSP_IOConfig
+                0x00000264      0x190 ./src/ssp.o
+                0x00000264                SSP_IOConfig
+ .text.SSP_Init
+                0x000003f4       0xcc ./src/ssp.o
+                0x000003f4                SSP_Init
+ .text.SSP_Send
+                0x000004c0       0xb4 ./src/ssp.o
+                0x000004c0                SSP_Send
+ .text.SSP_Receive
+                0x00000574       0x8c ./src/ssp.o
+                0x00000574                SSP_Receive
+ .text.SSP_SEEPROMTest
+                0x00000600      0x3d8 ./src/ssptest.o
+                0x00000600                SSP_SEEPROMTest
+ .text.main     0x000009d8      0x15c ./src/ssptest.o
+                0x000009d8                main
+ .text.FLEX_INT0_IRQHandler
+                0x00000b34       0xb8 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+                0x00000b34                FLEX_INT0_IRQHandler
+ .text.FLEX_INT1_IRQHandler
+                0x00000bec       0xa0 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+                0x00000bec                FLEX_INT1_IRQHandler
+ .text.FLEX_INT2_IRQHandler
+                0x00000c8c       0xa0 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+                0x00000c8c                FLEX_INT2_IRQHandler
+ .text.FLEX_INT3_IRQHandler
+                0x00000d2c       0xa0 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+                0x00000d2c                FLEX_INT3_IRQHandler
+ .text.FLEX_INT4_IRQHandler
+                0x00000dcc       0xa0 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+                0x00000dcc                FLEX_INT4_IRQHandler
+ .text.FLEX_INT5_IRQHandler
+                0x00000e6c       0xa0 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+                0x00000e6c                FLEX_INT5_IRQHandler
+ .text.FLEX_INT6_IRQHandler
+                0x00000f0c       0xa0 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+                0x00000f0c                FLEX_INT6_IRQHandler
+ .text.FLEX_INT7_IRQHandler
+                0x00000fac       0xa0 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+                0x00000fac                FLEX_INT7_IRQHandler
+ .text.GINT0_IRQHandler
+                0x0000104c       0x60 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+                0x0000104c                GINT0_IRQHandler
+ .text.GINT1_IRQHandler
+                0x000010ac       0x60 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+                0x000010ac                GINT1_IRQHandler
+ .text.GPIOSetBitValue
+                0x0000110c       0x54 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+                0x0000110c                GPIOSetBitValue
+ .text.GPIOSetDir
+                0x00001160       0x78 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+                0x00001160                GPIOSetDir
+ .text.SystemCoreClockUpdate
+                0x000011d8      0x1e0 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(system_LPC11Uxx.o)
+                0x000011d8                SystemCoreClockUpdate
+ .text.SystemInit
+                0x000013b8      0x160 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(system_LPC11Uxx.o)
+                0x000013b8                SystemInit
+ .text.NVIC_EnableIRQ
+                0x00001518       0x2c /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+ .text.NVIC_DisableIRQ
+                0x00001544       0x30 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+ .text.UART_IRQHandler
+                0x00001574      0x11c /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+                0x00001574                UART_IRQHandler
+ .text.UARTInit
+                0x00001690      0x108 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+                0x00001690                UARTInit
+ .text.UARTSend
+                0x00001798       0x40 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+                0x00001798                UARTSend
+ .text.__weak_main
+                0x000017d8        0x8 /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv6-m/libcr_c.a(__weak__main.o)
+                0x000017d8                __main
+                0x000017d8                __weak_main
+ .text.__aeabi_division_uidivmod
+                0x000017e0       0x72 /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv6-m/libcr_eabihelpers.a(division.o)
+                0x000017e0                __aeabi_uidiv
+                0x000017e0                __aeabi_uidivmod
+ .text.__aeabi_division_idiv0
+                0x00001852        0x2 /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv6-m/libcr_eabihelpers.a(division.o)
+                0x00001852                __aeabi_idiv0
+ *(.rodata .rodata.*)
+ .rodata        0x00001854        0xc ./src/ssptest.o
+ .rodata.SystemCoreClockUpdate
+                0x00001860       0x40 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(system_LPC11Uxx.o)
+                0x000018a0                . = ALIGN (0x4)
+
+.glue_7         0x000018a0        0x0
+ .glue_7        0x00000000        0x0 linker stubs
+
+.glue_7t        0x000018a0        0x0
+ .glue_7t       0x00000000        0x0 linker stubs
+
+.vfp11_veneer   0x000018a0        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x000018a0        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x000018a0                __exidx_start = .
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x000018a0                __exidx_end = .
+                0x000018a0                _etext = .
+
+.data_RAM2      0x20004000        0x0 load address 0x000018a0
+ FILL mask 0xff
+ *(.data.$RAM2*)
+ *(.data.$RamUsb2*)
+                0x20004000                . = ALIGN (0x4)
+
+.uninit_RESERVED
+                0x10000000        0x0
+ *(.bss.$RESERVED*)
+                0x10000000                . = ALIGN (0x4)
+                0x10000000                _end_uninit_RESERVED = .
+
+.data           0x10000000        0x8 load address 0x000018a0
+ FILL mask 0xff
+                0x10000000                _data = .
+ *(vtable)
+ *(.data*)
+ .data.SystemCoreClock
+                0x10000000        0x4 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(system_LPC11Uxx.o)
+                0x10000000                SystemCoreClock
+ .data.UARTTxEmpty
+                0x10000004        0x1 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+                0x10000004                UARTTxEmpty
+                0x10000008                . = ALIGN (0x4)
+ *fill*         0x10000005        0x3 ff
+                0x10000008                _edata = .
+
+.bss_RAM2       0x20004000        0x0
+ *(.bss.$RAM2*)
+ *(.bss.$RamUsb2*)
+                0x20004000                . = ALIGN (0x4)
+
+.bss            0x10000008      0x118
+                0x10000008                _bss = .
+ *(.bss*)
+ .bss.interruptRxStat0
+                0x10000008        0x4 ./src/ssp.o
+                0x10000008                interruptRxStat0
+ .bss.interruptOverRunStat0
+                0x1000000c        0x4 ./src/ssp.o
+                0x1000000c                interruptOverRunStat0
+ .bss.interruptRxTimeoutStat0
+                0x10000010        0x4 ./src/ssp.o
+                0x10000010                interruptRxTimeoutStat0
+ .bss.interruptRxStat1
+                0x10000014        0x4 ./src/ssp.o
+                0x10000014                interruptRxStat1
+ .bss.interruptOverRunStat1
+                0x10000018        0x4 ./src/ssp.o
+                0x10000018                interruptOverRunStat1
+ .bss.interruptRxTimeoutStat1
+                0x1000001c        0x4 ./src/ssp.o
+                0x1000001c                interruptRxTimeoutStat1
+ .bss.flex_int0_counter
+                0x10000020        0x4 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+                0x10000020                flex_int0_counter
+ .bss.flex_int1_counter
+                0x10000024        0x4 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+                0x10000024                flex_int1_counter
+ .bss.flex_int2_counter
+                0x10000028        0x4 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+                0x10000028                flex_int2_counter
+ .bss.flex_int3_counter
+                0x1000002c        0x4 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+                0x1000002c                flex_int3_counter
+ .bss.flex_int4_counter
+                0x10000030        0x4 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+                0x10000030                flex_int4_counter
+ .bss.flex_int5_counter
+                0x10000034        0x4 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+                0x10000034                flex_int5_counter
+ .bss.flex_int6_counter
+                0x10000038        0x4 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+                0x10000038                flex_int6_counter
+ .bss.flex_int7_counter
+                0x1000003c        0x4 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+                0x1000003c                flex_int7_counter
+ .bss.gint0_counter
+                0x10000040        0x4 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+                0x10000040                gint0_counter
+ .bss.gint1_counter
+                0x10000044        0x4 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+                0x10000044                gint1_counter
+ .bss.flex_int0_level_counter
+                0x10000048        0x4 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+                0x10000048                flex_int0_level_counter
+ .bss.flex_int0_rising_edge_counter
+                0x1000004c        0x4 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+                0x1000004c                flex_int0_rising_edge_counter
+ .bss.flex_int0_falling_edge_counter
+                0x10000050        0x4 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+                0x10000050                flex_int0_falling_edge_counter
+ .bss.flex_int1_level_counter
+                0x10000054        0x4 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+                0x10000054                flex_int1_level_counter
+ .bss.flex_int1_rising_edge_counter
+                0x10000058        0x4 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+                0x10000058                flex_int1_rising_edge_counter
+ .bss.flex_int1_falling_edge_counter
+                0x1000005c        0x4 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+                0x1000005c                flex_int1_falling_edge_counter
+ .bss.flex_int2_level_counter
+                0x10000060        0x4 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+                0x10000060                flex_int2_level_counter
+ .bss.flex_int2_rising_edge_counter
+                0x10000064        0x4 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+                0x10000064                flex_int2_rising_edge_counter
+ .bss.flex_int2_falling_edge_counter
+                0x10000068        0x4 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+                0x10000068                flex_int2_falling_edge_counter
+ .bss.flex_int3_level_counter
+                0x1000006c        0x4 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+                0x1000006c                flex_int3_level_counter
+ .bss.flex_int3_rising_edge_counter
+                0x10000070        0x4 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+                0x10000070                flex_int3_rising_edge_counter
+ .bss.flex_int3_falling_edge_counter
+                0x10000074        0x4 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+                0x10000074                flex_int3_falling_edge_counter
+ .bss.flex_int4_level_counter
+                0x10000078        0x4 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+                0x10000078                flex_int4_level_counter
+ .bss.flex_int4_rising_edge_counter
+                0x1000007c        0x4 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+                0x1000007c                flex_int4_rising_edge_counter
+ .bss.flex_int4_falling_edge_counter
+                0x10000080        0x4 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+                0x10000080                flex_int4_falling_edge_counter
+ .bss.flex_int5_level_counter
+                0x10000084        0x4 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+                0x10000084                flex_int5_level_counter
+ .bss.flex_int5_rising_edge_counter
+                0x10000088        0x4 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+                0x10000088                flex_int5_rising_edge_counter
+ .bss.flex_int5_falling_edge_counter
+                0x1000008c        0x4 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+                0x1000008c                flex_int5_falling_edge_counter
+ .bss.flex_int6_level_counter
+                0x10000090        0x4 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+                0x10000090                flex_int6_level_counter
+ .bss.flex_int6_rising_edge_counter
+                0x10000094        0x4 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+                0x10000094                flex_int6_rising_edge_counter
+ .bss.flex_int6_falling_edge_counter
+                0x10000098        0x4 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+                0x10000098                flex_int6_falling_edge_counter
+ .bss.flex_int7_level_counter
+                0x1000009c        0x4 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+                0x1000009c                flex_int7_level_counter
+ .bss.flex_int7_rising_edge_counter
+                0x100000a0        0x4 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+                0x100000a0                flex_int7_rising_edge_counter
+ .bss.flex_int7_falling_edge_counter
+                0x100000a4        0x4 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+                0x100000a4                flex_int7_falling_edge_counter
+ .bss.gint0_level_counter
+                0x100000a8        0x4 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+                0x100000a8                gint0_level_counter
+ .bss.gint0_edge_counter
+                0x100000ac        0x4 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+                0x100000ac                gint0_edge_counter
+ .bss.gint1_level_counter
+                0x100000b0        0x4 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+                0x100000b0                gint1_level_counter
+ .bss.gint1_edge_counter
+                0x100000b4        0x4 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+                0x100000b4                gint1_edge_counter
+ .bss.UARTCount
+                0x100000b8        0x4 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+                0x100000b8                UARTCount
+ *(COMMON)
+ COMMON         0x100000bc       0x20 ./src/ssptest.o
+                0x100000bc                dest_addr
+                0x100000cc                src_addr
+ COMMON         0x100000dc       0x44 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+                0x100000dc                UARTBuffer
+                0x1000011c                UARTStatus
+                0x10000120                . = ALIGN (0x4)
+                0x10000120                _ebss = .
+                0x10000120                PROVIDE (end, .)
+
+.noinit_RAM2    0x20004000        0x0
+ *(.noinit.$RAM2*)
+ *(.noinit.$RamUsb2*)
+                0x20004000                . = ALIGN (0x4)
+
+.noinit         0x10000120        0x0
+                0x10000120                _noinit = .
+ *(.noinit*)
+                0x10000120                . = ALIGN (0x4)
+                0x10000120                _end_noinit = .
+                0x10000120                PROVIDE (_pvHeapStart, .)
+                0x10001000                PROVIDE (_vStackTop, (__top_RamLoc4 - 0x0))
+OUTPUT(SSP.axf elf32-littlearm)
+
+.debug_info     0x00000000     0x3d6a
+ .debug_info    0x00000000      0x296 ./src/cr_startup_lpc11u.o
+ .debug_info    0x00000296      0xda3 ./src/ssp.o
+ .debug_info    0x00001039      0x51e ./src/ssptest.o
+ .debug_info    0x00001557     0x1302 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+ .debug_info    0x00002859      0x5d2 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(system_LPC11Uxx.o)
+ .debug_info    0x00002e2b      0xf3f /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+
+.debug_abbrev   0x00000000      0x8a7
+ .debug_abbrev  0x00000000      0x116 ./src/cr_startup_lpc11u.o
+ .debug_abbrev  0x00000116      0x1b8 ./src/ssp.o
+ .debug_abbrev  0x000002ce      0x11a ./src/ssptest.o
+ .debug_abbrev  0x000003e8      0x1e8 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+ .debug_abbrev  0x000005d0       0xf9 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(system_LPC11Uxx.o)
+ .debug_abbrev  0x000006c9      0x1de /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+
+.debug_loc      0x00000000      0xb3d
+ .debug_loc     0x00000000      0x28f ./src/cr_startup_lpc11u.o
+ .debug_loc     0x0000028f      0x188 ./src/ssp.o
+ .debug_loc     0x00000417       0xa8 ./src/ssptest.o
+ .debug_loc     0x000004bf      0x44c /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+ .debug_loc     0x0000090b       0x70 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(system_LPC11Uxx.o)
+ .debug_loc     0x0000097b      0x1c2 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+
+.debug_aranges  0x00000000      0x228
+ .debug_aranges
+                0x00000000       0x60 ./src/cr_startup_lpc11u.o
+ .debug_aranges
+                0x00000060       0x50 ./src/ssp.o
+ .debug_aranges
+                0x000000b0       0x30 ./src/ssptest.o
+ .debug_aranges
+                0x000000e0       0xc8 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+ .debug_aranges
+                0x000001a8       0x28 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(system_LPC11Uxx.o)
+ .debug_aranges
+                0x000001d0       0x58 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+
+.debug_ranges   0x00000000      0x1c8
+ .debug_ranges  0x00000000       0x50 ./src/cr_startup_lpc11u.o
+ .debug_ranges  0x00000050       0x40 ./src/ssp.o
+ .debug_ranges  0x00000090       0x20 ./src/ssptest.o
+ .debug_ranges  0x000000b0       0xb8 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+ .debug_ranges  0x00000168       0x18 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(system_LPC11Uxx.o)
+ .debug_ranges  0x00000180       0x48 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+
+.debug_line     0x00000000     0x1fa8
+ .debug_line    0x00000000      0x418 ./src/cr_startup_lpc11u.o
+ .debug_line    0x00000418      0x536 ./src/ssp.o
+ .debug_line    0x0000094e      0x595 ./src/ssptest.o
+ .debug_line    0x00000ee3      0x6cd /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+ .debug_line    0x000015b0      0x49c /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(system_LPC11Uxx.o)
+ .debug_line    0x00001a4c      0x55c /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+
+.debug_macinfo  0x00000000    0x1fd9d
+ .debug_macinfo
+                0x00000000     0x522b ./src/cr_startup_lpc11u.o
+ .debug_macinfo
+                0x0000522b     0x565c ./src/ssp.o
+ .debug_macinfo
+                0x0000a887     0x58e5 ./src/ssptest.o
+ .debug_macinfo
+                0x0001016c     0x528d /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+ .debug_macinfo
+                0x000153f9     0x5500 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(system_LPC11Uxx.o)
+ .debug_macinfo
+                0x0001a8f9     0x54a4 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+
+.debug_str      0x00000000     0x124b
+ .debug_str     0x00000000      0x201 ./src/cr_startup_lpc11u.o
+                                0x229 (size before relaxing)
+ .debug_str     0x00000201      0x7a7 ./src/ssp.o
+                                0x8a0 (size before relaxing)
+ .debug_str     0x000009a8       0x57 ./src/ssptest.o
+                                0x349 (size before relaxing)
+ .debug_str     0x000009ff      0x64e /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+                                0xbe9 (size before relaxing)
+ .debug_str     0x0000104d       0x58 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(system_LPC11Uxx.o)
+                                0x3c9 (size before relaxing)
+ .debug_str     0x000010a5      0x1a6 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+                                0x973 (size before relaxing)
+
+.comment        0x00000000       0x70
+ .comment       0x00000000       0x70 ./src/cr_startup_lpc11u.o
+                                 0x71 (size before relaxing)
+ .comment       0x00000000       0x71 ./src/ssp.o
+ .comment       0x00000000       0x71 ./src/ssptest.o
+ .comment       0x00000000       0x71 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+ .comment       0x00000000       0x71 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(system_LPC11Uxx.o)
+ .comment       0x00000000       0x71 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+ .comment       0x00000000       0x71 /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv6-m/libcr_c.a(__weak__main.o)
+
+.ARM.attributes
+                0x00000000       0x2f
+ .ARM.attributes
+                0x00000000       0x31 ./src/cr_startup_lpc11u.o
+ .ARM.attributes
+                0x00000031       0x31 ./src/ssp.o
+ .ARM.attributes
+                0x00000062       0x31 ./src/ssptest.o
+ .ARM.attributes
+                0x00000093       0x31 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+ .ARM.attributes
+                0x000000c4       0x31 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(system_LPC11Uxx.o)
+ .ARM.attributes
+                0x000000f5       0x31 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+ .ARM.attributes
+                0x00000126       0x31 /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv6-m/libcr_c.a(__weak__main.o)
+ .ARM.attributes
+                0x00000157       0x21 /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv6-m/libcr_eabihelpers.a(division.o)
+
+.debug_frame    0x00000000      0x650
+ .debug_frame   0x00000000       0xec ./src/cr_startup_lpc11u.o
+ .debug_frame   0x000000ec       0xf0 ./src/ssp.o
+ .debug_frame   0x000001dc       0x70 ./src/ssptest.o
+ .debug_frame   0x0000024c      0x2a4 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(gpio.o)
+ .debug_frame   0x000004f0       0x50 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(system_LPC11Uxx.o)
+ .debug_frame   0x00000540      0x110 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)

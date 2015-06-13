@@ -1,0 +1,235 @@
+
+Discarded input sections
+
+ .data          0x00000000        0x0 ./src/asm_sum_cm0.o
+ .bss           0x00000000        0x0 ./src/asm_sum_cm0.o
+ .text          0x00000000        0x0 ./src/cr_startup_lpc11.o
+ .data          0x00000000        0x0 ./src/cr_startup_lpc11.o
+ .bss           0x00000000        0x0 ./src/cr_startup_lpc11.o
+ .text          0x00000000        0x0 ./src/main.o
+ .data          0x00000000        0x0 ./src/main.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+MFlash32         0x00000000         0x00008000         xr
+RamLoc4          0x10000000         0x00001000         xrw
+RamUsb2          0x20004000         0x00000800         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ./src/asm_sum_cm0.o
+LOAD ./src/cr_startup_lpc11.o
+LOAD ./src/main.o
+START GROUP
+LOAD /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv6-m/libcr_semihost.a
+LOAD /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv6-m/libcr_c.a
+LOAD /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv6-m/libcr_eabihelpers.a
+END GROUP
+                0x00008000                __top_MFlash32 = 0x8000
+                0x10001000                __top_RamLoc4 = 0x10001000
+                0x20004800                __top_RamUsb2 = 0x20004800
+
+.text           0x00000000      0x1e8
+ FILL mask 0xff
+                0x00000000                __vectors_start__ = ABSOLUTE (.)
+ *(.isr_vector)
+ .isr_vector    0x00000000       0xc0 ./src/cr_startup_lpc11.o
+                0x00000000                g_pfnVectors
+                0x000000c0                . = ALIGN (0x4)
+                0x000000c0                __section_table_start = .
+                0x000000c0                __data_section_table = .
+                0x000000c0        0x4 LONG 0x1e8 LOADADDR (.data)
+                0x000000c4        0x4 LONG 0x10000000 ADDR (.data)
+                0x000000c8        0x4 LONG 0x0 SIZEOF (.data)
+                0x000000cc        0x4 LONG 0x1e8 LOADADDR (.data_RAM2)
+                0x000000d0        0x4 LONG 0x20004000 ADDR (.data_RAM2)
+                0x000000d4        0x4 LONG 0x0 SIZEOF (.data_RAM2)
+                0x000000d8                __data_section_table_end = .
+                0x000000d8                __bss_section_table = .
+                0x000000d8        0x4 LONG 0x10000000 ADDR (.bss)
+                0x000000dc        0x4 LONG 0x4 SIZEOF (.bss)
+                0x000000e0        0x4 LONG 0x20004000 ADDR (.bss_RAM2)
+                0x000000e4        0x4 LONG 0x0 SIZEOF (.bss_RAM2)
+                0x000000e8                __bss_section_table_end = .
+                0x000000e8                __section_table_end = .
+ *(.after_vectors*)
+ *(.text*)
+ .text          0x000000e8       0x18 ./src/asm_sum_cm0.o
+                0x000000e8                asm_sum
+ .text.Reset_Handler
+                0x00000100       0x70 ./src/cr_startup_lpc11.o
+                0x00000100                Reset_Handler
+                0x00000100                ResetISR
+ .text.NMI_Handler
+                0x00000170        0x8 ./src/cr_startup_lpc11.o
+                0x00000170                NMI_Handler
+ .text.HardFault_Handler
+                0x00000178        0x8 ./src/cr_startup_lpc11.o
+                0x00000178                HardFault_Handler
+ .text.SVCall_Handler
+                0x00000180        0x8 ./src/cr_startup_lpc11.o
+                0x00000180                SVCall_Handler
+ .text.PendSV_Handler
+                0x00000188        0x8 ./src/cr_startup_lpc11.o
+                0x00000188                PendSV_Handler
+ .text.SysTick_Handler
+                0x00000190        0x8 ./src/cr_startup_lpc11.o
+                0x00000190                SysTick_Handler
+ .text.IntDefaultHandler
+                0x00000198        0x8 ./src/cr_startup_lpc11.o
+                0x00000198                TIMER16_0_IRQHandler
+                0x00000198                UART_IRQHandler
+                0x00000198                TIMER32_0_IRQHandler
+                0x00000198                TIMER32_1_IRQHandler
+                0x00000198                IntDefaultHandler
+                0x00000198                PIOINT1_IRQHandler
+                0x00000198                SSP_IRQHandler
+                0x00000198                TIMER16_1_IRQHandler
+                0x00000198                USB_FIQHandler
+                0x00000198                ADC_IRQHandler
+                0x00000198                PIOINT2_IRQHandler
+                0x00000198                USB_IRQHandler
+                0x00000198                BOD_IRQHandler
+                0x00000198                WAKEUP_IRQHandler
+                0x00000198                PIOINT0_IRQHandler
+                0x00000198                I2C_IRQHandler
+                0x00000198                WDT_IRQHandler
+                0x00000198                PIOINT3_IRQHandler
+                0x00000198                FMC_IRQHandler
+ .text.sum      0x000001a0       0x18 ./src/main.o
+                0x000001a0                sum
+ .text.main     0x000001b8       0x30 ./src/main.o
+                0x000001b8                main
+ *(.rodata .rodata.*)
+                0x000001e8                . = ALIGN (0x4)
+
+.glue_7         0x000001e8        0x0
+ .glue_7        0x00000000        0x0 linker stubs
+
+.glue_7t        0x000001e8        0x0
+ .glue_7t       0x00000000        0x0 linker stubs
+
+.vfp11_veneer   0x000001e8        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x000001e8        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x000001e8                __exidx_start = .
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x000001e8                __exidx_end = .
+                0x000001e8                _etext = .
+
+.data_RAM2      0x20004000        0x0 load address 0x000001e8
+ FILL mask 0xff
+ *(.data.$RAM2*)
+ *(.data.$RamUsb2*)
+                0x20004000                . = ALIGN (0x4)
+
+.uninit_RESERVED
+                0x10000000        0x0
+ *(.bss.$RESERVED*)
+                0x10000000                . = ALIGN (0x4)
+                0x10000000                _end_uninit_RESERVED = .
+
+.data           0x10000000        0x0 load address 0x000001e8
+ FILL mask 0xff
+                0x10000000                _data = .
+ *(vtable)
+ *(.data*)
+                0x10000000                . = ALIGN (0x4)
+                0x10000000                _edata = .
+
+.bss_RAM2       0x20004000        0x0
+ *(.bss.$RAM2*)
+ *(.bss.$RamUsb2*)
+                0x20004000                . = ALIGN (0x4)
+
+.bss            0x10000000        0x4
+                0x10000000                _bss = .
+ *(.bss*)
+ .bss           0x10000000        0x4 ./src/main.o
+ *(COMMON)
+                0x10000004                . = ALIGN (0x4)
+                0x10000004                _ebss = .
+                0x10000004                PROVIDE (end, .)
+
+.noinit_RAM2    0x20004000        0x0
+ *(.noinit.$RAM2*)
+ *(.noinit.$RamUsb2*)
+                0x20004000                . = ALIGN (0x4)
+
+.noinit         0x10000004        0x0
+                0x10000004                _noinit = .
+ *(.noinit*)
+                0x10000004                . = ALIGN (0x4)
+                0x10000004                _end_noinit = .
+                0x10000004                PROVIDE (_pvHeapStart, .)
+                0x10001000                PROVIDE (_vStackTop, (__top_RamLoc4 - 0x0))
+OUTPUT(asm_xample11.axf elf32-littlearm)
+
+.ARM.attributes
+                0x00000000       0x2d
+ .ARM.attributes
+                0x00000000       0x21 ./src/asm_sum_cm0.o
+ .ARM.attributes
+                0x00000021       0x31 ./src/cr_startup_lpc11.o
+ .ARM.attributes
+                0x00000052       0x31 ./src/main.o
+
+.comment        0x00000000       0x70
+ .comment       0x00000000       0x70 ./src/cr_startup_lpc11.o
+                                 0x71 (size before relaxing)
+ .comment       0x00000000       0x71 ./src/main.o
+
+.debug_line     0x00000000      0x18f
+ .debug_line    0x00000000       0x4d ./src/asm_sum_cm0.o
+ .debug_line    0x0000004d       0xec ./src/cr_startup_lpc11.o
+ .debug_line    0x00000139       0x56 ./src/main.o
+
+.debug_info     0x00000000      0x2ec
+ .debug_info    0x00000000       0x78 ./src/asm_sum_cm0.o
+ .debug_info    0x00000078      0x1bd ./src/cr_startup_lpc11.o
+ .debug_info    0x00000235       0xb7 ./src/main.o
+
+.debug_abbrev   0x00000000      0x16a
+ .debug_abbrev  0x00000000       0x14 ./src/asm_sum_cm0.o
+ .debug_abbrev  0x00000014       0xcd ./src/cr_startup_lpc11.o
+ .debug_abbrev  0x000000e1       0x89 ./src/main.o
+
+.debug_aranges  0x00000000       0x98
+ .debug_aranges
+                0x00000000       0x20 ./src/asm_sum_cm0.o
+ .debug_aranges
+                0x00000020       0x50 ./src/cr_startup_lpc11.o
+ .debug_aranges
+                0x00000070       0x28 ./src/main.o
+
+.debug_loc      0x00000000      0x1b0
+ .debug_loc     0x00000000      0x140 ./src/cr_startup_lpc11.o
+ .debug_loc     0x00000140       0x70 ./src/main.o
+
+.debug_ranges   0x00000000       0x58
+ .debug_ranges  0x00000000       0x40 ./src/cr_startup_lpc11.o
+ .debug_ranges  0x00000040       0x18 ./src/main.o
+
+.debug_macinfo  0x00000000     0x4420
+ .debug_macinfo
+                0x00000000     0x2236 ./src/cr_startup_lpc11.o
+ .debug_macinfo
+                0x00002236     0x21ea ./src/main.o
+
+.debug_str      0x00000000      0x183
+ .debug_str     0x00000000      0x16b ./src/cr_startup_lpc11.o
+ .debug_str     0x0000016b       0x18 ./src/main.o
+                                 0x9c (size before relaxing)
+
+.debug_frame    0x00000000      0x128
+ .debug_frame   0x00000000       0xd8 ./src/cr_startup_lpc11.o
+ .debug_frame   0x000000d8       0x50 ./src/main.o

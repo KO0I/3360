@@ -1,0 +1,339 @@
+Archive member included because of file (symbol)
+
+/home/patrick/school/ddl_3360/workspace/CMSISv2p00_LPC11Uxx/Debug/libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
+                              ./src/rs485test.o (SystemCoreClockUpdate)
+/usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv6-m/libcr_c.a(__weak__main.o)
+                              ./src/cr_startup_lpc11u.o (__main)
+/usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv6-m/libcr_eabihelpers.a(division.o)
+                              ./src/rs485.o (__aeabi_uidiv)
+
+Allocating common symbols
+Common symbol       size              file
+
+UARTBuffer          0x40              ./src/rs485.o
+UARTStatus          0x4               ./src/rs485.o
+UARTTxBuffer        0x40              ./src/rs485test.o
+
+Discarded input sections
+
+ .text          0x00000000        0x0 ./src/cr_startup_lpc11u.o
+ .data          0x00000000        0x0 ./src/cr_startup_lpc11u.o
+ .bss           0x00000000        0x0 ./src/cr_startup_lpc11u.o
+ .text          0x00000000        0x0 ./src/rs485.o
+ .data          0x00000000        0x0 ./src/rs485.o
+ .bss           0x00000000        0x0 ./src/rs485.o
+ .bss.garbageCount
+                0x00000000        0x4 ./src/rs485.o
+ .text          0x00000000        0x0 ./src/rs485test.o
+ .data          0x00000000        0x0 ./src/rs485test.o
+ .bss           0x00000000        0x0 ./src/rs485test.o
+ .text          0x00000000        0x0 /home/patrick/school/ddl_3360/workspace/CMSISv2p00_LPC11Uxx/Debug/libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
+ .data          0x00000000        0x0 /home/patrick/school/ddl_3360/workspace/CMSISv2p00_LPC11Uxx/Debug/libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
+ .bss           0x00000000        0x0 /home/patrick/school/ddl_3360/workspace/CMSISv2p00_LPC11Uxx/Debug/libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
+ .text          0x00000000        0x0 /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv6-m/libcr_c.a(__weak__main.o)
+ .data          0x00000000        0x0 /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv6-m/libcr_c.a(__weak__main.o)
+ .bss           0x00000000        0x0 /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv6-m/libcr_c.a(__weak__main.o)
+ .text          0x00000000        0x0 /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv6-m/libcr_eabihelpers.a(division.o)
+ .data          0x00000000        0x0 /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv6-m/libcr_eabihelpers.a(division.o)
+ .bss           0x00000000        0x0 /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv6-m/libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_idivmod
+                0x00000000        0x6 /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv6-m/libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_uldivmod
+                0x00000000       0x5a /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv6-m/libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_ldivmod
+                0x00000000       0x32 /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv6-m/libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_ldiv0
+                0x00000000        0x2 /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv6-m/libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_idivq31+15
+                0x00000000      0x188 /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv6-m/libcr_eabihelpers.a(division.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+MFlash32         0x00000000         0x00008000         xr
+RamLoc4          0x10000000         0x00001000         xrw
+RamUsb2          0x20004000         0x00000800         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ./src/cr_startup_lpc11u.o
+LOAD ./src/rs485.o
+LOAD ./src/rs485test.o
+LOAD /home/patrick/school/ddl_3360/workspace/CMSISv2p00_LPC11Uxx/Debug/libCMSISv2p00_LPC11Uxx.a
+START GROUP
+LOAD /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv6-m/libcr_c.a
+LOAD /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv6-m/libcr_eabihelpers.a
+END GROUP
+                0x00008000                __top_MFlash32 = 0x8000
+                0x10001000                __top_RamLoc4 = 0x10001000
+                0x20004800                __top_RamUsb2 = 0x20004800
+
+.text           0x00000000      0x790
+ FILL mask 0xff
+                0x00000000                __vectors_start__ = ABSOLUTE (.)
+ *(.isr_vector)
+ .isr_vector    0x00000000       0xc0 ./src/cr_startup_lpc11u.o
+                0x00000000                g_pfnVectors
+                0x000000c0                . = ALIGN (0x4)
+                0x000000c0                __section_table_start = .
+                0x000000c0                __data_section_table = .
+                0x000000c0        0x4 LONG 0x790 LOADADDR (.data)
+                0x000000c4        0x4 LONG 0x10000000 ADDR (.data)
+                0x000000c8        0x4 LONG 0x8 SIZEOF (.data)
+                0x000000cc        0x4 LONG 0x790 LOADADDR (.data_RAM2)
+                0x000000d0        0x4 LONG 0x20004000 ADDR (.data_RAM2)
+                0x000000d4        0x4 LONG 0x0 SIZEOF (.data_RAM2)
+                0x000000d8                __data_section_table_end = .
+                0x000000d8                __bss_section_table = .
+                0x000000d8        0x4 LONG 0x10000008 ADDR (.bss)
+                0x000000dc        0x4 LONG 0x88 SIZEOF (.bss)
+                0x000000e0        0x4 LONG 0x20004000 ADDR (.bss_RAM2)
+                0x000000e4        0x4 LONG 0x0 SIZEOF (.bss_RAM2)
+                0x000000e8                __bss_section_table_end = .
+                0x000000e8                __section_table_end = .
+ *(.after_vectors*)
+ .after_vectors
+                0x000000e8       0x80 ./src/cr_startup_lpc11u.o
+                0x000000e8                NMI_Handler
+                0x000000ec                HardFault_Handler
+                0x000000f0                SVC_Handler
+                0x000000f4                PendSV_Handler
+                0x000000f8                SysTick_Handler
+                0x000000fc                data_init
+                0x0000010e                bss_init
+                0x00000120                ResetISR
+                0x00000164                TIMER16_0_IRQHandler
+                0x00000164                TIMER32_0_IRQHandler
+                0x00000164                FLEX_INT7_IRQHandler
+                0x00000164                TIMER32_1_IRQHandler
+                0x00000164                FLEX_INT1_IRQHandler
+                0x00000164                IntDefaultHandler
+                0x00000164                SSP0_IRQHandler
+                0x00000164                USBWakeup_IRQHandler
+                0x00000164                FLEX_INT0_IRQHandler
+                0x00000164                FLEX_INT2_IRQHandler
+                0x00000164                TIMER16_1_IRQHandler
+                0x00000164                USB_FIQHandler
+                0x00000164                FLEX_INT5_IRQHandler
+                0x00000164                ADC_IRQHandler
+                0x00000164                SSP1_IRQHandler
+                0x00000164                FLEX_INT3_IRQHandler
+                0x00000164                USB_IRQHandler
+                0x00000164                BOD_IRQHandler
+                0x00000164                I2C_IRQHandler
+                0x00000164                WDT_IRQHandler
+                0x00000164                GINT0_IRQHandler
+                0x00000164                FLEX_INT4_IRQHandler
+                0x00000164                FLEX_INT6_IRQHandler
+                0x00000164                FMC_IRQHandler
+                0x00000164                GINT1_IRQHandler
+ *(.text*)
+ .text.NVIC_EnableIRQ
+                0x00000168       0x2c ./src/rs485.o
+ .text.NVIC_DisableIRQ
+                0x00000194       0x30 ./src/rs485.o
+ .text.UART_IRQHandler
+                0x000001c4      0x19c ./src/rs485.o
+                0x000001c4                UART_IRQHandler
+ .text.RS485Init
+                0x00000360      0x114 ./src/rs485.o
+                0x00000360                RS485Init
+ .text.RS485Send
+                0x00000474       0x7c ./src/rs485.o
+                0x00000474                RS485Send
+ .text.main     0x000004f0       0x78 ./src/rs485test.o
+                0x000004f0                main
+ .text.SystemCoreClockUpdate
+                0x00000568       0x9c /home/patrick/school/ddl_3360/workspace/CMSISv2p00_LPC11Uxx/Debug/libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
+                0x00000568                SystemCoreClockUpdate
+ .text.SystemInit
+                0x00000604       0xd4 /home/patrick/school/ddl_3360/workspace/CMSISv2p00_LPC11Uxx/Debug/libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
+                0x00000604                SystemInit
+ .text.__weak_main
+                0x000006d8        0x8 /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv6-m/libcr_c.a(__weak__main.o)
+                0x000006d8                __main
+                0x000006d8                __weak_main
+ .text.__aeabi_division_uidivmod
+                0x000006e0       0x72 /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv6-m/libcr_eabihelpers.a(division.o)
+                0x000006e0                __aeabi_uidiv
+                0x000006e0                __aeabi_uidivmod
+ .text.__aeabi_division_idiv0
+                0x00000752        0x2 /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv6-m/libcr_eabihelpers.a(division.o)
+                0x00000752                __aeabi_idiv0
+ *(.rodata .rodata.*)
+ .rodata.CSWTCH.8
+                0x00000754       0x3c /home/patrick/school/ddl_3360/workspace/CMSISv2p00_LPC11Uxx/Debug/libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
+                0x00000790                . = ALIGN (0x4)
+
+.glue_7         0x00000790        0x0
+ .glue_7        0x00000000        0x0 linker stubs
+
+.glue_7t        0x00000790        0x0
+ .glue_7t       0x00000000        0x0 linker stubs
+
+.vfp11_veneer   0x00000790        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x00000790        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x00000790                __exidx_start = .
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x00000790                __exidx_end = .
+                0x00000790                _etext = .
+
+.data_RAM2      0x20004000        0x0 load address 0x00000790
+ FILL mask 0xff
+ *(.data.$RAM2*)
+ *(.data.$RamUsb2*)
+                0x20004000                . = ALIGN (0x4)
+
+.uninit_RESERVED
+                0x10000000        0x0
+ *(.bss.$RESERVED*)
+                0x10000000                . = ALIGN (0x4)
+                0x10000000                _end_uninit_RESERVED = .
+
+.data           0x10000000        0x8 load address 0x00000790
+ FILL mask 0xff
+                0x10000000                _data = .
+ *(vtable)
+ *(.data*)
+ .data.UART0TxEmpty
+                0x10000000        0x1 ./src/rs485.o
+                0x10000000                UART0TxEmpty
+ *fill*         0x10000001        0x3 00
+ .data.SystemCoreClock
+                0x10000004        0x4 /home/patrick/school/ddl_3360/workspace/CMSISv2p00_LPC11Uxx/Debug/libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
+                0x10000004                SystemCoreClock
+                0x10000008                . = ALIGN (0x4)
+                0x10000008                _edata = .
+
+.bss_RAM2       0x20004000        0x0
+ *(.bss.$RAM2*)
+ *(.bss.$RamUsb2*)
+                0x20004000                . = ALIGN (0x4)
+
+.bss            0x10000008       0x88
+                0x10000008                _bss = .
+ *(.bss*)
+ .bss.UARTCount
+                0x10000008        0x4 ./src/rs485.o
+                0x10000008                UARTCount
+ *(COMMON)
+ COMMON         0x1000000c       0x44 ./src/rs485.o
+                0x1000000c                UARTBuffer
+                0x1000004c                UARTStatus
+ COMMON         0x10000050       0x40 ./src/rs485test.o
+                0x10000050                UARTTxBuffer
+                0x10000090                . = ALIGN (0x4)
+                0x10000090                _ebss = .
+                0x10000090                PROVIDE (end, .)
+
+.noinit_RAM2    0x20004000        0x0
+ *(.noinit.$RAM2*)
+ *(.noinit.$RamUsb2*)
+                0x20004000                . = ALIGN (0x4)
+
+.noinit         0x10000090        0x0
+                0x10000090                _noinit = .
+ *(.noinit*)
+                0x10000090                . = ALIGN (0x4)
+                0x10000090                _end_noinit = .
+                0x10000090                PROVIDE (_pvHeapStart, .)
+                0x10001000                PROVIDE (_vStackTop, (__top_RamLoc4 - 0x0))
+OUTPUT(RS485.axf elf32-littlearm)
+
+.debug_info     0x00000000     0x179a
+ .debug_info    0x00000000      0x296 ./src/cr_startup_lpc11u.o
+ .debug_info    0x00000296      0xe2a ./src/rs485.o
+ .debug_info    0x000010c0      0x106 ./src/rs485test.o
+ .debug_info    0x000011c6      0x5d4 /home/patrick/school/ddl_3360/workspace/CMSISv2p00_LPC11Uxx/Debug/libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
+
+.debug_abbrev   0x00000000      0x442
+ .debug_abbrev  0x00000000      0x116 ./src/cr_startup_lpc11u.o
+ .debug_abbrev  0x00000116      0x195 ./src/rs485.o
+ .debug_abbrev  0x000002ab       0x9e ./src/rs485test.o
+ .debug_abbrev  0x00000349       0xf9 /home/patrick/school/ddl_3360/workspace/CMSISv2p00_LPC11Uxx/Debug/libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
+
+.debug_loc      0x00000000      0x469
+ .debug_loc     0x00000000      0x28f ./src/cr_startup_lpc11u.o
+ .debug_loc     0x0000028f      0x118 ./src/rs485.o
+ .debug_loc     0x000003a7       0x38 ./src/rs485test.o
+ .debug_loc     0x000003df       0x8a /home/patrick/school/ddl_3360/workspace/CMSISv2p00_LPC11Uxx/Debug/libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
+
+.debug_aranges  0x00000000       0xe8
+ .debug_aranges
+                0x00000000       0x60 ./src/cr_startup_lpc11u.o
+ .debug_aranges
+                0x00000060       0x40 ./src/rs485.o
+ .debug_aranges
+                0x000000a0       0x20 ./src/rs485test.o
+ .debug_aranges
+                0x000000c0       0x28 /home/patrick/school/ddl_3360/workspace/CMSISv2p00_LPC11Uxx/Debug/libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
+
+.debug_ranges   0x00000000       0xa8
+ .debug_ranges  0x00000000       0x50 ./src/cr_startup_lpc11u.o
+ .debug_ranges  0x00000050       0x30 ./src/rs485.o
+ .debug_ranges  0x00000080       0x10 ./src/rs485test.o
+ .debug_ranges  0x00000090       0x18 /home/patrick/school/ddl_3360/workspace/CMSISv2p00_LPC11Uxx/Debug/libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
+
+.debug_line     0x00000000     0x108c
+ .debug_line    0x00000000      0x418 ./src/cr_startup_lpc11u.o
+ .debug_line    0x00000418      0x489 ./src/rs485.o
+ .debug_line    0x000008a1      0x3ef ./src/rs485test.o
+ .debug_line    0x00000c90      0x3fc /home/patrick/school/ddl_3360/workspace/CMSISv2p00_LPC11Uxx/Debug/libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
+
+.debug_macinfo  0x00000000    0x14eaf
+ .debug_macinfo
+                0x00000000     0x522b ./src/cr_startup_lpc11u.o
+ .debug_macinfo
+                0x0000522b     0x53d9 ./src/rs485.o
+ .debug_macinfo
+                0x0000a604     0x53d9 ./src/rs485test.o
+ .debug_macinfo
+                0x0000f9dd     0x54d2 /home/patrick/school/ddl_3360/workspace/CMSISv2p00_LPC11Uxx/Debug/libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
+
+.debug_str      0x00000000      0xa5e
+ .debug_str     0x00000000      0x203 ./src/cr_startup_lpc11u.o
+                                0x22b (size before relaxing)
+ .debug_str     0x00000203      0x7ac ./src/rs485.o
+                                0x8a7 (size before relaxing)
+ .debug_str     0x000009af       0x25 ./src/rs485test.o
+                                0x12e (size before relaxing)
+ .debug_str     0x000009d4       0x8a /home/patrick/school/ddl_3360/workspace/CMSISv2p00_LPC11Uxx/Debug/libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
+                                0x3c9 (size before relaxing)
+
+.comment        0x00000000       0x70
+ .comment       0x00000000       0x70 ./src/cr_startup_lpc11u.o
+                                 0x71 (size before relaxing)
+ .comment       0x00000000       0x71 ./src/rs485.o
+ .comment       0x00000000       0x71 ./src/rs485test.o
+ .comment       0x00000000       0x71 /home/patrick/school/ddl_3360/workspace/CMSISv2p00_LPC11Uxx/Debug/libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
+ .comment       0x00000000       0x71 /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv6-m/libcr_c.a(__weak__main.o)
+
+.ARM.attributes
+                0x00000000       0x2f
+ .ARM.attributes
+                0x00000000       0x31 ./src/cr_startup_lpc11u.o
+ .ARM.attributes
+                0x00000031       0x31 ./src/rs485.o
+ .ARM.attributes
+                0x00000062       0x31 ./src/rs485test.o
+ .ARM.attributes
+                0x00000093       0x31 /home/patrick/school/ddl_3360/workspace/CMSISv2p00_LPC11Uxx/Debug/libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
+ .ARM.attributes
+                0x000000c4       0x31 /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv6-m/libcr_c.a(__weak__main.o)
+ .ARM.attributes
+                0x000000f5       0x21 /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv6-m/libcr_eabihelpers.a(division.o)
+
+.debug_frame    0x00000000      0x218
+ .debug_frame   0x00000000       0xec ./src/cr_startup_lpc11u.o
+ .debug_frame   0x000000ec       0xb0 ./src/rs485.o
+ .debug_frame   0x0000019c       0x30 ./src/rs485test.o
+ .debug_frame   0x000001cc       0x4c /home/patrick/school/ddl_3360/workspace/CMSISv2p00_LPC11Uxx/Debug/libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
