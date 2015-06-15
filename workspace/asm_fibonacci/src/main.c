@@ -69,6 +69,10 @@ void delay_ms(uint32_t ms) {
 }
 
 // Recursive Fibonacci code written in assembly
+//extern int asm_fibonacci_marisa(int x);
+
+extern int asm_fib(int x);
+
 extern int asm_fibonacci(int x);
 
 // From ADC Example
@@ -84,20 +88,27 @@ static uint8_t ConvertDigital ( uint8_t digit )
 uint32_t print32bitCompare(uint32_t m, uint32_t n, uint32_t buffer){
   // pass this function a 32-bit number, and this will product a
   // useable value on the UART buffer
+  UARTBuffer[buffer++] = 'i';
+  UARTBuffer[buffer++] = 'd';
+  UARTBuffer[buffer++] = 'e';
+  UARTBuffer[buffer++] = 'a';
+  UARTBuffer[buffer++] = 'l';
+  UARTBuffer[buffer++] = ':';
   UARTBuffer[buffer++] = ConvertDigital((uint8_t)((m>>12)&0xF));
   UARTBuffer[buffer++] = ConvertDigital( (uint8_t)((m>>8)&0xF));
   UARTBuffer[buffer++] = ConvertDigital( (uint8_t)((m>>4)&0xF));
   UARTBuffer[buffer++] = ConvertDigital((uint8_t)(m&0xF));
+  UARTBuffer[buffer++] = ',';
   UARTBuffer[buffer++] = ' ';
+  UARTBuffer[buffer++] = 'r';
+  UARTBuffer[buffer++] = 'e';
+  UARTBuffer[buffer++] = 'a';
+  UARTBuffer[buffer++] = 'l';
   UARTBuffer[buffer++] = ':';
-  UARTBuffer[buffer++] = ' ';
   UARTBuffer[buffer++] = ConvertDigital((uint8_t)((n>>12)&0xF));
   UARTBuffer[buffer++] = ConvertDigital( (uint8_t)((n>>8)&0xF));
   UARTBuffer[buffer++] = ConvertDigital( (uint8_t)((n>>4)&0xF));
   UARTBuffer[buffer++] = ConvertDigital((uint8_t)(n&0xF));
-  UARTBuffer[buffer++] = '\r';
-  UARTBuffer[buffer++] = '\n';
-  UARTBuffer[buffer++] = ConvertDigital(16);
   UARTBuffer[buffer++] = '\r';
   UARTBuffer[buffer++] = '\n';
   UARTSend( (uint8_t *)UARTBuffer, buffer );
@@ -234,10 +245,13 @@ int main(void) {
   for(i=0; i<21; i++){
     j = 0;
     //n = asm_fibonacci(i);
-    n = fibonacci(i);
+    m = fibonacci(i);
+    n = fib(i);
+    //n = asm_fibonacci(i);
+    print32bitCompare(m,n,j);
     // the encoding is Morse
     // the output signal is CW
-    cwblink32(n);
+    //cwblink32(n);
   }
 return 0;
 }
