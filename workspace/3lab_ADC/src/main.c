@@ -65,21 +65,14 @@ void TIMERInit() {
   // Starting with one timer:
   // The timer CT32B0 has four match registers
   //    and two capture registers
-  LPC_IOCON->PIO1_5 &= ~0x07;// I/O Config
-  LPC_IOCON->PIO1_5 |=  0x02;// Timer0_32 MAT0
+  LPC_IOCON->PIO0_18 &= ~0x07;// I/O Config
+  LPC_IOCON->PIO0_18 |=  0x02;// Timer0_32 CAP0
 
-  LPC_IOCON->PIO1_6 &= ~0x07;// I/O Config
-  LPC_IOCON->PIO1_6 |=  0x02;// Timer0_32 MAT0
+  //External Match Register Config
 
-  LPC_IOCON->PIO1_7 &= ~0x07;// I/O Config
-  LPC_IOCON->PIO1_7 |=  0x02;// Timer0_32 MAT1
+	LPC_CT32B0->EMR &= ~(0xFF<<4);//Clear EMR
+  LPC_CT32B0->EMR |= ((0x3<<4)|(0x3<<6)|(0x3<<8)|(0x3<<10));	
 
-  LPC_IOCON->PIO0_1 &= ~0x07;// I/O Config
-  LPC_IOCON->PIO0_1 |=  0x02;// Timer0_32 MAT2
-
-  // replace with lower-level stuff later?
-  NVIC_EnableIRQ(TIMER_32_0_IRQn);
-  NVIC_SetPriority(TIMER_32_0_IRQn, 0);
   
   // when TC = 1/2ms, clear TC
 
@@ -89,6 +82,10 @@ void TIMERInit() {
   LPC_CT32B0->IR  = 0x11;// Clears the interrupt req.
   LPC_CT32B0->MCR = 0x03;// interrupt and reset on match
   LPC_CT32B0->TCR = 0x01;// start the timer(s)
+  
+  // replace with lower-level stuff later?
+  NVIC_EnableIRQ(TIMER_32_0_IRQn);
+  NVIC_SetPriority(TIMER_32_0_IRQn, 0);
 
   //LPC_GPIO2->IE |= (0x1<<1);//unmask the interrupt
 }
@@ -103,7 +100,7 @@ void FLEX_INT0_IRQHandler(void) {
   tock = tick;
   duty = (period * duty_cycle)/100;
   // always enable the LED on rising edge
-  //LPC_GPIO->SET[0] = (1<<7);
+  LPC_GPIO->SET[0] = (1<<7);
   led_en = 1;
   duty_count = 0;
 }
