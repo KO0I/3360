@@ -41,19 +41,21 @@ void GPIOInit() {
   // Set port 0 pin 7 to output
   LPC_GPIO->DIR[0] |= (0x1<<7);
   //LED_OFF;
-  // Set port 0 pin 3 to input
-  LPC_GPIO->DIR[0] &=~(0x1<<3); // 0b_1111_0111
+  // Set port 0 pin 1 to input
+  //LPC_GPIO->DIR[0] &=~(0x1<<1); // 0b_1111_1101
+  LPC_GPIO->DIR[0] &= (0xFD); // 0b_1111_1101
   LPC_SYSCON->PINTSEL[channelNum] = 1;
   // Enable the IRQ and set priority
   NVIC_EnableIRQ(FLEX_INT1_IRQn);
-  NVIC_SetPriority(FLEX_INT1_IRQn, 0);
   // Set ISEL to Edge sensitive p.156
   LPC_GPIO_PIN_INT->ISEL  &=~(0x1<<channelNum);
   // Set IENR to rising edge
   LPC_GPIO_PIN_INT->IENR  |= (0x1<<channelNum);// Rising Edge of P0_0
   // Set IENF explicity to IGNORE FALLING EDGE
   //LPC_GPIO_PIN_INT->IENF  &=~(0x1<<channelNum);
-  LPC_GPIO_PIN_INT->SIENR |= (0x1<<channelNum);
+  //LPC_GPIO_PIN_INT->SIENR |= (0x1<<channelNum);
+
+  //NVIC_SetPriority(FLEX_INT1_IRQn, 0);
 }
 
 void TIMERInit() {
@@ -69,7 +71,7 @@ void TIMERInit() {
 
   //External Match Register Config
 
-	LPC_CT32B0->EMR &= ~(0xFF<<4);//Clear EMR
+  LPC_CT32B0->EMR &= ~(0xFF<<4);//Clear EMR
   LPC_CT32B0->EMR |= ((0x3<<4)|(0x3<<6)|(0x3<<8)|(0x3<<10));	
 
   
@@ -91,7 +93,7 @@ void TIMERInit() {
 
 void FLEX_INT1_IRQHandler(void) {
   //LPC_GPIO->SET[0] = (0x1<<7);
-  //LPC_GPIO->CLR[0] = (0x1<<7);
+  LPC_GPIO->SET[0] = (0x1<<7);
 
 	period = tick - start_of_period+1;
 	start_of_period = tick;
@@ -99,23 +101,24 @@ void FLEX_INT1_IRQHandler(void) {
 	// always enable the LED on rising edge
 	if(!led_en)LPC_GPIO->SET[0] = (0x1<<7);
 	led_en = 1;
-	//duty_count = 0;
+
+	duty_count = 0;
   //if(LPC_GPIO_PIN_INT->RISE & (0x1<<0)&& (LPC_GPIO_PIN_INT->IENR & (0x1<<0))){
   //  LPC_GPIO_PIN_INT->RISE = 0x1<<0;
 
   //}
   // clear interrupt flag
-	LPC_GPIO_PIN_INT->IST = 0x1<<0;
+	LPC_GPIO_PIN_INT->IST = 0x1<<1;
   return;
 }
 
 void TIMER32_0_IRQHandler(void) {
 	// Clear interrupt registers and increment counter
 	// These handle the match events on the timer
-  
+  //LPC_GPIO->SET[0] = (0x1<<7);
   tick++;
   if(tick == TEN_SEC){
-	LED_OFF;
+	//LED_OFF;
     tick = 0;
     duty_cycle      = (duty_cycle_mode)?75:25;
     duty_cycle_mode = (duty_cycle_mode)?0:1;
@@ -139,14 +142,12 @@ void TIMER32_0_IRQHandler(void) {
 int main(void) {
   //SystemCoreClockUpdate();
   // Initialize GPIO ports for both Interrupts and LED control
-  //LPC_GPIO->SET[0] = (0x1<<7);
-  //LPC_GPIO->CLR[0] = (0x1<<7);
   GPIOInit();
   // Initialize Timer and Generate a 1ms interrupt
   TIMERInit();
 
   while(1){
-	//  if(LPC_GPIO_PIN_INT->RISE & (0x1<<0))LED_ON;
+	  //if(LPC_GPIO_PIN_INT->RISE & (0x1<<0))LED_ON;
   }
 
 
