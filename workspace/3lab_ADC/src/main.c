@@ -11,13 +11,10 @@ Description : Lab 3 for ECEN 3000/3360
 ===============================================================================
 */
 /* GPIO and GPIO Interrupt Initialization */
-#ifdef __USE_CMSIS
 #include "LPC11Uxx.h"
-#endif
 #include "timer32.h"
-#include <cr_section_macros.h>
 
-#define TEN_SEC 20000
+#define TEN_SEC 10000
 #define LED_ON  LPC_GPIO->SET[0] = (0x1<<7);
 #define LED_OFF LPC_GPIO->CLR[0] = (0x1<<7);
 
@@ -25,37 +22,37 @@ Description : Lab 3 for ECEN 3000/3360
 //volatile uint32_t timer32_1_counter[4] = {0,0,0,0};
 volatile uint32_t duty_cycle_mode = 1; //0===25%, 1===75% time_on Cycle
 
-volatile uint32_t tick = 0; 
+volatile uint32_t tick = 0;
 volatile uint32_t start_of_period = 0;
 volatile uint32_t period;
 volatile uint32_t time_on;
-volatile uint32_t duty_cycle;
+volatile uint32_t duty_cycle = 25;
 volatile uint32_t duty_count;
 volatile uint32_t led_en = 0;
 
 void GPIOInit() {
+  uint32_t channelNum = 1;
   // Power up the peripherals
   // Enable AHB clock to the GPIO domain.
-  LPC_SYSCON->SYSAHBCLKCTRL |= (1<<6);
+  LPC_SYSCON->SYSAHBCLKCTRL |= (0x1<<6);
   // Enable AHB clock to the FlexInt, GroupedInt domain.
-  LPC_SYSCON->SYSAHBCLKCTRL |= ((1<<19) | (1<<23) | (1<<24));
+  LPC_SYSCON->SYSAHBCLKCTRL |= ((0x1<<19) | (0x1<<23) | (0x1<<24));
   
   // Set port 0 pin 7 to output
-  LPC_GPIO->DIR[0] |= (1<<7);
+  LPC_GPIO->DIR[0] |= (0x1<<7);
   //LED_OFF;
-  // Set port 0 pin 1 to input
-  LPC_GPIO->DIR[0] &= (0xFD); // 0b_1111_1101
-  uint32_t channelNum = 0;
-  LPC_SYSCON->PINTSEL[channelNum] = 0 + 24;
+  // Set port 0 pin 3 to input
+  LPC_GPIO->DIR[0] &=~(0x1<<3); // 0b_1111_0111
+  LPC_SYSCON->PINTSEL[channelNum] = 1;
   // Enable the IRQ and set priority
-  NVIC_EnableIRQ(FLEX_INT0_IRQn);
-  NVIC_SetPriority(FLEX_INT0_IRQn, 0);
+  NVIC_EnableIRQ(FLEX_INT1_IRQn);
+  NVIC_SetPriority(FLEX_INT1_IRQn, 0);
   // Set ISEL to Edge sensitive p.156
   LPC_GPIO_PIN_INT->ISEL  &=~(0x1<<channelNum);
   // Set IENR to rising edge
   LPC_GPIO_PIN_INT->IENR  |= (0x1<<channelNum);// Rising Edge of P0_0
   // Set IENF explicity to IGNORE FALLING EDGE
-  LPC_GPIO_PIN_INT->IENF  &=~(0x1<<channelNum);
+  //LPC_GPIO_PIN_INT->IENF  &=~(0x1<<channelNum);
   LPC_GPIO_PIN_INT->SIENR |= (0x1<<channelNum);
 }
 
@@ -92,21 +89,21 @@ void TIMERInit() {
   return;
 }
 
-void FLEX_INT0_IRQHandler(void) {
-	//LPC_GPIO->SET[0] = (0x1<<7);
+void FLEX_INT1_IRQHandler(void) {
+  //LPC_GPIO->SET[0] = (0x1<<7);
   //LPC_GPIO->CLR[0] = (0x1<<7);
 
-  //LPC_GPIO_PIN_INT->IST = (0x1<<0);// reset interrupt flag
-  if(LPC_GPIO_PIN_INT->RISE & (0x1<<0)&& (LPC_GPIO_PIN_INT->IENR & (0x1<<0))){
-	LPC_GPIO_PIN_INT->RISE = 0x1<<0;
-    period = tick - start_of_period;
-    start_of_period = tick;
-    time_on = (period * duty_cycle)/100;
-  // always enable the LED on rising edge
-    if(!led_en)LPC_GPIO->SET[0] = (0x1<<7);
-    led_en = 1;
-    duty_count = 1;
-  }
+	period = tick - start_of_period+1;
+	start_of_period = tick;
+	time_on = (period * duty_cycle)/100;
+	// always enable the LED on rising edge
+	if(!led_en)LPC_GPIO->SET[0] = (0x1<<7);
+	led_en = 1;
+	//duty_count = 0;
+  //if(LPC_GPIO_PIN_INT->RISE & (0x1<<0)&& (LPC_GPIO_PIN_INT->IENR & (0x1<<0))){
+  //  LPC_GPIO_PIN_INT->RISE = 0x1<<0;
+
+  //}
   // clear interrupt flag
 	LPC_GPIO_PIN_INT->IST = 0x1<<0;
   return;
@@ -116,9 +113,9 @@ void TIMER32_0_IRQHandler(void) {
 	// Clear interrupt registers and increment counter
 	// These handle the match events on the timer
   
-  LPC_CT32B0->IR = 0x11; //reset interrupt flag
   tick++;
   if(tick == TEN_SEC){
+	LED_OFF;
     tick = 0;
     duty_cycle      = (duty_cycle_mode)?75:25;
     duty_cycle_mode = (duty_cycle_mode)?0:1;
@@ -135,11 +132,12 @@ void TIMER32_0_IRQHandler(void) {
       duty_count = 0;
     }
   }
-	return;
+  LPC_CT32B0->IR = (0x1<<0); //reset interrupt flag
+  return;
 }
 
 int main(void) {
-  SystemCoreClockUpdate();
+  //SystemCoreClockUpdate();
   // Initialize GPIO ports for both Interrupts and LED control
   //LPC_GPIO->SET[0] = (0x1<<7);
   //LPC_GPIO->CLR[0] = (0x1<<7);
@@ -147,7 +145,9 @@ int main(void) {
   // Initialize Timer and Generate a 1ms interrupt
   TIMERInit();
 
-  while(1);      
+  while(1){
+	//  if(LPC_GPIO_PIN_INT->RISE & (0x1<<0))LED_ON;
+  }
 
 
   return 0;
