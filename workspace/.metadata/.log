@@ -1,0 +1,1087 @@
+!SESSION 2015-06-28 13:23:08.917 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_45
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-06-28 13:28:53.111
+!MESSAGE Indexed 'ADC' (3 sources, 20 headers) in 2.86 sec: 1,127 declarations; 1,660 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-06-28 13:28:53.454
+!MESSAGE Indexed 'LPC11Uxx_Driver_Lib' (7 sources, 23 headers) in 0.32 sec: 1,112 declarations; 3,643 references; 1 unresolved inclusions; 0 syntax errors; 1 unresolved names (0.02%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-06-28 13:28:53.594
+!MESSAGE Indexed 'eepROMapi' (3 sources, 21 headers) in 0.14 sec: 1,119 declarations; 1,402 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-06-28 13:28:53.674
+!MESSAGE Indexed 'CMSISv2p00_LPC11Uxx' (2 sources, 14 headers) in 0.08 sec: 695 declarations; 1,203 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-06-28 13:28:53.767
+!MESSAGE Indexed 'gpio' (2 sources, 15 headers) in 0.09 sec: 853 declarations; 1,115 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-06-28 13:28:53.854
+!MESSAGE Indexed 'i2c' (3 sources, 16 headers) in 0.08 sec: 841 declarations; 1,437 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-06-28 13:28:54.064
+!MESSAGE Indexed 'USB_ROM_MSC_HID_DFU' (10 sources, 35 headers) in 0.21 sec: 2,108 declarations; 2,811 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-06-28 13:28:54.171
+!MESSAGE Indexed 'smartcard' (4 sources, 21 headers) in 0.10 sec: 1,025 declarations; 1,830 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-06-28 13:28:54.255
+!MESSAGE Indexed 'Timer32' (2 sources, 16 headers) in 0.08 sec: 886 declarations; 1,125 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-06-28 13:28:54.340
+!MESSAGE Indexed 'WDT' (3 sources, 18 headers) in 0.08 sec: 905 declarations; 1,250 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-06-28 13:28:54.419
+!MESSAGE Indexed 'PWM' (2 sources, 17 headers) in 0.08 sec: 918 declarations; 1,155 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-06-28 13:28:54.584
+!MESSAGE Indexed 'USB_ROM_CDC' (3 sources, 32 headers) in 0.16 sec: 1,984 declarations; 2,563 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-06-28 13:28:54.702
+!MESSAGE Indexed '3lab_ADC' (3 sources, 17 headers) in 0.12 sec: 847 declarations; 1,229 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-06-28 13:28:54.790
+!MESSAGE Indexed 'i2cmonitor' (3 sources, 15 headers) in 0.09 sec: 819 declarations; 1,306 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-06-28 13:28:54.872
+!MESSAGE Indexed 'USART Slave' (3 sources, 15 headers) in 0.08 sec: 836 declarations; 1,330 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-06-28 13:28:54.951
+!MESSAGE Indexed 'i2cslave' (3 sources, 16 headers) in 0.08 sec: 822 declarations; 1,278 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-06-28 13:28:55.035
+!MESSAGE Indexed 'UART' (2 sources, 15 headers) in 0.08 sec: 813 declarations; 1,087 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-06-28 13:28:55.199
+!MESSAGE Indexed 'USB_ROM_MSC' (6 sources, 35 headers) in 0.16 sec: 2,037 declarations; 2,436 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-06-28 13:28:55.365
+!MESSAGE Indexed 'USB_ROM_HID' (4 sources, 33 headers) in 0.16 sec: 1,965 declarations; 2,278 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-06-28 13:28:55.482
+!MESSAGE Indexed 'asm_fibonacci' (3 sources, 20 headers) in 0.11 sec: 1,141 declarations; 1,619 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-06-28 13:28:55.570
+!MESSAGE Indexed 'BOD' (3 sources, 17 headers) in 0.09 sec: 896 declarations; 1,182 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-06-28 13:28:55.580
+!MESSAGE Indexed 'asm_xample11' (2 sources, 0 headers) in 0.01 sec: 89 declarations; 91 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-06-28 13:28:55.659
+!MESSAGE Indexed 'RS485' (3 sources, 15 headers) in 0.08 sec: 827 declarations; 1,325 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-06-28 13:28:55.772
+!MESSAGE Indexed 'pmu' (7 sources, 19 headers) in 0.11 sec: 1,054 declarations; 2,951 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-06-28 13:28:55.854
+!MESSAGE Indexed 'Systick' (2 sources, 15 headers) in 0.08 sec: 859 declarations; 1,123 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-06-28 13:28:55.928
+!MESSAGE Indexed 'gint' (2 sources, 15 headers) in 0.07 sec: 855 declarations; 1,093 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-06-28 13:28:56.017
+!MESSAGE Indexed 'SSP' (3 sources, 17 headers) in 0.09 sec: 922 declarations; 1,756 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-06-28 13:28:56.101
+!MESSAGE Indexed 'Blinky' (2 sources, 18 headers) in 0.08 sec: 896 declarations; 1,148 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-06-28 13:28:56.189
+!MESSAGE Indexed 'USART Master' (3 sources, 15 headers) in 0.08 sec: 837 declarations; 1,352 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY com.crt.log 1 0 2015-06-28 13:30:30.050
+!MESSAGE Drivers loaded in 7288 milliseconds
+
+!ENTRY org.eclipse.jface 2 0 2015-06-28 13:32:20.595
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-06-28 13:32:20.596
+!MESSAGE A conflict occurred for ALT+CTRL+I:
+Binding(ALT+CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.include.browser,Open Include Browser,
+		Open an include browser on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@27d6e0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(ALT+CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.include.browser,Open Include Browser,
+		Open an include browser on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@27d6e0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-06-28 13:32:20.596
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.text.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.cdt.ui.category.refactoring,Refactor - C++,C/C++ Refactorings,true),
+		org.eclipse.ui.internal.MakeHandlersGo@18c1676,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.text.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.cdt.ui.category.refactoring,Refactor - C++,C/C++ Refactorings,true),
+		org.eclipse.ui.internal.MakeHandlersGo@18c1676,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-06-28 13:32:20.596
+!MESSAGE A conflict occurred for F3:
+Binding(F3,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.opendecl,Open Declaration,
+		Open an editor on the selected element's declaration(s),
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@16bf9f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(F3,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.opendecl,Open Declaration,
+		Open an editor on the selected element's declaration(s),
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@16bf9f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-06-28 13:32:20.596
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.navigate.opentype,Open Element,
+		Open an element in an Editor,
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@17e7135,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.navigate.opentype,Open Element,
+		Open an element in an Editor,
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@17e7135,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-06-28 13:32:20.596
+!MESSAGE A conflict occurred for F4:
+Binding(F4,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.type.hierarchy,Open Type Hierarchy,
+		Open a type hierarchy on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@3a505d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(F4,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.type.hierarchy,Open Type Hierarchy,
+		Open a type hierarchy on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@3a505d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-06-28 13:32:20.596
+!MESSAGE A conflict occurred for CTRL+G:
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.search.finddecl,Declaration,
+		Search for declarations of the selected element in the workspace,
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@723c0c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.search.finddecl,Declaration,
+		Search for declarations of the selected element in the workspace,
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@723c0c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-06-28 13:32:20.596
+!MESSAGE A conflict occurred for CTRL+SHIFT+G:
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.search.findrefs,References,
+		Search for references to the selected element in the workspace,
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@1c46a52,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.search.findrefs,References,
+		Search for references to the selected element in the workspace,
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@1c46a52,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-06-28 13:32:20.596
+!MESSAGE A conflict occurred for ALT+CTRL+H:
+Binding(ALT+CTRL+H,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.call.hierarchy,Open Call Hierarchy,
+		Open the call hierarchy for the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@204b1f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(ALT+CTRL+H,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.call.hierarchy,Open Call Hierarchy,
+		Open the call hierarchy for the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@204b1f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-06-28 13:32:20.596
+!MESSAGE A conflict occurred for CTRL+SHIFT+H:
+Binding(CTRL+SHIFT+H,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.navigate.open.type.in.hierarchy,Open Type in Hierarchy,
+		Open a type in the type hierarchy view,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@23e777,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(CTRL+SHIFT+H,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.navigate.open.type.in.hierarchy,Open Type in Hierarchy,
+		Open a type in the type hierarchy view,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@23e777,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+
+!ENTRY com.crt.ctrlcenter 4 -1 2015-06-28 13:32:36.814
+!MESSAGE Error while launching Debug\3lab_ADC.axf:
+Error in final launch sequence
+Failed to execute MI command:
+-break-insert -t main
+Error message from debugger back end:
+Could not fetch register "xpsr"; remote failure reply 'E22'
+
+!ENTRY com.crt.dsfdebug 4 0 2015-06-28 13:32:37.108
+!MESSAGE 15: Target error from Commit Flash write
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 13:32:37.108
+!MESSAGE 15: Target error from Commit Flash write
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 13:32:37.108
+!MESSAGE IO Error - cable disconnected?
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 13:32:37.108
+!MESSAGE 15: Target error from Read register
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 13:32:37.108
+!MESSAGE Cannot access core regs when target running.
+
+!ENTRY com.crt.log 1 0 2015-06-28 13:32:55.724
+!MESSAGE Drivers loaded in 1763 milliseconds
+
+!ENTRY org.eclipse.cdt.core 4 0 2015-06-28 13:34:23.704
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.core.CCorePlugin.getCProjectDescription(CCorePlugin.java:743)
+	at org.eclipse.cdt.make.internal.core.scannerconfig2.ScannerConfigInfoFactory2$ScannerConfigInfoSet.load(ScannerConfigInfoFactory2.java:100)
+	at org.eclipse.cdt.make.internal.core.scannerconfig2.ScannerConfigInfoFactory2$ScannerConfigInfoSet.<init>(ScannerConfigInfoFactory2.java:94)
+	at org.eclipse.cdt.make.internal.core.scannerconfig2.ScannerConfigInfoFactory2.createInfoSet(ScannerConfigInfoFactory2.java:1372)
+	at org.eclipse.cdt.make.internal.core.scannerconfig2.ScannerConfigProfileManager.createScannerConfigBuildInfo2Set(ScannerConfigProfileManager.java:214)
+	at org.eclipse.cdt.build.internal.core.scannerconfig2.CfgScannerConfigInfoFactory2$CfgInfo.getContainer(CfgScannerConfigInfoFactory2.java:113)
+	at org.eclipse.cdt.build.internal.core.scannerconfig2.CfgScannerConfigInfoFactory2$CfgInfo.createMap(CfgScannerConfigInfoFactory2.java:138)
+	at org.eclipse.cdt.build.internal.core.scannerconfig2.CfgScannerConfigInfoFactory2$CfgInfo.getInfo(CfgScannerConfigInfoFactory2.java:79)
+	at org.eclipse.cdt.build.internal.core.scannerconfig.CfgDiscoveredPathManager.getContextInfo(CfgDiscoveredPathManager.java:421)
+	at org.eclipse.cdt.build.internal.core.scannerconfig.CfgDiscoveredPathManager.getContextInfo(CfgDiscoveredPathManager.java:406)
+	at org.eclipse.cdt.build.internal.core.scannerconfig.CfgDiscoveredPathManager.getDiscoveredInfo(CfgDiscoveredPathManager.java:168)
+	at org.eclipse.cdt.managedbuilder.internal.dataprovider.ProfileInfoProvider.getEntryValues(ProfileInfoProvider.java:65)
+	at org.eclipse.cdt.managedbuilder.internal.dataprovider.BuildEntryStorage.getDiscoveredEntries(BuildEntryStorage.java:200)
+	at org.eclipse.cdt.managedbuilder.internal.dataprovider.BuildEntryStorage.putEntriesToLevel(BuildEntryStorage.java:190)
+	at org.eclipse.cdt.core.settings.model.util.AbstractEntryStorage.initCache(AbstractEntryStorage.java:71)
+	at org.eclipse.cdt.core.settings.model.util.AbstractEntryStorage.getEntries(AbstractEntryStorage.java:34)
+	at org.eclipse.cdt.managedbuilder.internal.dataprovider.BuildLanguageData.getEntries(BuildLanguageData.java:161)
+	at org.eclipse.cdt.core.settings.model.extension.impl.CDefaultLanguageData.getEntriesToCopy(CDefaultLanguageData.java:101)
+	at org.eclipse.cdt.core.settings.model.extension.impl.CDefaultLanguageData.createStore(CDefaultLanguageData.java:92)
+	at org.eclipse.cdt.core.settings.model.extension.impl.CDefaultLanguageData.copySettingsFrom(CDefaultLanguageData.java:85)
+	at org.eclipse.cdt.internal.core.settings.model.CLanguageSettingCache.copySettingsFrom(CLanguageSettingCache.java:47)
+	at org.eclipse.cdt.internal.core.settings.model.CLanguageSettingCache.<init>(CLanguageSettingCache.java:36)
+	at org.eclipse.cdt.internal.core.settings.model.CFolderDescriptionCache.copyLanguageData(CFolderDescriptionCache.java:79)
+	at org.eclipse.cdt.core.settings.model.extension.impl.CDefaultFolderData.copyDataFrom(CDefaultFolderData.java:56)
+	at org.eclipse.cdt.internal.core.settings.model.CFolderDescriptionCache.<init>(CFolderDescriptionCache.java:38)
+	at org.eclipse.cdt.internal.core.settings.model.CConfigurationDescriptionCache.copyFolderData(CConfigurationDescriptionCache.java:217)
+	at org.eclipse.cdt.core.settings.model.extension.impl.CDefaultConfigurationData.copySettingsFrom(CDefaultConfigurationData.java:113)
+	at org.eclipse.cdt.internal.core.settings.model.CConfigurationDescriptionCache.loadData(CConfigurationDescriptionCache.java:132)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescription.loadDatas(CProjectDescription.java:194)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.loadProjectDescription(XmlProjectDescriptionStorage.java:493)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.getProjectDescription(XmlProjectDescriptionStorage.java:235)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescriptionInternal(CProjectDescriptionManager.java:437)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:419)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:413)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:406)
+	at org.eclipse.cdt.core.model.CoreModel.getProjectDescription(CoreModel.java:1442)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getLanguage(TranslationUnit.java:762)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getLanguages(ProjectIndexerInputAdapter.java:231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.extractFiles(AbstractIndexerTask.java:613)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:496)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:139)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-06-28 13:34:23.965
+!MESSAGE An internal error occurred during: "C/C++ Indexer".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.core.CCorePlugin.getCProjectDescription(CCorePlugin.java:743)
+	at org.eclipse.cdt.make.internal.core.scannerconfig2.ScannerConfigInfoFactory2$ScannerConfigInfoSet.load(ScannerConfigInfoFactory2.java:100)
+	at org.eclipse.cdt.make.internal.core.scannerconfig2.ScannerConfigInfoFactory2$ScannerConfigInfoSet.<init>(ScannerConfigInfoFactory2.java:94)
+	at org.eclipse.cdt.make.internal.core.scannerconfig2.ScannerConfigInfoFactory2.createInfoSet(ScannerConfigInfoFactory2.java:1372)
+	at org.eclipse.cdt.make.internal.core.scannerconfig2.ScannerConfigProfileManager.createScannerConfigBuildInfo2Set(ScannerConfigProfileManager.java:214)
+	at org.eclipse.cdt.build.internal.core.scannerconfig2.CfgScannerConfigInfoFactory2$CfgInfo.getContainer(CfgScannerConfigInfoFactory2.java:113)
+	at org.eclipse.cdt.build.internal.core.scannerconfig2.CfgScannerConfigInfoFactory2$CfgInfo.createMap(CfgScannerConfigInfoFactory2.java:138)
+	at org.eclipse.cdt.build.internal.core.scannerconfig2.CfgScannerConfigInfoFactory2$CfgInfo.getInfo(CfgScannerConfigInfoFactory2.java:79)
+	at org.eclipse.cdt.build.internal.core.scannerconfig.CfgDiscoveredPathManager.getContextInfo(CfgDiscoveredPathManager.java:421)
+	at org.eclipse.cdt.build.internal.core.scannerconfig.CfgDiscoveredPathManager.getContextInfo(CfgDiscoveredPathManager.java:406)
+	at org.eclipse.cdt.build.internal.core.scannerconfig.CfgDiscoveredPathManager.getDiscoveredInfo(CfgDiscoveredPathManager.java:168)
+	at org.eclipse.cdt.managedbuilder.internal.dataprovider.ProfileInfoProvider.getEntryValues(ProfileInfoProvider.java:65)
+	at org.eclipse.cdt.managedbuilder.internal.dataprovider.BuildEntryStorage.getDiscoveredEntries(BuildEntryStorage.java:200)
+	at org.eclipse.cdt.managedbuilder.internal.dataprovider.BuildEntryStorage.putEntriesToLevel(BuildEntryStorage.java:190)
+	at org.eclipse.cdt.core.settings.model.util.AbstractEntryStorage.initCache(AbstractEntryStorage.java:71)
+	at org.eclipse.cdt.core.settings.model.util.AbstractEntryStorage.getEntries(AbstractEntryStorage.java:34)
+	at org.eclipse.cdt.managedbuilder.internal.dataprovider.BuildLanguageData.getEntries(BuildLanguageData.java:161)
+	at org.eclipse.cdt.core.settings.model.extension.impl.CDefaultLanguageData.getEntriesToCopy(CDefaultLanguageData.java:101)
+	at org.eclipse.cdt.core.settings.model.extension.impl.CDefaultLanguageData.createStore(CDefaultLanguageData.java:92)
+	at org.eclipse.cdt.core.settings.model.extension.impl.CDefaultLanguageData.copySettingsFrom(CDefaultLanguageData.java:85)
+	at org.eclipse.cdt.internal.core.settings.model.CLanguageSettingCache.copySettingsFrom(CLanguageSettingCache.java:47)
+	at org.eclipse.cdt.internal.core.settings.model.CLanguageSettingCache.<init>(CLanguageSettingCache.java:36)
+	at org.eclipse.cdt.internal.core.settings.model.CFolderDescriptionCache.copyLanguageData(CFolderDescriptionCache.java:79)
+	at org.eclipse.cdt.core.settings.model.extension.impl.CDefaultFolderData.copyDataFrom(CDefaultFolderData.java:56)
+	at org.eclipse.cdt.internal.core.settings.model.CFolderDescriptionCache.<init>(CFolderDescriptionCache.java:38)
+	at org.eclipse.cdt.internal.core.settings.model.CConfigurationDescriptionCache.copyFolderData(CConfigurationDescriptionCache.java:217)
+	at org.eclipse.cdt.core.settings.model.extension.impl.CDefaultConfigurationData.copySettingsFrom(CDefaultConfigurationData.java:113)
+	at org.eclipse.cdt.internal.core.settings.model.CConfigurationDescriptionCache.loadData(CConfigurationDescriptionCache.java:132)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescription.loadDatas(CProjectDescription.java:194)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.loadProjectDescription(XmlProjectDescriptionStorage.java:493)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.getProjectDescription(XmlProjectDescriptionStorage.java:235)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescriptionInternal(CProjectDescriptionManager.java:437)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:419)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:413)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:406)
+	at org.eclipse.cdt.core.model.CoreModel.getProjectDescription(CoreModel.java:1442)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getLanguage(TranslationUnit.java:762)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getLanguages(ProjectIndexerInputAdapter.java:231)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.extractFiles(AbstractIndexerTask.java:613)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:496)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:139)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.core.jobs 2 2 2015-06-28 13:34:24.322
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.debug.internal.ui.DebugUIPlugin$8
+!SESSION 2015-06-28 13:34:25.100 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_45
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.crt.log 1 0 2015-06-28 13:35:11.153
+!MESSAGE Drivers loaded in 1767 milliseconds
+
+!ENTRY com.crt.ctrlcenter 4 -1 2015-06-28 13:35:46.310
+!MESSAGE Error while launching Debug\3lab_ADC.axf:
+Error in final launch sequence
+Failed to execute MI command:
+-break-insert -t main
+Error message from debugger back end:
+Cannot access memory at address 0x52c
+
+!ENTRY com.crt.dsfdebug 4 0 2015-06-28 13:35:46.654
+!MESSAGE 15: Target error from Commit Flash write
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 13:35:46.654
+!MESSAGE 15: Target error from Commit Flash write
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 13:35:46.654
+!MESSAGE IO Error - cable disconnected?
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 13:35:46.654
+!MESSAGE 15: Target error from Read Memory
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 13:35:46.654
+!MESSAGE Not connected to emulator.
+
+!ENTRY com.crt.log 1 0 2015-06-28 13:36:39.567
+!MESSAGE Drivers loaded in 1751 milliseconds
+
+!ENTRY org.eclipse.jface 2 0 2015-06-28 13:36:59.753
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-06-28 13:36:59.753
+!MESSAGE A conflict occurred for ALT+CTRL+I:
+Binding(ALT+CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.include.browser,Open Include Browser,
+		Open an include browser on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@74d242,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(ALT+CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.include.browser,Open Include Browser,
+		Open an include browser on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@74d242,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-06-28 13:36:59.753
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.text.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.cdt.ui.category.refactoring,Refactor - C++,C/C++ Refactorings,true),
+		org.eclipse.ui.internal.MakeHandlersGo@19824bc,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.text.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.cdt.ui.category.refactoring,Refactor - C++,C/C++ Refactorings,true),
+		org.eclipse.ui.internal.MakeHandlersGo@19824bc,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-06-28 13:36:59.753
+!MESSAGE A conflict occurred for F4:
+Binding(F4,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.type.hierarchy,Open Type Hierarchy,
+		Open a type hierarchy on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@193b582,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(F4,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.type.hierarchy,Open Type Hierarchy,
+		Open a type hierarchy on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@193b582,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-06-28 13:36:59.753
+!MESSAGE A conflict occurred for F3:
+Binding(F3,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.opendecl,Open Declaration,
+		Open an editor on the selected element's declaration(s),
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@718e84,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(F3,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.opendecl,Open Declaration,
+		Open an editor on the selected element's declaration(s),
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@718e84,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-06-28 13:36:59.753
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.navigate.opentype,Open Element,
+		Open an element in an Editor,
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@14395fb,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.navigate.opentype,Open Element,
+		Open an element in an Editor,
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@14395fb,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-06-28 13:36:59.753
+!MESSAGE A conflict occurred for CTRL+G:
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.search.finddecl,Declaration,
+		Search for declarations of the selected element in the workspace,
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@2bb129,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.search.finddecl,Declaration,
+		Search for declarations of the selected element in the workspace,
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@2bb129,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-06-28 13:36:59.753
+!MESSAGE A conflict occurred for CTRL+SHIFT+G:
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.search.findrefs,References,
+		Search for references to the selected element in the workspace,
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@7c0b3f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.search.findrefs,References,
+		Search for references to the selected element in the workspace,
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@7c0b3f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-06-28 13:36:59.753
+!MESSAGE A conflict occurred for ALT+CTRL+H:
+Binding(ALT+CTRL+H,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.call.hierarchy,Open Call Hierarchy,
+		Open the call hierarchy for the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@1c65f9a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(ALT+CTRL+H,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.call.hierarchy,Open Call Hierarchy,
+		Open the call hierarchy for the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@1c65f9a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-06-28 13:36:59.753
+!MESSAGE A conflict occurred for CTRL+SHIFT+H:
+Binding(CTRL+SHIFT+H,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.navigate.open.type.in.hierarchy,Open Type in Hierarchy,
+		Open a type in the type hierarchy view,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@aea688,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(CTRL+SHIFT+H,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.navigate.open.type.in.hierarchy,Open Type in Hierarchy,
+		Open a type in the type hierarchy view,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@aea688,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+
+!ENTRY com.crt.dsfdebug 4 0 2015-06-28 13:45:12.301
+!MESSAGE 15: Target error from Commit Flash write
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 13:45:12.301
+!MESSAGE 15: Target error from Commit Flash write
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 13:45:12.301
+!MESSAGE Flash verify operation failed.
+
+!ENTRY com.crt.dsfdebug 4 0 2015-06-28 13:45:18.993
+!MESSAGE 16: Target error from status-poll
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 13:45:18.993
+!MESSAGE 16: Target error from status-poll
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 13:45:18.993
+!MESSAGE Not connected to emulator.
+
+!ENTRY com.crt.log 1 0 2015-06-28 13:45:29.872
+!MESSAGE Drivers loaded in 1789 milliseconds
+
+!ENTRY org.eclipse.core.jobs 2 2 2015-06-28 13:48:59.458
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob$ProgressUpdateJob
+!SESSION 2015-06-28 13:49:55.089 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_45
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.crt.dsfdebug 4 0 2015-06-28 13:50:20.640
+!MESSAGE 15: Target error from Commit Flash write
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 13:50:20.640
+!MESSAGE 15: Target error from Commit Flash write
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 13:50:20.640
+!MESSAGE Flash verify operation failed.
+
+!ENTRY com.crt.dsfdebug 4 0 2015-06-28 13:50:33.697
+!MESSAGE 16: Target error from status-poll
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 13:50:33.697
+!MESSAGE 16: Target error from status-poll
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 13:50:33.697
+!MESSAGE Not connected to emulator.
+
+!ENTRY com.crt.log 1 0 2015-06-28 13:50:51.294
+!MESSAGE Drivers loaded in 1782 milliseconds
+
+!ENTRY org.eclipse.jface 2 0 2015-06-28 13:51:13.331
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-06-28 13:51:13.331
+!MESSAGE A conflict occurred for ALT+CTRL+I:
+Binding(ALT+CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.include.browser,Open Include Browser,
+		Open an include browser on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@8dd37d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(ALT+CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.include.browser,Open Include Browser,
+		Open an include browser on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@8dd37d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-06-28 13:51:13.331
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.text.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.cdt.ui.category.refactoring,Refactor - C++,C/C++ Refactorings,true),
+		org.eclipse.ui.internal.MakeHandlersGo@137d9c8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.text.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.cdt.ui.category.refactoring,Refactor - C++,C/C++ Refactorings,true),
+		org.eclipse.ui.internal.MakeHandlersGo@137d9c8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-06-28 13:51:13.331
+!MESSAGE A conflict occurred for F4:
+Binding(F4,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.type.hierarchy,Open Type Hierarchy,
+		Open a type hierarchy on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@1baec8e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(F4,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.type.hierarchy,Open Type Hierarchy,
+		Open a type hierarchy on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@1baec8e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-06-28 13:51:13.331
+!MESSAGE A conflict occurred for F3:
+Binding(F3,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.opendecl,Open Declaration,
+		Open an editor on the selected element's declaration(s),
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@1009b04,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(F3,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.opendecl,Open Declaration,
+		Open an editor on the selected element's declaration(s),
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@1009b04,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-06-28 13:51:13.331
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.navigate.opentype,Open Element,
+		Open an element in an Editor,
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@c145f9,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.navigate.opentype,Open Element,
+		Open an element in an Editor,
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@c145f9,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-06-28 13:51:13.331
+!MESSAGE A conflict occurred for CTRL+G:
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.search.finddecl,Declaration,
+		Search for declarations of the selected element in the workspace,
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@d90e02,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.search.finddecl,Declaration,
+		Search for declarations of the selected element in the workspace,
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@d90e02,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-06-28 13:51:13.331
+!MESSAGE A conflict occurred for CTRL+SHIFT+G:
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.search.findrefs,References,
+		Search for references to the selected element in the workspace,
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@26afff,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.search.findrefs,References,
+		Search for references to the selected element in the workspace,
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@26afff,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-06-28 13:51:13.331
+!MESSAGE A conflict occurred for ALT+CTRL+H:
+Binding(ALT+CTRL+H,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.call.hierarchy,Open Call Hierarchy,
+		Open the call hierarchy for the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@1ecaa1f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(ALT+CTRL+H,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.call.hierarchy,Open Call Hierarchy,
+		Open the call hierarchy for the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@1ecaa1f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-06-28 13:51:13.331
+!MESSAGE A conflict occurred for CTRL+SHIFT+H:
+Binding(CTRL+SHIFT+H,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.navigate.open.type.in.hierarchy,Open Type in Hierarchy,
+		Open a type in the type hierarchy view,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@94ecac,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(CTRL+SHIFT+H,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.navigate.open.type.in.hierarchy,Open Type in Hierarchy,
+		Open a type in the type hierarchy view,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@94ecac,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+
+!ENTRY com.crt.dsfdebug 4 0 2015-06-28 13:57:17.817
+!MESSAGE 15: Target error from Commit Flash write
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 13:57:17.817
+!MESSAGE 15: Target error from Commit Flash write
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 13:57:17.817
+!MESSAGE IO Error - cable disconnected?
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2015-06-28 13:57:21.767
+!MESSAGE Error in final launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to execute MI command:
+-break-insert -t main
+Error message from debugger back end:
+Cannot access memory at address 0x4f8
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:115)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:231)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:106)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:94)
+	at com.crt.dsfdebug.dsf.override.CRTGdbLaunchDelegate.launch(Unknown Source)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: java.lang.Exception: Cannot access memory at address 0x4f8
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:918)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:747)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-06-28 13:57:21.768
+!MESSAGE Failed to execute MI command:
+-break-insert -t main
+Error message from debugger back end:
+Cannot access memory at address 0x4f8
+!STACK 0
+java.lang.Exception: Cannot access memory at address 0x4f8
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:918)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:747)
+
+!ENTRY com.crt.dsfdebug 4 0 2015-06-28 13:57:22.180
+!MESSAGE 15: Target error from Read register
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 13:57:22.180
+!MESSAGE 15: Target error from Read register
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 13:57:22.180
+!MESSAGE Cannot access core regs when target running.
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 13:57:22.180
+!MESSAGE 15: Target error from Read Memory
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 13:57:22.180
+!MESSAGE Not connected to emulator.
+
+!ENTRY com.crt.log 1 0 2015-06-28 13:57:37.340
+!MESSAGE Drivers loaded in 1784 milliseconds
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2015-06-28 14:08:26.064
+!MESSAGE Error in final launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to execute MI command:
+-break-insert -t main
+Error message from debugger back end:
+Cannot access memory at address 0x50c
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:115)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:231)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:106)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:94)
+	at com.crt.dsfdebug.dsf.override.CRTGdbLaunchDelegate.launch(Unknown Source)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: java.lang.Exception: Cannot access memory at address 0x50c
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:918)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:747)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-06-28 14:08:26.064
+!MESSAGE Failed to execute MI command:
+-break-insert -t main
+Error message from debugger back end:
+Cannot access memory at address 0x50c
+!STACK 0
+java.lang.Exception: Cannot access memory at address 0x50c
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:918)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:747)
+
+!ENTRY com.crt.dsfdebug 4 0 2015-06-28 14:08:26.176
+!MESSAGE 15: Target error from Commit Flash write
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 14:08:26.176
+!MESSAGE 15: Target error from Commit Flash write
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 14:08:26.176
+!MESSAGE IO Error - cable disconnected?
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 14:08:26.176
+!MESSAGE 15: Target error from Read Memory
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 14:08:26.176
+!MESSAGE Not connected to emulator.
+
+!ENTRY com.crt.log 1 0 2015-06-28 14:08:36.572
+!MESSAGE Drivers loaded in 1765 milliseconds
+
+!ENTRY com.crt.ctrlcenter 4 -1 2015-06-28 14:17:40.483
+!MESSAGE Error while launching Debug\3lab_ADC.axf:
+Error in final launch sequence
+Failed to execute MI command:
+-target-select extended-remote | crt_emu_lpc11_13_nxp -msg-port=62378 -g -mi -2 -pLPC11U14/201 -vendor=NXP -wire=hid
+Error message from debugger back end:
+Remote communication error.  Target disconnected.: No error.
+
+!ENTRY com.crt.dsfdebug 4 0 2015-06-28 14:17:40.765
+!MESSAGE 02: Failed on connect
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 14:17:40.765
+!MESSAGE 02: Failed on connect
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 14:17:40.765
+!MESSAGE No matching emulator found - make sure power is on and not in use already.
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 14:17:40.765
+!MESSAGE 31: No connection to emulator device
+
+!ENTRY com.crt.log 1 0 2015-06-28 14:17:52.134
+!MESSAGE Drivers loaded in 1777 milliseconds
+
+!ENTRY com.crt.log 1 0 2015-06-28 15:05:02.267
+!MESSAGE Drivers loaded in 1799 milliseconds
+
+!ENTRY com.crt.log 1 0 2015-06-28 15:28:30.753
+!MESSAGE Drivers loaded in 1805 milliseconds
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2015-06-28 15:31:55.733
+!MESSAGE Error in final launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to execute MI command:
+-break-insert -t main
+Error message from debugger back end:
+Cannot access memory at address 0x318
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:115)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:231)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:106)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:94)
+	at com.crt.dsfdebug.dsf.override.CRTGdbLaunchDelegate.launch(Unknown Source)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: java.lang.Exception: Cannot access memory at address 0x318
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:918)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:747)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-06-28 15:31:55.733
+!MESSAGE Failed to execute MI command:
+-break-insert -t main
+Error message from debugger back end:
+Cannot access memory at address 0x318
+!STACK 0
+java.lang.Exception: Cannot access memory at address 0x318
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:918)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:747)
+
+!ENTRY com.crt.dsfdebug 4 0 2015-06-28 15:31:55.861
+!MESSAGE 15: Target error from Commit Flash write
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 15:31:55.861
+!MESSAGE 15: Target error from Commit Flash write
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 15:31:55.861
+!MESSAGE Not connected to emulator.
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 15:31:55.861
+!MESSAGE 15: Target error from Read Memory
+
+!ENTRY com.crt.log 1 0 2015-06-28 15:32:07.385
+!MESSAGE Drivers loaded in 1824 milliseconds
+
+!ENTRY com.crt.ctrlcenter 4 -1 2015-06-28 15:32:16.196
+!MESSAGE Error while launching Debug\3lab_ADC.axf:
+Error in final launch sequence
+Failed to execute MI command:
+-break-insert -t main
+Error message from debugger back end:
+Cannot access memory at address 0x318
+
+!ENTRY com.crt.dsfdebug 4 0 2015-06-28 15:32:16.536
+!MESSAGE 15: Target error from Commit Flash write
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 15:32:16.536
+!MESSAGE 15: Target error from Commit Flash write
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 15:32:16.536
+!MESSAGE IO Error - cable disconnected?
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 15:32:16.536
+!MESSAGE 15: Target error from Read Memory
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 15:32:16.536
+!MESSAGE Not connected to emulator.
+
+!ENTRY com.crt.log 1 0 2015-06-28 15:32:26.492
+!MESSAGE Drivers loaded in 1815 milliseconds
+
+!ENTRY com.crt.ctrlcenter 4 -1 2015-06-28 15:42:32.182
+!MESSAGE Error while launching Debug\3lab_ADC.axf:
+Error in final launch sequence
+Failed to execute MI command:
+-break-insert -t main
+Error message from debugger back end:
+Cannot access memory at address 0x318
+
+!ENTRY com.crt.dsfdebug 4 0 2015-06-28 15:42:32.511
+!MESSAGE 15: Target error from Commit Flash write
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 15:42:32.511
+!MESSAGE 15: Target error from Commit Flash write
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 15:42:32.511
+!MESSAGE Not connected to emulator.
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 15:42:32.511
+!MESSAGE 15: Target error from Read Memory
+
+!ENTRY com.crt.log 1 0 2015-06-28 15:42:45.346
+!MESSAGE Drivers loaded in 1815 milliseconds
+
+!ENTRY com.crt.dsfdebug 4 0 2015-06-28 15:44:31.367
+!MESSAGE 15: Target error from Commit Flash write
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 15:44:31.367
+!MESSAGE 15: Target error from Commit Flash write
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 15:44:31.367
+!MESSAGE Not connected to emulator.
+
+!ENTRY com.crt.log 1 0 2015-06-28 15:44:53.671
+!MESSAGE Drivers loaded in 1787 milliseconds
+
+!ENTRY com.crt.ctrlcenter 4 -1 2015-06-28 15:52:39.454
+!MESSAGE Error while launching Debug\3lab_ADC.axf:
+Error in final launch sequence
+Failed to execute MI command:
+-break-insert -t main
+Error message from debugger back end:
+Cannot access memory at address 0x480
+
+!ENTRY com.crt.dsfdebug 4 0 2015-06-28 15:52:39.788
+!MESSAGE 15: Target error from Commit Flash write
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 15:52:39.788
+!MESSAGE 15: Target error from Commit Flash write
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 15:52:39.788
+!MESSAGE Not connected to emulator.
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 15:52:39.788
+!MESSAGE 15: Target error from Read Memory
+
+!ENTRY com.crt.log 1 0 2015-06-28 15:52:50.685
+!MESSAGE Drivers loaded in 1789 milliseconds
+
+!ENTRY com.crt.ctrlcenter 4 -1 2015-06-28 15:56:07.829
+!MESSAGE Error while launching Debug\3lab_ADC.axf:
+Error in final launch sequence
+Failed to execute MI command:
+-break-insert -t main
+Error message from debugger back end:
+Cannot access memory at address 0x480
+
+!ENTRY com.crt.dsfdebug 4 0 2015-06-28 15:56:08.173
+!MESSAGE 15: Target error from Commit Flash write
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 15:56:08.173
+!MESSAGE 15: Target error from Commit Flash write
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 15:56:08.173
+!MESSAGE IO Error - cable disconnected?
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 15:56:08.173
+!MESSAGE 15: Target error from Read Memory
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 15:56:08.173
+!MESSAGE Not connected to emulator.
+
+!ENTRY com.crt.log 1 0 2015-06-28 15:56:41.367
+!MESSAGE Drivers loaded in 1777 milliseconds
+
+!ENTRY com.crt.ctrlcenter 4 -1 2015-06-28 15:58:50.559
+!MESSAGE Error while launching Debug\3lab_ADC.axf:
+Error in final launch sequence
+Failed to execute MI command:
+-break-insert -t main
+Error message from debugger back end:
+Cannot access memory at address 0x43c
+
+!ENTRY com.crt.dsfdebug 4 0 2015-06-28 15:58:50.888
+!MESSAGE 15: Target error from Commit Flash write
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 15:58:50.888
+!MESSAGE 15: Target error from Commit Flash write
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 15:58:50.888
+!MESSAGE IO Error - cable disconnected?
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 15:58:50.889
+!MESSAGE 15: Target error from Read Memory
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 15:58:50.889
+!MESSAGE Not connected to emulator.
+
+!ENTRY com.crt.log 1 0 2015-06-28 15:59:01.982
+!MESSAGE Drivers loaded in 1840 milliseconds
+
+!ENTRY com.crt.ctrlcenter 4 -1 2015-06-28 16:00:30.763
+!MESSAGE Error while launching Debug\3lab_ADC.axf:
+Error in final launch sequence
+Failed to execute MI command:
+-break-insert -t main
+Error message from debugger back end:
+Cannot access memory at address 0x4a0
+
+!ENTRY com.crt.dsfdebug 4 0 2015-06-28 16:00:31.109
+!MESSAGE 15: Target error from Commit Flash write
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 16:00:31.109
+!MESSAGE 15: Target error from Commit Flash write
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 16:00:31.109
+!MESSAGE Not connected to emulator.
+!SUBENTRY 1 com.crt.dsfdebug 4 0 2015-06-28 16:00:31.109
+!MESSAGE 15: Target error from Read Memory
+
+!ENTRY com.crt.log 1 0 2015-06-28 16:13:37.953
+!MESSAGE Drivers loaded in 1786 milliseconds
