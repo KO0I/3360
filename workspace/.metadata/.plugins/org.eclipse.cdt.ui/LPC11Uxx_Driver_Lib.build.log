@@ -1,0 +1,6 @@
+11:55:05 **** Incremental Build of configuration Debug for project LPC11Uxx_Driver_Lib ****
+make all 
+make: Nothing to be done for `all'.
+
+11:55:06 Build Finished (took 930ms)
+

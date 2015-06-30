@@ -723,3 +723,1019 @@ arm-none-eabi-size "3lab_ADC.axf"; # arm-none-eabi-objcopy -O binary "3lab_ADC.a
    text	   data	    bss	    dec	    hex	filename
    3412	     12	    360	   3784	    ec8	3lab_ADC.axf
  
+09:19:44 **** Incremental Build of configuration Debug for project CMSISv2p00_LPC11Uxx ****
+make all 
+Building file: ../src/core_cm0.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../inc -O0 -Os -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/core_cm0.d" -MT"src/core_cm0.d" -o"src/core_cm0.o" "../src/core_cm0.c"
+Finished building: ../src/core_cm0.c
+ 
+Building file: ../src/system_LPC11Uxx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../inc -O0 -Os -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/system_LPC11Uxx.d" -MT"src/system_LPC11Uxx.d" -o"src/system_LPC11Uxx.o" "../src/system_LPC11Uxx.c"
+Finished building: ../src/system_LPC11Uxx.c
+ 
+Building target: libCMSISv2p00_LPC11Uxx.a
+Invoking: MCU Archiver
+arm-none-eabi-ar -r "libCMSISv2p00_LPC11Uxx.a"  ./src/core_cm0.o ./src/system_LPC11Uxx.o   
+c:\nxp\LPCXpresso_5.2.6_2137\lpcxpresso\tools\bin\arm-none-eabi-ar.exe: creating libCMSISv2p00_LPC11Uxx.a
+Finished building target: libCMSISv2p00_LPC11Uxx.a
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size libCMSISv2p00_LPC11Uxx.a ; # arm-none-eabi-objdump -h -S libCMSISv2p00_LPC11Uxx.a >libCMSISv2p00_LPC11Uxx.lss
+   text	   data	    bss	    dec	    hex	filename
+      0	      0	      0	      0	      0	core_cm0.o (ex libCMSISv2p00_LPC11Uxx.a)
+    428	      4	      0	    432	    1b0	system_LPC11Uxx.o (ex libCMSISv2p00_LPC11Uxx.a)
+ 
+09:19:51 **** Incremental Build of configuration Debug for project 3lab_ADC ****
+make all 
+Building file: ../src/aeabi_romdiv_patch.s
+Invoking: MCU Assembler
+arm-none-eabi-gcc -c -x assembler-with-cpp -D__REDLIB__ -DDEBUG -D__CODE_RED -g3 -mcpu=cortex-m0 -mthumb -o "src/aeabi_romdiv_patch.o" "../src/aeabi_romdiv_patch.s"
+Finished building: ../src/aeabi_romdiv_patch.s
+ 
+Building file: ../src/cr_startup_lpc11u.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC11Uxx -I"Z:\school\3360\workspace\CMSISv2p00_LPC11Uxx\inc" -Os -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/cr_startup_lpc11u.d" -MT"src/cr_startup_lpc11u.d" -o "src/cr_startup_lpc11u.o" "../src/cr_startup_lpc11u.c"
+Finished building: ../src/cr_startup_lpc11u.c
+ 
+Building file: ../src/crp.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC11Uxx -I"Z:\school\3360\workspace\CMSISv2p00_LPC11Uxx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/crp.d" -MT"src/crp.d" -o "src/crp.o" "../src/crp.c"
+Finished building: ../src/crp.c
+ 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC11Uxx -I"Z:\school\3360\workspace\CMSISv2p00_LPC11Uxx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: 3lab_ADC.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"Z:\school\3360\workspace\CMSISv2p00_LPC11Uxx\Debug" -Xlinker -Map="3lab_ADC.map" -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "3lab_ADC_Debug.ld" -o "3lab_ADC.axf"  ./src/aeabi_romdiv_patch.o ./src/cr_startup_lpc11u.o ./src/crp.o ./src/main.o   -lCMSISv2p00_LPC11Uxx
+Finished building target: 3lab_ADC.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "3lab_ADC.axf"; # arm-none-eabi-objcopy -O binary "3lab_ADC.axf" "3lab_ADC.bin" ; checksum -p LPC11U14_201 -d "3lab_ADC.bin";
+   text	   data	    bss	    dec	    hex	filename
+   3412	     12	    360	   3784	    ec8	3lab_ADC.axf
+ 
+09:20:35 **** Incremental Build of configuration Debug for project CMSISv2p00_LPC11Uxx ****
+make all 
+make: Nothing to be done for `all'.
+09:20:37 **** Incremental Build of configuration Debug for project 3lab_ADC ****
+make all 
+make: Nothing to be done for `all'.
+09:21:00 **** Incremental Build of configuration Debug for project CMSISv2p00_LPC11Uxx ****
+make all 
+make: Nothing to be done for `all'.
+09:21:02 **** Incremental Build of configuration Debug for project 3lab_ADC ****
+make all 
+make: Nothing to be done for `all'.
+09:21:30 **** Incremental Build of configuration Debug for project CMSISv2p00_LPC11Uxx ****
+make all 
+make: Nothing to be done for `all'.
+09:21:31 **** Incremental Build of configuration Debug for project 3lab_ADC ****
+make all 
+make: Nothing to be done for `all'.
+09:22:01 **** Incremental Build of configuration Debug for project CMSISv2p00_LPC11Uxx ****
+make all 
+make: Nothing to be done for `all'.
+09:22:03 **** Incremental Build of configuration Debug for project 3lab_ADC ****
+make all 
+make: Nothing to be done for `all'.
+09:23:09 **** Incremental Build of configuration Debug for project CMSISv2p00_LPC11Uxx ****
+make all 
+make: Nothing to be done for `all'.
+09:23:11 **** Incremental Build of configuration Debug for project 3lab_ADC ****
+make all 
+make: Nothing to be done for `all'.
+09:23:38 **** Clean-only build of configuration Debug for project CMSISv2p00_LPC11Uxx ****
+make clean 
+rm -rf  ./src/core_cm0.o ./src/system_LPC11Uxx.o  ./src/core_cm0.d ./src/system_LPC11Uxx.d  libCMSISv2p00_LPC11Uxx.a
+ 
+09:23:39 **** Clean-only build of configuration Debug for project 3lab_ADC ****
+make clean 
+rm -rf  ./src/aeabi_romdiv_patch.o ./src/cr_startup_lpc11u.o ./src/crp.o ./src/main.o  ./src/cr_startup_lpc11u.d ./src/crp.d ./src/main.d  3lab_ADC.axf
+ 
+09:24:03 **** Build of configuration Debug for project CMSISv2p00_LPC11Uxx ****
+make all 
+Building file: ../src/core_cm0.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../inc -O0 -Os -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/core_cm0.d" -MT"src/core_cm0.d" -o"src/core_cm0.o" "../src/core_cm0.c"
+Finished building: ../src/core_cm0.c
+ 
+Building file: ../src/system_LPC11Uxx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../inc -O0 -Os -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/system_LPC11Uxx.d" -MT"src/system_LPC11Uxx.d" -o"src/system_LPC11Uxx.o" "../src/system_LPC11Uxx.c"
+Finished building: ../src/system_LPC11Uxx.c
+ 
+Building target: libCMSISv2p00_LPC11Uxx.a
+Invoking: MCU Archiver
+arm-none-eabi-ar -r "libCMSISv2p00_LPC11Uxx.a"  ./src/core_cm0.o ./src/system_LPC11Uxx.o   
+c:\nxp\LPCXpresso_5.2.6_2137\lpcxpresso\tools\bin\arm-none-eabi-ar.exe: creating libCMSISv2p00_LPC11Uxx.a
+Finished building target: libCMSISv2p00_LPC11Uxx.a
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size libCMSISv2p00_LPC11Uxx.a ; # arm-none-eabi-objdump -h -S libCMSISv2p00_LPC11Uxx.a >libCMSISv2p00_LPC11Uxx.lss
+   text	   data	    bss	    dec	    hex	filename
+      0	      0	      0	      0	      0	core_cm0.o (ex libCMSISv2p00_LPC11Uxx.a)
+    428	      4	      0	    432	    1b0	system_LPC11Uxx.o (ex libCMSISv2p00_LPC11Uxx.a)
+ 
+09:24:07 **** Build of configuration Debug for project 3lab_ADC ****
+make all 
+Building file: ../src/aeabi_romdiv_patch.s
+Invoking: MCU Assembler
+arm-none-eabi-gcc -c -x assembler-with-cpp -D__REDLIB__ -DDEBUG -D__CODE_RED -g3 -mcpu=cortex-m0 -mthumb -o "src/aeabi_romdiv_patch.o" "../src/aeabi_romdiv_patch.s"
+Finished building: ../src/aeabi_romdiv_patch.s
+ 
+Building file: ../src/cr_startup_lpc11u.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC11Uxx -I"Z:\school\3360\workspace\CMSISv2p00_LPC11Uxx\inc" -Os -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/cr_startup_lpc11u.d" -MT"src/cr_startup_lpc11u.d" -o "src/cr_startup_lpc11u.o" "../src/cr_startup_lpc11u.c"
+Finished building: ../src/cr_startup_lpc11u.c
+ 
+Building file: ../src/crp.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC11Uxx -I"Z:\school\3360\workspace\CMSISv2p00_LPC11Uxx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/crp.d" -MT"src/crp.d" -o "src/crp.o" "../src/crp.c"
+Finished building: ../src/crp.c
+ 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC11Uxx -I"Z:\school\3360\workspace\CMSISv2p00_LPC11Uxx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: 3lab_ADC.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"Z:\school\3360\workspace\CMSISv2p00_LPC11Uxx\Debug" -Xlinker -Map="3lab_ADC.map" -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "3lab_ADC_Debug.ld" -o "3lab_ADC.axf"  ./src/aeabi_romdiv_patch.o ./src/cr_startup_lpc11u.o ./src/crp.o ./src/main.o   -lCMSISv2p00_LPC11Uxx
+Finished building target: 3lab_ADC.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "3lab_ADC.axf"; # arm-none-eabi-objcopy -O binary "3lab_ADC.axf" "3lab_ADC.bin" ; checksum -p LPC11U14_201 -d "3lab_ADC.bin";
+   text	   data	    bss	    dec	    hex	filename
+   3412	     12	    360	   3784	    ec8	3lab_ADC.axf
+ 
+09:35:14 **** Clean-only build of configuration Debug for project pmu_fib ****
+make clean 
+rm -rf  ./startup/cr_startup_lpc11.o  ./src/gpio.o ./src/pmu.o ./src/power_api_demo.o  ./driver/adc.o ./driver/can.o ./driver/clkconfig.o ./driver/crp.o ./driver/debug_printf.o ./driver/gpio.o ./driver/i2c.o ./driver/i2cslave.o ./driver/lpc_swu.o ./driver/rs485.o ./driver/small_gpio.o ./driver/ssp.o ./driver/timer16.o ./driver/timer32.o ./driver/uart.o ./driver/wdt.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o  ./startup/cr_startup_lpc11.d  ./src/gpio.d ./src/pmu.d ./src/power_api_demo.d  ./driver/adc.d ./driver/can.d ./driver/clkconfig.d ./driver/crp.d ./driver/debug_printf.d ./driver/gpio.d ./driver/i2c.d ./driver/i2cslave.d ./driver/lpc_swu.d ./driver/rs485.d ./driver/small_gpio.d ./driver/ssp.d ./driver/timer16.d ./driver/timer32.d ./driver/uart.d ./driver/wdt.d  ./cmsis/core_cm0.d ./cmsis/system_LPC11xx.d  pmu_fib.axf
+ 
+09:35:19 **** Build of configuration Debug for project pmu_fib ****
+make all 
+Building file: ../startup/cr_startup_lpc11.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"startup/cr_startup_lpc11.d" -MT"startup/cr_startup_lpc11.d" -o "startup/cr_startup_lpc11.o" "../startup/cr_startup_lpc11.c"
+Finished building: ../startup/cr_startup_lpc11.c
+ 
+Building file: ../src/gpio.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/gpio.d" -MT"src/gpio.d" -o "src/gpio.o" "../src/gpio.c"
+Finished building: ../src/gpio.c
+ 
+Building file: ../src/pmu.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/pmu.d" -MT"src/pmu.d" -o "src/pmu.o" "../src/pmu.c"
+Finished building: ../src/pmu.c
+ 
+Building file: ../src/power_api_demo.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/power_api_demo.d" -MT"src/power_api_demo.d" -o "src/power_api_demo.o" "../src/power_api_demo.c"
+Finished building: ../src/power_api_demo.c
+ 
+Building file: ../driver/adc.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/adc.d" -MT"driver/adc.d" -o "driver/adc.o" "../driver/adc.c"
+Finished building: ../driver/adc.c
+ 
+Building file: ../driver/can.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/can.d" -MT"driver/can.d" -o "driver/can.o" "../driver/can.c"
+Finished building: ../driver/can.c
+ 
+Building file: ../driver/clkconfig.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/clkconfig.d" -MT"driver/clkconfig.d" -o "driver/clkconfig.o" "../driver/clkconfig.c"
+Finished building: ../driver/clkconfig.c
+ 
+Building file: ../driver/crp.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/crp.d" -MT"driver/crp.d" -o "driver/crp.o" "../driver/crp.c"
+Finished building: ../driver/crp.c
+ 
+Building file: ../driver/debug_printf.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/debug_printf.d" -MT"driver/debug_printf.d" -o "driver/debug_printf.o" "../driver/debug_printf.c"
+Finished building: ../driver/debug_printf.c
+ 
+Building file: ../driver/gpio.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/gpio.d" -MT"driver/gpio.d" -o "driver/gpio.o" "../driver/gpio.c"
+Finished building: ../driver/gpio.c
+ 
+Building file: ../driver/i2c.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/i2c.d" -MT"driver/i2c.d" -o "driver/i2c.o" "../driver/i2c.c"
+Finished building: ../driver/i2c.c
+ 
+Building file: ../driver/i2cslave.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/i2cslave.d" -MT"driver/i2cslave.d" -o "driver/i2cslave.o" "../driver/i2cslave.c"
+Finished building: ../driver/i2cslave.c
+ 
+Building file: ../driver/lpc_swu.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/lpc_swu.d" -MT"driver/lpc_swu.d" -o "driver/lpc_swu.o" "../driver/lpc_swu.c"
+Finished building: ../driver/lpc_swu.c
+ 
+Building file: ../driver/rs485.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/rs485.d" -MT"driver/rs485.d" -o "driver/rs485.o" "../driver/rs485.c"
+Finished building: ../driver/rs485.c
+ 
+Building file: ../driver/small_gpio.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/small_gpio.d" -MT"driver/small_gpio.d" -o "driver/small_gpio.o" "../driver/small_gpio.c"
+Finished building: ../driver/small_gpio.c
+ 
+Building file: ../driver/ssp.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/ssp.d" -MT"driver/ssp.d" -o "driver/ssp.o" "../driver/ssp.c"
+Finished building: ../driver/ssp.c
+ 
+Building file: ../driver/timer16.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/timer16.d" -MT"driver/timer16.d" -o "driver/timer16.o" "../driver/timer16.c"
+Finished building: ../driver/timer16.c
+ 
+Building file: ../driver/timer32.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/timer32.d" -MT"driver/timer32.d" -o "driver/timer32.o" "../driver/timer32.c"
+Finished building: ../driver/timer32.c
+ 
+Building file: ../driver/uart.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/uart.d" -MT"driver/uart.d" -o "driver/uart.o" "../driver/uart.c"
+Finished building: ../driver/uart.c
+ 
+Building file: ../driver/wdt.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/wdt.d" -MT"driver/wdt.d" -o "driver/wdt.o" "../driver/wdt.c"
+Finished building: ../driver/wdt.c
+ 
+Building file: ../cmsis/core_cm0.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"cmsis/core_cm0.d" -MT"cmsis/core_cm0.d" -o "cmsis/core_cm0.o" "../cmsis/core_cm0.c"
+Finished building: ../cmsis/core_cm0.c
+ 
+Building file: ../cmsis/system_LPC11xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"cmsis/system_LPC11xx.d" -MT"cmsis/system_LPC11xx.d" -o "cmsis/system_LPC11xx.o" "../cmsis/system_LPC11xx.c"
+Finished building: ../cmsis/system_LPC11xx.c
+ 
+Building target: pmu_fib.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map=pmu_fib.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "pmu_fib_Debug.ld" -o "pmu_fib.axf"  ./startup/cr_startup_lpc11.o  ./src/gpio.o ./src/pmu.o ./src/power_api_demo.o  ./driver/adc.o ./driver/can.o ./driver/clkconfig.o ./driver/crp.o ./driver/debug_printf.o ./driver/gpio.o ./driver/i2c.o ./driver/i2cslave.o ./driver/lpc_swu.o ./driver/rs485.o ./driver/small_gpio.o ./driver/ssp.o ./driver/timer16.o ./driver/timer32.o ./driver/uart.o ./driver/wdt.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   
+Finished building target: pmu_fib.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size pmu_fib.axf; # arm-none-eabi-objcopy -O binary pmu_fib.axf pmu_fib.bin ; checksum -p LPC11U14_201 -d pmu_fib.bin;
+   text	   data	    bss	    dec	    hex	filename
+   5232	      8	    396	   5636	   1604	pmu_fib.axf
+ 
+09:36:05 **** Incremental Build of configuration Debug for project pmu_fib ****
+make all 
+make: Nothing to be done for `all'.
+09:36:28 **** Incremental Build of configuration Debug for project pmu_fib ****
+make all 
+make: Nothing to be done for `all'.
+09:37:29 **** Incremental Build of configuration Debug for project pmu_fib ****
+make all 
+make: Nothing to be done for `all'.
+09:37:36 **** Clean-only build of configuration Debug for project pmu_fib ****
+make clean 
+rm -rf  ./startup/cr_startup_lpc11.o  ./src/gpio.o ./src/pmu.o ./src/power_api_demo.o  ./driver/adc.o ./driver/can.o ./driver/clkconfig.o ./driver/crp.o ./driver/debug_printf.o ./driver/gpio.o ./driver/i2c.o ./driver/i2cslave.o ./driver/lpc_swu.o ./driver/rs485.o ./driver/small_gpio.o ./driver/ssp.o ./driver/timer16.o ./driver/timer32.o ./driver/uart.o ./driver/wdt.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o  ./startup/cr_startup_lpc11.d  ./src/gpio.d ./src/pmu.d ./src/power_api_demo.d  ./driver/adc.d ./driver/can.d ./driver/clkconfig.d ./driver/crp.d ./driver/debug_printf.d ./driver/gpio.d ./driver/i2c.d ./driver/i2cslave.d ./driver/lpc_swu.d ./driver/rs485.d ./driver/small_gpio.d ./driver/ssp.d ./driver/timer16.d ./driver/timer32.d ./driver/uart.d ./driver/wdt.d  ./cmsis/core_cm0.d ./cmsis/system_LPC11xx.d  pmu_fib.axf
+ 
+09:37:44 **** Build of configuration Debug for project pmu_fib ****
+make all 
+Building file: ../startup/cr_startup_lpc11.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"startup/cr_startup_lpc11.d" -MT"startup/cr_startup_lpc11.d" -o "startup/cr_startup_lpc11.o" "../startup/cr_startup_lpc11.c"
+Finished building: ../startup/cr_startup_lpc11.c
+ 
+Building file: ../src/gpio.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/gpio.d" -MT"src/gpio.d" -o "src/gpio.o" "../src/gpio.c"
+Finished building: ../src/gpio.c
+ 
+Building file: ../src/pmu.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/pmu.d" -MT"src/pmu.d" -o "src/pmu.o" "../src/pmu.c"
+Finished building: ../src/pmu.c
+ 
+Building file: ../src/power_api_demo.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/power_api_demo.d" -MT"src/power_api_demo.d" -o "src/power_api_demo.o" "../src/power_api_demo.c"
+Finished building: ../src/power_api_demo.c
+ 
+Building file: ../driver/adc.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/adc.d" -MT"driver/adc.d" -o "driver/adc.o" "../driver/adc.c"
+Finished building: ../driver/adc.c
+ 
+Building file: ../driver/can.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/can.d" -MT"driver/can.d" -o "driver/can.o" "../driver/can.c"
+Finished building: ../driver/can.c
+ 
+Building file: ../driver/clkconfig.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/clkconfig.d" -MT"driver/clkconfig.d" -o "driver/clkconfig.o" "../driver/clkconfig.c"
+Finished building: ../driver/clkconfig.c
+ 
+Building file: ../driver/crp.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/crp.d" -MT"driver/crp.d" -o "driver/crp.o" "../driver/crp.c"
+Finished building: ../driver/crp.c
+ 
+Building file: ../driver/debug_printf.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/debug_printf.d" -MT"driver/debug_printf.d" -o "driver/debug_printf.o" "../driver/debug_printf.c"
+Finished building: ../driver/debug_printf.c
+ 
+Building file: ../driver/gpio.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/gpio.d" -MT"driver/gpio.d" -o "driver/gpio.o" "../driver/gpio.c"
+Finished building: ../driver/gpio.c
+ 
+Building file: ../driver/i2c.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/i2c.d" -MT"driver/i2c.d" -o "driver/i2c.o" "../driver/i2c.c"
+Finished building: ../driver/i2c.c
+ 
+Building file: ../driver/i2cslave.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/i2cslave.d" -MT"driver/i2cslave.d" -o "driver/i2cslave.o" "../driver/i2cslave.c"
+Finished building: ../driver/i2cslave.c
+ 
+Building file: ../driver/lpc_swu.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/lpc_swu.d" -MT"driver/lpc_swu.d" -o "driver/lpc_swu.o" "../driver/lpc_swu.c"
+Finished building: ../driver/lpc_swu.c
+ 
+Building file: ../driver/rs485.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/rs485.d" -MT"driver/rs485.d" -o "driver/rs485.o" "../driver/rs485.c"
+Finished building: ../driver/rs485.c
+ 
+Building file: ../driver/small_gpio.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/small_gpio.d" -MT"driver/small_gpio.d" -o "driver/small_gpio.o" "../driver/small_gpio.c"
+Finished building: ../driver/small_gpio.c
+ 
+Building file: ../driver/ssp.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/ssp.d" -MT"driver/ssp.d" -o "driver/ssp.o" "../driver/ssp.c"
+Finished building: ../driver/ssp.c
+ 
+Building file: ../driver/timer16.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/timer16.d" -MT"driver/timer16.d" -o "driver/timer16.o" "../driver/timer16.c"
+Finished building: ../driver/timer16.c
+ 
+Building file: ../driver/timer32.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/timer32.d" -MT"driver/timer32.d" -o "driver/timer32.o" "../driver/timer32.c"
+Finished building: ../driver/timer32.c
+ 
+Building file: ../driver/uart.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/uart.d" -MT"driver/uart.d" -o "driver/uart.o" "../driver/uart.c"
+Finished building: ../driver/uart.c
+ 
+Building file: ../driver/wdt.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/wdt.d" -MT"driver/wdt.d" -o "driver/wdt.o" "../driver/wdt.c"
+Finished building: ../driver/wdt.c
+ 
+Building file: ../cmsis/core_cm0.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"cmsis/core_cm0.d" -MT"cmsis/core_cm0.d" -o "cmsis/core_cm0.o" "../cmsis/core_cm0.c"
+Finished building: ../cmsis/core_cm0.c
+ 
+Building file: ../cmsis/system_LPC11xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"cmsis/system_LPC11xx.d" -MT"cmsis/system_LPC11xx.d" -o "cmsis/system_LPC11xx.o" "../cmsis/system_LPC11xx.c"
+Finished building: ../cmsis/system_LPC11xx.c
+ 
+Building target: pmu_fib.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map=pmu_fib.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "pmu_fib_Debug.ld" -o "pmu_fib.axf"  ./startup/cr_startup_lpc11.o  ./src/gpio.o ./src/pmu.o ./src/power_api_demo.o  ./driver/adc.o ./driver/can.o ./driver/clkconfig.o ./driver/crp.o ./driver/debug_printf.o ./driver/gpio.o ./driver/i2c.o ./driver/i2cslave.o ./driver/lpc_swu.o ./driver/rs485.o ./driver/small_gpio.o ./driver/ssp.o ./driver/timer16.o ./driver/timer32.o ./driver/uart.o ./driver/wdt.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   
+Finished building target: pmu_fib.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size pmu_fib.axf; # arm-none-eabi-objcopy -O binary pmu_fib.axf pmu_fib.bin ; checksum -p LPC11U14_201 -d pmu_fib.bin;
+   text	   data	    bss	    dec	    hex	filename
+   5232	      8	    396	   5636	   1604	pmu_fib.axf
+ 
+09:38:28 **** Incremental Build of configuration Debug for project pmu_fib ****
+make all 
+make: Nothing to be done for `all'.
+09:39:06 **** Incremental Build of configuration Debug for project pmu_fib ****
+make all 
+make: Nothing to be done for `all'.
+09:39:46 **** Incremental Build of configuration Debug for project pmu_fib ****
+make all 
+make: Nothing to be done for `all'.
+09:40:24 **** Clean-only build of configuration Debug for project pmu_fib ****
+make clean 
+rm -rf  ./startup/cr_startup_lpc11.o  ./src/gpio.o ./src/pmu.o ./src/power_api_demo.o  ./driver/adc.o ./driver/can.o ./driver/clkconfig.o ./driver/crp.o ./driver/debug_printf.o ./driver/gpio.o ./driver/i2c.o ./driver/i2cslave.o ./driver/lpc_swu.o ./driver/rs485.o ./driver/small_gpio.o ./driver/ssp.o ./driver/timer16.o ./driver/timer32.o ./driver/uart.o ./driver/wdt.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o  ./startup/cr_startup_lpc11.d  ./src/gpio.d ./src/pmu.d ./src/power_api_demo.d  ./driver/adc.d ./driver/can.d ./driver/clkconfig.d ./driver/crp.d ./driver/debug_printf.d ./driver/gpio.d ./driver/i2c.d ./driver/i2cslave.d ./driver/lpc_swu.d ./driver/rs485.d ./driver/small_gpio.d ./driver/ssp.d ./driver/timer16.d ./driver/timer32.d ./driver/uart.d ./driver/wdt.d  ./cmsis/core_cm0.d ./cmsis/system_LPC11xx.d  pmu_fib.axf
+ 
+09:40:35 **** Build of configuration Debug for project pmu_fib ****
+make all 
+Building file: ../startup/cr_startup_lpc11.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"startup/cr_startup_lpc11.d" -MT"startup/cr_startup_lpc11.d" -o "startup/cr_startup_lpc11.o" "../startup/cr_startup_lpc11.c"
+Finished building: ../startup/cr_startup_lpc11.c
+ 
+Building file: ../src/gpio.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/gpio.d" -MT"src/gpio.d" -o "src/gpio.o" "../src/gpio.c"
+Finished building: ../src/gpio.c
+ 
+Building file: ../src/pmu.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/pmu.d" -MT"src/pmu.d" -o "src/pmu.o" "../src/pmu.c"
+Finished building: ../src/pmu.c
+ 
+Building file: ../src/power_api_demo.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/power_api_demo.d" -MT"src/power_api_demo.d" -o "src/power_api_demo.o" "../src/power_api_demo.c"
+Finished building: ../src/power_api_demo.c
+ 
+Building file: ../driver/adc.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/adc.d" -MT"driver/adc.d" -o "driver/adc.o" "../driver/adc.c"
+Finished building: ../driver/adc.c
+ 
+Building file: ../driver/can.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/can.d" -MT"driver/can.d" -o "driver/can.o" "../driver/can.c"
+Finished building: ../driver/can.c
+ 
+Building file: ../driver/clkconfig.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/clkconfig.d" -MT"driver/clkconfig.d" -o "driver/clkconfig.o" "../driver/clkconfig.c"
+Finished building: ../driver/clkconfig.c
+ 
+Building file: ../driver/crp.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/crp.d" -MT"driver/crp.d" -o "driver/crp.o" "../driver/crp.c"
+Finished building: ../driver/crp.c
+ 
+Building file: ../driver/debug_printf.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/debug_printf.d" -MT"driver/debug_printf.d" -o "driver/debug_printf.o" "../driver/debug_printf.c"
+Finished building: ../driver/debug_printf.c
+ 
+Building file: ../driver/gpio.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/gpio.d" -MT"driver/gpio.d" -o "driver/gpio.o" "../driver/gpio.c"
+Finished building: ../driver/gpio.c
+ 
+Building file: ../driver/i2c.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/i2c.d" -MT"driver/i2c.d" -o "driver/i2c.o" "../driver/i2c.c"
+Finished building: ../driver/i2c.c
+ 
+Building file: ../driver/i2cslave.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/i2cslave.d" -MT"driver/i2cslave.d" -o "driver/i2cslave.o" "../driver/i2cslave.c"
+Finished building: ../driver/i2cslave.c
+ 
+Building file: ../driver/lpc_swu.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/lpc_swu.d" -MT"driver/lpc_swu.d" -o "driver/lpc_swu.o" "../driver/lpc_swu.c"
+Finished building: ../driver/lpc_swu.c
+ 
+Building file: ../driver/rs485.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/rs485.d" -MT"driver/rs485.d" -o "driver/rs485.o" "../driver/rs485.c"
+Finished building: ../driver/rs485.c
+ 
+Building file: ../driver/small_gpio.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/small_gpio.d" -MT"driver/small_gpio.d" -o "driver/small_gpio.o" "../driver/small_gpio.c"
+Finished building: ../driver/small_gpio.c
+ 
+Building file: ../driver/ssp.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/ssp.d" -MT"driver/ssp.d" -o "driver/ssp.o" "../driver/ssp.c"
+Finished building: ../driver/ssp.c
+ 
+Building file: ../driver/timer16.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/timer16.d" -MT"driver/timer16.d" -o "driver/timer16.o" "../driver/timer16.c"
+Finished building: ../driver/timer16.c
+ 
+Building file: ../driver/timer32.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/timer32.d" -MT"driver/timer32.d" -o "driver/timer32.o" "../driver/timer32.c"
+Finished building: ../driver/timer32.c
+ 
+Building file: ../driver/uart.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/uart.d" -MT"driver/uart.d" -o "driver/uart.o" "../driver/uart.c"
+Finished building: ../driver/uart.c
+ 
+Building file: ../driver/wdt.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/wdt.d" -MT"driver/wdt.d" -o "driver/wdt.o" "../driver/wdt.c"
+Finished building: ../driver/wdt.c
+ 
+Building file: ../cmsis/core_cm0.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"cmsis/core_cm0.d" -MT"cmsis/core_cm0.d" -o "cmsis/core_cm0.o" "../cmsis/core_cm0.c"
+Finished building: ../cmsis/core_cm0.c
+ 
+Building file: ../cmsis/system_LPC11xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"cmsis/system_LPC11xx.d" -MT"cmsis/system_LPC11xx.d" -o "cmsis/system_LPC11xx.o" "../cmsis/system_LPC11xx.c"
+Finished building: ../cmsis/system_LPC11xx.c
+ 
+Building target: pmu_fib.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map=pmu_fib.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "pmu_fib_Debug.ld" -o "pmu_fib.axf"  ./startup/cr_startup_lpc11.o  ./src/gpio.o ./src/pmu.o ./src/power_api_demo.o  ./driver/adc.o ./driver/can.o ./driver/clkconfig.o ./driver/crp.o ./driver/debug_printf.o ./driver/gpio.o ./driver/i2c.o ./driver/i2cslave.o ./driver/lpc_swu.o ./driver/rs485.o ./driver/small_gpio.o ./driver/ssp.o ./driver/timer16.o ./driver/timer32.o ./driver/uart.o ./driver/wdt.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   
+Finished building target: pmu_fib.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size pmu_fib.axf; # arm-none-eabi-objcopy -O binary pmu_fib.axf pmu_fib.bin ; checksum -p LPC11U14_201 -d pmu_fib.bin;
+   text	   data	    bss	    dec	    hex	filename
+   5232	      8	    396	   5636	   1604	pmu_fib.axf
+ 
+09:41:04 **** Incremental Build of configuration Debug for project CMSISv2p00_LPC11Uxx ****
+make all 
+make: Nothing to be done for `all'.
+09:41:06 **** Incremental Build of configuration Debug for project 3lab_ADC ****
+make all 
+make: Nothing to be done for `all'.
+09:42:01 **** Incremental Build of configuration Debug for project pmu_fib ****
+make all 
+make: Nothing to be done for `all'.
+09:44:23 **** Build of configuration Debug for project pmu_fib ****
+make all 
+Building target: pmu_fib.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map=pmu_fib.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "pmu_fib_Debug.ld" -o "pmu_fib.axf"  ./startup/cr_startup_lpc11.o  ./src/gpio.o ./src/pmu.o ./src/power_api_demo.o  ./driver/adc.o ./driver/can.o ./driver/clkconfig.o ./driver/crp.o ./driver/debug_printf.o ./driver/gpio.o ./driver/i2c.o ./driver/i2cslave.o ./driver/lpc_swu.o ./driver/rs485.o ./driver/small_gpio.o ./driver/ssp.o ./driver/timer16.o ./driver/timer32.o ./driver/uart.o ./driver/wdt.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   
+Finished building target: pmu_fib.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size pmu_fib.axf; # arm-none-eabi-objcopy -O binary pmu_fib.axf pmu_fib.bin ; checksum -p LPC11U14_201 -d pmu_fib.bin;
+   text	   data	    bss	    dec	    hex	filename
+   4460	      4	    392	   4856	   12f8	pmu_fib.axf
+ 
+09:53:13 **** Clean-only build of configuration Debug for project power_api_demo ****
+make clean 
+rm -rf  ./startup/cr_startup_lpc11.o  ./src/power_api_demo.o  ./driver/adc.o ./driver/can.o ./driver/clkconfig.o ./driver/crp.o ./driver/debug_printf.o ./driver/gpio.o ./driver/i2c.o ./driver/i2cslave.o ./driver/lpc_swu.o ./driver/rs485.o ./driver/small_gpio.o ./driver/ssp.o ./driver/timer16.o ./driver/timer32.o ./driver/uart.o ./driver/wdt.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o  ./startup/cr_startup_lpc11.d  ./src/power_api_demo.d  ./driver/adc.d ./driver/can.d ./driver/clkconfig.d ./driver/crp.d ./driver/debug_printf.d ./driver/gpio.d ./driver/i2c.d ./driver/i2cslave.d ./driver/lpc_swu.d ./driver/rs485.d ./driver/small_gpio.d ./driver/ssp.d ./driver/timer16.d ./driver/timer32.d ./driver/uart.d ./driver/wdt.d  ./cmsis/core_cm0.d ./cmsis/system_LPC11xx.d  power_api_demo.axf
+ 
+09:53:18 **** Build of configuration Debug for project power_api_demo ****
+make all 
+Building file: ../startup/cr_startup_lpc11.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\power_api_demo\cmsis" -I"Z:\school\3360\workspace\power_api_demo\config" -I"Z:\school\3360\workspace\power_api_demo\startup" -I"Z:\school\3360\workspace\power_api_demo\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"startup/cr_startup_lpc11.d" -MT"startup/cr_startup_lpc11.d" -o "startup/cr_startup_lpc11.o" "../startup/cr_startup_lpc11.c"
+Finished building: ../startup/cr_startup_lpc11.c
+ 
+Building file: ../src/power_api_demo.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\power_api_demo\cmsis" -I"Z:\school\3360\workspace\power_api_demo\config" -I"Z:\school\3360\workspace\power_api_demo\startup" -I"Z:\school\3360\workspace\power_api_demo\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/power_api_demo.d" -MT"src/power_api_demo.d" -o "src/power_api_demo.o" "../src/power_api_demo.c"
+../src/power_api_demo.c:15:17: fatal error: pmu.h: No such file or directory
+compilation terminated.
+make: *** [src/power_api_demo.o] Error 1
+09:53:42 **** Incremental Build of configuration Debug for project power_api_demo ****
+make all 
+Building file: ../src/gpio.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\power_api_demo\cmsis" -I"Z:\school\3360\workspace\power_api_demo\config" -I"Z:\school\3360\workspace\power_api_demo\startup" -I"Z:\school\3360\workspace\power_api_demo\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/gpio.d" -MT"src/gpio.d" -o "src/gpio.o" "../src/gpio.c"
+Finished building: ../src/gpio.c
+ 
+Building file: ../src/pmu.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\power_api_demo\cmsis" -I"Z:\school\3360\workspace\power_api_demo\config" -I"Z:\school\3360\workspace\power_api_demo\startup" -I"Z:\school\3360\workspace\power_api_demo\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/pmu.d" -MT"src/pmu.d" -o "src/pmu.o" "../src/pmu.c"
+Finished building: ../src/pmu.c
+ 
+Building file: ../src/power_api_demo.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\power_api_demo\cmsis" -I"Z:\school\3360\workspace\power_api_demo\config" -I"Z:\school\3360\workspace\power_api_demo\startup" -I"Z:\school\3360\workspace\power_api_demo\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/power_api_demo.d" -MT"src/power_api_demo.d" -o "src/power_api_demo.o" "../src/power_api_demo.c"
+Finished building: ../src/power_api_demo.c
+ 
+Building file: ../driver/adc.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\power_api_demo\cmsis" -I"Z:\school\3360\workspace\power_api_demo\config" -I"Z:\school\3360\workspace\power_api_demo\startup" -I"Z:\school\3360\workspace\power_api_demo\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/adc.d" -MT"driver/adc.d" -o "driver/adc.o" "../driver/adc.c"
+Finished building: ../driver/adc.c
+ 
+Building file: ../driver/can.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\power_api_demo\cmsis" -I"Z:\school\3360\workspace\power_api_demo\config" -I"Z:\school\3360\workspace\power_api_demo\startup" -I"Z:\school\3360\workspace\power_api_demo\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/can.d" -MT"driver/can.d" -o "driver/can.o" "../driver/can.c"
+Finished building: ../driver/can.c
+ 
+Building file: ../driver/clkconfig.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\power_api_demo\cmsis" -I"Z:\school\3360\workspace\power_api_demo\config" -I"Z:\school\3360\workspace\power_api_demo\startup" -I"Z:\school\3360\workspace\power_api_demo\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/clkconfig.d" -MT"driver/clkconfig.d" -o "driver/clkconfig.o" "../driver/clkconfig.c"
+Finished building: ../driver/clkconfig.c
+ 
+Building file: ../driver/crp.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\power_api_demo\cmsis" -I"Z:\school\3360\workspace\power_api_demo\config" -I"Z:\school\3360\workspace\power_api_demo\startup" -I"Z:\school\3360\workspace\power_api_demo\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/crp.d" -MT"driver/crp.d" -o "driver/crp.o" "../driver/crp.c"
+Finished building: ../driver/crp.c
+ 
+Building file: ../driver/debug_printf.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\power_api_demo\cmsis" -I"Z:\school\3360\workspace\power_api_demo\config" -I"Z:\school\3360\workspace\power_api_demo\startup" -I"Z:\school\3360\workspace\power_api_demo\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/debug_printf.d" -MT"driver/debug_printf.d" -o "driver/debug_printf.o" "../driver/debug_printf.c"
+Finished building: ../driver/debug_printf.c
+ 
+Building file: ../driver/gpio.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\power_api_demo\cmsis" -I"Z:\school\3360\workspace\power_api_demo\config" -I"Z:\school\3360\workspace\power_api_demo\startup" -I"Z:\school\3360\workspace\power_api_demo\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/gpio.d" -MT"driver/gpio.d" -o "driver/gpio.o" "../driver/gpio.c"
+Finished building: ../driver/gpio.c
+ 
+Building file: ../driver/i2c.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\power_api_demo\cmsis" -I"Z:\school\3360\workspace\power_api_demo\config" -I"Z:\school\3360\workspace\power_api_demo\startup" -I"Z:\school\3360\workspace\power_api_demo\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/i2c.d" -MT"driver/i2c.d" -o "driver/i2c.o" "../driver/i2c.c"
+Finished building: ../driver/i2c.c
+ 
+Building file: ../driver/i2cslave.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\power_api_demo\cmsis" -I"Z:\school\3360\workspace\power_api_demo\config" -I"Z:\school\3360\workspace\power_api_demo\startup" -I"Z:\school\3360\workspace\power_api_demo\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/i2cslave.d" -MT"driver/i2cslave.d" -o "driver/i2cslave.o" "../driver/i2cslave.c"
+Finished building: ../driver/i2cslave.c
+ 
+Building file: ../driver/lpc_swu.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\power_api_demo\cmsis" -I"Z:\school\3360\workspace\power_api_demo\config" -I"Z:\school\3360\workspace\power_api_demo\startup" -I"Z:\school\3360\workspace\power_api_demo\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/lpc_swu.d" -MT"driver/lpc_swu.d" -o "driver/lpc_swu.o" "../driver/lpc_swu.c"
+Finished building: ../driver/lpc_swu.c
+ 
+Building file: ../driver/rs485.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\power_api_demo\cmsis" -I"Z:\school\3360\workspace\power_api_demo\config" -I"Z:\school\3360\workspace\power_api_demo\startup" -I"Z:\school\3360\workspace\power_api_demo\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/rs485.d" -MT"driver/rs485.d" -o "driver/rs485.o" "../driver/rs485.c"
+Finished building: ../driver/rs485.c
+ 
+Building file: ../driver/small_gpio.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\power_api_demo\cmsis" -I"Z:\school\3360\workspace\power_api_demo\config" -I"Z:\school\3360\workspace\power_api_demo\startup" -I"Z:\school\3360\workspace\power_api_demo\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/small_gpio.d" -MT"driver/small_gpio.d" -o "driver/small_gpio.o" "../driver/small_gpio.c"
+Finished building: ../driver/small_gpio.c
+ 
+Building file: ../driver/ssp.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\power_api_demo\cmsis" -I"Z:\school\3360\workspace\power_api_demo\config" -I"Z:\school\3360\workspace\power_api_demo\startup" -I"Z:\school\3360\workspace\power_api_demo\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/ssp.d" -MT"driver/ssp.d" -o "driver/ssp.o" "../driver/ssp.c"
+Finished building: ../driver/ssp.c
+ 
+Building file: ../driver/timer16.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\power_api_demo\cmsis" -I"Z:\school\3360\workspace\power_api_demo\config" -I"Z:\school\3360\workspace\power_api_demo\startup" -I"Z:\school\3360\workspace\power_api_demo\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/timer16.d" -MT"driver/timer16.d" -o "driver/timer16.o" "../driver/timer16.c"
+Finished building: ../driver/timer16.c
+ 
+Building file: ../driver/timer32.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\power_api_demo\cmsis" -I"Z:\school\3360\workspace\power_api_demo\config" -I"Z:\school\3360\workspace\power_api_demo\startup" -I"Z:\school\3360\workspace\power_api_demo\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/timer32.d" -MT"driver/timer32.d" -o "driver/timer32.o" "../driver/timer32.c"
+Finished building: ../driver/timer32.c
+ 
+Building file: ../driver/uart.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\power_api_demo\cmsis" -I"Z:\school\3360\workspace\power_api_demo\config" -I"Z:\school\3360\workspace\power_api_demo\startup" -I"Z:\school\3360\workspace\power_api_demo\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/uart.d" -MT"driver/uart.d" -o "driver/uart.o" "../driver/uart.c"
+Finished building: ../driver/uart.c
+ 
+Building file: ../driver/wdt.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\power_api_demo\cmsis" -I"Z:\school\3360\workspace\power_api_demo\config" -I"Z:\school\3360\workspace\power_api_demo\startup" -I"Z:\school\3360\workspace\power_api_demo\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/wdt.d" -MT"driver/wdt.d" -o "driver/wdt.o" "../driver/wdt.c"
+Finished building: ../driver/wdt.c
+ 
+Building file: ../cmsis/core_cm0.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\power_api_demo\cmsis" -I"Z:\school\3360\workspace\power_api_demo\config" -I"Z:\school\3360\workspace\power_api_demo\startup" -I"Z:\school\3360\workspace\power_api_demo\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"cmsis/core_cm0.d" -MT"cmsis/core_cm0.d" -o "cmsis/core_cm0.o" "../cmsis/core_cm0.c"
+Finished building: ../cmsis/core_cm0.c
+ 
+Building file: ../cmsis/system_LPC11xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\power_api_demo\cmsis" -I"Z:\school\3360\workspace\power_api_demo\config" -I"Z:\school\3360\workspace\power_api_demo\startup" -I"Z:\school\3360\workspace\power_api_demo\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"cmsis/system_LPC11xx.d" -MT"cmsis/system_LPC11xx.d" -o "cmsis/system_LPC11xx.o" "../cmsis/system_LPC11xx.c"
+Finished building: ../cmsis/system_LPC11xx.c
+ 
+Building target: power_api_demo.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map=power_api_demo.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "power_api_demo_Debug.ld" -o "power_api_demo.axf"  ./startup/cr_startup_lpc11.o  ./src/gpio.o ./src/pmu.o ./src/power_api_demo.o  ./driver/adc.o ./driver/can.o ./driver/clkconfig.o ./driver/crp.o ./driver/debug_printf.o ./driver/gpio.o ./driver/i2c.o ./driver/i2cslave.o ./driver/lpc_swu.o ./driver/rs485.o ./driver/small_gpio.o ./driver/ssp.o ./driver/timer16.o ./driver/timer32.o ./driver/uart.o ./driver/wdt.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   
+Finished building target: power_api_demo.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size power_api_demo.axf; # arm-none-eabi-objcopy -O binary power_api_demo.axf power_api_demo.bin ; checksum -p LPC11U14_201 -d power_api_demo.bin;
+   text	   data	    bss	    dec	    hex	filename
+   5232	      8	    396	   5636	   1604	power_api_demo.axf
+ 
+09:54:31 **** Incremental Build of configuration Debug for project power_api_demo ****
+make all 
+make: Nothing to be done for `all'.
+10:52:38 **** Incremental Build of configuration Debug for project CMSISv2p00_LPC11Uxx ****
+make all 
+make: Nothing to be done for `all'.
+10:52:40 **** Clean-only build of configuration Debug for project LPC11Uxx_Driver_Lib ****
+make clean 
+rm -rf  ./src/clkconfig.o ./src/gpio.o ./src/nmi.o ./src/system_LPC11Uxx.o ./src/timer16.o ./src/timer32.o ./src/uart.o  ./src/clkconfig.d ./src/gpio.d ./src/nmi.d ./src/system_LPC11Uxx.d ./src/timer16.d ./src/timer32.d ./src/uart.d  libLPC11Uxx_Driver_Lib.a
+ 
+10:52:42 **** Build of configuration Debug for project LPC11Uxx_Driver_Lib ****
+make all 
+Building file: ../src/clkconfig.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC11Uxx -I"Z:\school\3360\workspace\LPC11Uxx_Driver_Lib\inc" -I"Z:\school\3360\workspace\CMSISv2p00_LPC11Uxx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/clkconfig.d" -MT"src/clkconfig.d" -o "src/clkconfig.o" "../src/clkconfig.c"
+Finished building: ../src/clkconfig.c
+ 
+Building file: ../src/gpio.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC11Uxx -I"Z:\school\3360\workspace\LPC11Uxx_Driver_Lib\inc" -I"Z:\school\3360\workspace\CMSISv2p00_LPC11Uxx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/gpio.d" -MT"src/gpio.d" -o "src/gpio.o" "../src/gpio.c"
+Finished building: ../src/gpio.c
+ 
+Building file: ../src/nmi.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC11Uxx -I"Z:\school\3360\workspace\LPC11Uxx_Driver_Lib\inc" -I"Z:\school\3360\workspace\CMSISv2p00_LPC11Uxx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/nmi.d" -MT"src/nmi.d" -o "src/nmi.o" "../src/nmi.c"
+Finished building: ../src/nmi.c
+ 
+Building file: ../src/system_LPC11Uxx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC11Uxx -I"Z:\school\3360\workspace\LPC11Uxx_Driver_Lib\inc" -I"Z:\school\3360\workspace\CMSISv2p00_LPC11Uxx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/system_LPC11Uxx.d" -MT"src/system_LPC11Uxx.d" -o "src/system_LPC11Uxx.o" "../src/system_LPC11Uxx.c"
+Finished building: ../src/system_LPC11Uxx.c
+ 
+Building file: ../src/timer16.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC11Uxx -I"Z:\school\3360\workspace\LPC11Uxx_Driver_Lib\inc" -I"Z:\school\3360\workspace\CMSISv2p00_LPC11Uxx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/timer16.d" -MT"src/timer16.d" -o "src/timer16.o" "../src/timer16.c"
+Finished building: ../src/timer16.c
+ 
+Building file: ../src/timer32.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC11Uxx -I"Z:\school\3360\workspace\LPC11Uxx_Driver_Lib\inc" -I"Z:\school\3360\workspace\CMSISv2p00_LPC11Uxx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/timer32.d" -MT"src/timer32.d" -o "src/timer32.o" "../src/timer32.c"
+Finished building: ../src/timer32.c
+ 
+Building file: ../src/uart.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC11Uxx -I"Z:\school\3360\workspace\LPC11Uxx_Driver_Lib\inc" -I"Z:\school\3360\workspace\CMSISv2p00_LPC11Uxx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/uart.d" -MT"src/uart.d" -o "src/uart.o" "../src/uart.c"
+../src/uart.c: In function 'UARTInit':
+../src/uart.c:282:21: warning: variable 'regVal' set but not used [-Wunused-but-set-variable]
+Finished building: ../src/uart.c
+ 
+Building target: libLPC11Uxx_Driver_Lib.a
+Invoking: MCU Archiver
+arm-none-eabi-ar -r  "libLPC11Uxx_Driver_Lib.a"  ./src/clkconfig.o ./src/gpio.o ./src/nmi.o ./src/system_LPC11Uxx.o ./src/timer16.o ./src/timer32.o ./src/uart.o   
+c:\nxp\LPCXpresso_5.2.6_2137\lpcxpresso\tools\bin\arm-none-eabi-ar.exe: creating libLPC11Uxx_Driver_Lib.a
+Finished building target: libLPC11Uxx_Driver_Lib.a
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "libLPC11Uxx_Driver_Lib.a" ; # arm-none-eabi-objdump -h -S "libLPC11Uxx_Driver_Lib.a" >"libLPC11Uxx_Driver_Lib.lss"
+   text	   data	    bss	    dec	    hex	filename
+    152	      0	      0	    152	     98	clkconfig.o (ex libLPC11Uxx_Driver_Lib.a)
+   3104	      0	    152	   3256	    cb8	gpio.o (ex libLPC11Uxx_Driver_Lib.a)
+      0	      0	      0	      0	      0	nmi.o (ex libLPC11Uxx_Driver_Lib.a)
+    896	      4	      0	    900	    384	system_LPC11Uxx.o (ex libLPC11Uxx_Driver_Lib.a)
+   2168	      0	     40	   2208	    8a0	timer16.o (ex libLPC11Uxx_Driver_Lib.a)
+   2368	      0	     72	   2440	    988	timer32.o (ex libLPC11Uxx_Driver_Lib.a)
+   1176	      1	      4	   1181	    49d	uart.o (ex libLPC11Uxx_Driver_Lib.a)
+ 
+10:52:48 **** Incremental Build of configuration Debug for project LPC11Uxx_Driver_Lib ****
+make all 
+make: Nothing to be done for `all'.
+10:52:50 **** Incremental Build of configuration Debug for project CMSISv2p00_LPC11Uxx ****
+make all 
+make: Nothing to be done for `all'.
+10:52:51 **** Clean-only build of configuration Debug for project 5lab_UART_BT ****
+make clean 
+rm -rf  ./src/cr_startup_lpc11u.o ./src/uarttest.o  ./src/cr_startup_lpc11u.d ./src/uarttest.d  UART.axf
+ 
+10:52:52 **** Build of configuration Debug for project 5lab_UART_BT ****
+make all 
+Building file: ../src/cr_startup_lpc11u.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC11Uxx -I"Z:\school\3360\workspace\LPC11Uxx_Driver_Lib" -I"Z:\school\3360\workspace\CMSISv2p00_LPC11Uxx\inc" -I"Z:\school\3360\workspace\LPC11Uxx_Driver_Lib\inc" -Os -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/cr_startup_lpc11u.d" -MT"src/cr_startup_lpc11u.d" -o "src/cr_startup_lpc11u.o" "../src/cr_startup_lpc11u.c"
+Finished building: ../src/cr_startup_lpc11u.c
+ 
+Building file: ../src/uarttest.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC11Uxx -I"Z:\school\3360\workspace\LPC11Uxx_Driver_Lib" -I"Z:\school\3360\workspace\CMSISv2p00_LPC11Uxx\inc" -I"Z:\school\3360\workspace\LPC11Uxx_Driver_Lib\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/uarttest.d" -MT"src/uarttest.d" -o "src/uarttest.o" "../src/uarttest.c"
+Finished building: ../src/uarttest.c
+ 
+Building target: 5lab_UART_BT.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"Z:\school\3360\workspace\LPC11Uxx_Driver_Lib\Debug" -L"Z:\school\3360\workspace\CMSISv2p00_LPC11Uxx\Debug" -Xlinker -Map="5lab_UART_BT.map" -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "5lab_UART_BT_Debug.ld" -o "5lab_UART_BT.axf"  ./src/cr_startup_lpc11u.o ./src/uarttest.o   -lLPC11Uxx_Driver_Lib -lCMSISv2p00_LPC11Uxx
+Finished building target: 5lab_UART_BT.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "5lab_UART_BT.axf"; # arm-none-eabi-objcopy -O binary "5lab_UART_BT.axf" "5lab_UART_BT.bin" ; checksum -p LPC11U14_201 -d "5lab_UART_BT.bin";
+   text	   data	    bss	    dec	    hex	filename
+   2160	      8	     72	   2240	    8c0	5lab_UART_BT.axf
+ 
+11:43:35 **** Incremental Build of configuration Debug for project CMSISv2p00_LPC11Uxx ****
+make all 
+make: Nothing to be done for `all'.
+11:43:37 **** Incremental Build of configuration Debug for project LPC11Uxx_Driver_Lib ****
+make all 
+make: Nothing to be done for `all'.
+11:43:39 **** Incremental Build of configuration Debug for project LPC11Uxx_Driver_Lib ****
+make all 
+make: Nothing to be done for `all'.
+11:43:41 **** Incremental Build of configuration Debug for project CMSISv2p00_LPC11Uxx ****
+make all 
+make: Nothing to be done for `all'.
+11:43:42 **** Incremental Build of configuration Debug for project 5lab_UART_BT ****
+make all 
+make: Nothing to be done for `all'.
+11:44:14 **** Incremental Build of configuration Debug for project CMSISv2p00_LPC11Uxx ****
+make all 
+make: Nothing to be done for `all'.
+11:44:16 **** Incremental Build of configuration Debug for project LPC11Uxx_Driver_Lib ****
+make all 
+make: Nothing to be done for `all'.
+11:44:18 **** Incremental Build of configuration Debug for project LPC11Uxx_Driver_Lib ****
+make all 
+make: Nothing to be done for `all'.
+11:44:19 **** Incremental Build of configuration Debug for project CMSISv2p00_LPC11Uxx ****
+make all 
+make: Nothing to be done for `all'.
+11:44:20 **** Incremental Build of configuration Debug for project 5lab_UART_BT ****
+make all 
+make: Nothing to be done for `all'.
+11:44:43 **** Clean-only build of configuration Debug for project CMSISv2p00_LPC11Uxx ****
+make clean 
+rm -rf  ./src/core_cm0.o ./src/system_LPC11Uxx.o  ./src/core_cm0.d ./src/system_LPC11Uxx.d  libCMSISv2p00_LPC11Uxx.a
+ 
+11:44:44 **** Clean-only build of configuration Debug for project LPC11Uxx_Driver_Lib ****
+make clean 
+rm -rf  ./src/clkconfig.o ./src/gpio.o ./src/nmi.o ./src/system_LPC11Uxx.o ./src/timer16.o ./src/timer32.o ./src/uart.o  ./src/clkconfig.d ./src/gpio.d ./src/nmi.d ./src/system_LPC11Uxx.d ./src/timer16.d ./src/timer32.d ./src/uart.d  libLPC11Uxx_Driver_Lib.a
+ 
+11:44:45 **** Clean-only build of configuration Debug for project 5lab_UART_BT ****
+make clean 
+rm -rf  ./src/cr_startup_lpc11u.o ./src/uarttest.o  ./src/cr_startup_lpc11u.d ./src/uarttest.d  5lab_UART_BT.axf
+ 
+11:44:52 **** Build of configuration Debug for project CMSISv2p00_LPC11Uxx ****
+make all 
+Building file: ../src/core_cm0.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../inc -O0 -Os -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/core_cm0.d" -MT"src/core_cm0.d" -o"src/core_cm0.o" "../src/core_cm0.c"
+Finished building: ../src/core_cm0.c
+ 
+Building file: ../src/system_LPC11Uxx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../inc -O0 -Os -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/system_LPC11Uxx.d" -MT"src/system_LPC11Uxx.d" -o"src/system_LPC11Uxx.o" "../src/system_LPC11Uxx.c"
+Finished building: ../src/system_LPC11Uxx.c
+ 
+Building target: libCMSISv2p00_LPC11Uxx.a
+Invoking: MCU Archiver
+arm-none-eabi-ar -r "libCMSISv2p00_LPC11Uxx.a"  ./src/core_cm0.o ./src/system_LPC11Uxx.o   
+c:\nxp\LPCXpresso_5.2.6_2137\lpcxpresso\tools\bin\arm-none-eabi-ar.exe: creating libCMSISv2p00_LPC11Uxx.a
+Finished building target: libCMSISv2p00_LPC11Uxx.a
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size libCMSISv2p00_LPC11Uxx.a ; # arm-none-eabi-objdump -h -S libCMSISv2p00_LPC11Uxx.a >libCMSISv2p00_LPC11Uxx.lss
+   text	   data	    bss	    dec	    hex	filename
+      0	      0	      0	      0	      0	core_cm0.o (ex libCMSISv2p00_LPC11Uxx.a)
+    428	      4	      0	    432	    1b0	system_LPC11Uxx.o (ex libCMSISv2p00_LPC11Uxx.a)
+ 
+11:44:55 **** Build of configuration Debug for project LPC11Uxx_Driver_Lib ****
+make all 
+Building file: ../src/clkconfig.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC11Uxx -I"Z:\school\3360\workspace\LPC11Uxx_Driver_Lib\inc" -I"Z:\school\3360\workspace\CMSISv2p00_LPC11Uxx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/clkconfig.d" -MT"src/clkconfig.d" -o "src/clkconfig.o" "../src/clkconfig.c"
+Finished building: ../src/clkconfig.c
+ 
+Building file: ../src/gpio.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC11Uxx -I"Z:\school\3360\workspace\LPC11Uxx_Driver_Lib\inc" -I"Z:\school\3360\workspace\CMSISv2p00_LPC11Uxx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/gpio.d" -MT"src/gpio.d" -o "src/gpio.o" "../src/gpio.c"
+Finished building: ../src/gpio.c
+ 
+Building file: ../src/nmi.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC11Uxx -I"Z:\school\3360\workspace\LPC11Uxx_Driver_Lib\inc" -I"Z:\school\3360\workspace\CMSISv2p00_LPC11Uxx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/nmi.d" -MT"src/nmi.d" -o "src/nmi.o" "../src/nmi.c"
+Finished building: ../src/nmi.c
+ 
+Building file: ../src/system_LPC11Uxx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC11Uxx -I"Z:\school\3360\workspace\LPC11Uxx_Driver_Lib\inc" -I"Z:\school\3360\workspace\CMSISv2p00_LPC11Uxx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/system_LPC11Uxx.d" -MT"src/system_LPC11Uxx.d" -o "src/system_LPC11Uxx.o" "../src/system_LPC11Uxx.c"
+Finished building: ../src/system_LPC11Uxx.c
+ 
+Building file: ../src/timer16.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC11Uxx -I"Z:\school\3360\workspace\LPC11Uxx_Driver_Lib\inc" -I"Z:\school\3360\workspace\CMSISv2p00_LPC11Uxx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/timer16.d" -MT"src/timer16.d" -o "src/timer16.o" "../src/timer16.c"
+Finished building: ../src/timer16.c
+ 
+Building file: ../src/timer32.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC11Uxx -I"Z:\school\3360\workspace\LPC11Uxx_Driver_Lib\inc" -I"Z:\school\3360\workspace\CMSISv2p00_LPC11Uxx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/timer32.d" -MT"src/timer32.d" -o "src/timer32.o" "../src/timer32.c"
+Finished building: ../src/timer32.c
+ 
+Building file: ../src/uart.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC11Uxx -I"Z:\school\3360\workspace\LPC11Uxx_Driver_Lib\inc" -I"Z:\school\3360\workspace\CMSISv2p00_LPC11Uxx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/uart.d" -MT"src/uart.d" -o "src/uart.o" "../src/uart.c"
+../src/uart.c: In function 'UARTInit':
+../src/uart.c:282:21: warning: variable 'regVal' set but not used [-Wunused-but-set-variable]
+Finished building: ../src/uart.c
+ 
+Building target: libLPC11Uxx_Driver_Lib.a
+Invoking: MCU Archiver
+arm-none-eabi-ar -r  "libLPC11Uxx_Driver_Lib.a"  ./src/clkconfig.o ./src/gpio.o ./src/nmi.o ./src/system_LPC11Uxx.o ./src/timer16.o ./src/timer32.o ./src/uart.o   
+c:\nxp\LPCXpresso_5.2.6_2137\lpcxpresso\tools\bin\arm-none-eabi-ar.exe: creating libLPC11Uxx_Driver_Lib.a
+Finished building target: libLPC11Uxx_Driver_Lib.a
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "libLPC11Uxx_Driver_Lib.a" ; # arm-none-eabi-objdump -h -S "libLPC11Uxx_Driver_Lib.a" >"libLPC11Uxx_Driver_Lib.lss"
+   text	   data	    bss	    dec	    hex	filename
+    152	      0	      0	    152	     98	clkconfig.o (ex libLPC11Uxx_Driver_Lib.a)
+   3104	      0	    152	   3256	    cb8	gpio.o (ex libLPC11Uxx_Driver_Lib.a)
+      0	      0	      0	      0	      0	nmi.o (ex libLPC11Uxx_Driver_Lib.a)
+    896	      4	      0	    900	    384	system_LPC11Uxx.o (ex libLPC11Uxx_Driver_Lib.a)
+   2168	      0	     40	   2208	    8a0	timer16.o (ex libLPC11Uxx_Driver_Lib.a)
+   2368	      0	     72	   2440	    988	timer32.o (ex libLPC11Uxx_Driver_Lib.a)
+   1176	      1	      4	   1181	    49d	uart.o (ex libLPC11Uxx_Driver_Lib.a)
+ 
+11:45:01 **** Incremental Build of configuration Debug for project LPC11Uxx_Driver_Lib ****
+make all 
+make: Nothing to be done for `all'.
+11:45:03 **** Incremental Build of configuration Debug for project CMSISv2p00_LPC11Uxx ****
+make all 
+make: Nothing to be done for `all'.
+11:45:04 **** Build of configuration Debug for project 5lab_UART_BT ****
+make all 
+Building file: ../src/cr_startup_lpc11u.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC11Uxx -I"Z:\school\3360\workspace\LPC11Uxx_Driver_Lib" -I"Z:\school\3360\workspace\CMSISv2p00_LPC11Uxx\inc" -I"Z:\school\3360\workspace\LPC11Uxx_Driver_Lib\inc" -Os -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/cr_startup_lpc11u.d" -MT"src/cr_startup_lpc11u.d" -o "src/cr_startup_lpc11u.o" "../src/cr_startup_lpc11u.c"
+Finished building: ../src/cr_startup_lpc11u.c
+ 
+Building file: ../src/uarttest.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC11Uxx -I"Z:\school\3360\workspace\LPC11Uxx_Driver_Lib" -I"Z:\school\3360\workspace\CMSISv2p00_LPC11Uxx\inc" -I"Z:\school\3360\workspace\LPC11Uxx_Driver_Lib\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/uarttest.d" -MT"src/uarttest.d" -o "src/uarttest.o" "../src/uarttest.c"
+Finished building: ../src/uarttest.c
+ 
+Building target: 5lab_UART_BT.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"Z:\school\3360\workspace\LPC11Uxx_Driver_Lib\Debug" -L"Z:\school\3360\workspace\CMSISv2p00_LPC11Uxx\Debug" -Xlinker -Map="5lab_UART_BT.map" -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "5lab_UART_BT_Debug.ld" -o "5lab_UART_BT.axf"  ./src/cr_startup_lpc11u.o ./src/uarttest.o   -lLPC11Uxx_Driver_Lib -lCMSISv2p00_LPC11Uxx
+Finished building target: 5lab_UART_BT.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "5lab_UART_BT.axf"; # arm-none-eabi-objcopy -O binary "5lab_UART_BT.axf" "5lab_UART_BT.bin" ; checksum -p LPC11U14_201 -d "5lab_UART_BT.bin";
+   text	   data	    bss	    dec	    hex	filename
+   2160	      8	     72	   2240	    8c0	5lab_UART_BT.axf
+ 
+11:45:46 **** Incremental Build of configuration Debug for project CMSISv2p00_LPC11Uxx ****
+make all 
+make: Nothing to be done for `all'.
+11:45:48 **** Incremental Build of configuration Debug for project LPC11Uxx_Driver_Lib ****
+make all 
+make: Nothing to be done for `all'.
+11:45:50 **** Incremental Build of configuration Debug for project LPC11Uxx_Driver_Lib ****
+make all 
+make: Nothing to be done for `all'.
+11:45:52 **** Incremental Build of configuration Debug for project CMSISv2p00_LPC11Uxx ****
+make all 
+make: Nothing to be done for `all'.
+11:45:53 **** Incremental Build of configuration Debug for project 5lab_UART_BT ****
+make all 
+make: Nothing to be done for `all'.
+11:54:12 **** Clean-only build of configuration Debug for project 4lab_lowPow ****
+make clean 
+rm -rf  ./startup/cr_startup_lpc11.o  ./src/gpio.o ./src/pmu.o ./src/power_api_demo.o  ./driver/adc.o ./driver/can.o ./driver/clkconfig.o ./driver/crp.o ./driver/debug_printf.o ./driver/gpio.o ./driver/i2c.o ./driver/i2cslave.o ./driver/lpc_swu.o ./driver/rs485.o ./driver/small_gpio.o ./driver/ssp.o ./driver/timer16.o ./driver/timer32.o ./driver/uart.o ./driver/wdt.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o  ./startup/cr_startup_lpc11.d  ./src/gpio.d ./src/pmu.d ./src/power_api_demo.d  ./driver/adc.d ./driver/can.d ./driver/clkconfig.d ./driver/crp.d ./driver/debug_printf.d ./driver/gpio.d ./driver/i2c.d ./driver/i2cslave.d ./driver/lpc_swu.d ./driver/rs485.d ./driver/small_gpio.d ./driver/ssp.d ./driver/timer16.d ./driver/timer32.d ./driver/uart.d ./driver/wdt.d  ./cmsis/core_cm0.d ./cmsis/system_LPC11xx.d  power_api_demo.axf
+ 
+11:54:17 **** Build of configuration Debug for project 4lab_lowPow ****
+make all 
+Building file: ../startup/cr_startup_lpc11.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"startup/cr_startup_lpc11.d" -MT"startup/cr_startup_lpc11.d" -o "startup/cr_startup_lpc11.o" "../startup/cr_startup_lpc11.c"
+Finished building: ../startup/cr_startup_lpc11.c
+ 
+Building file: ../src/gpio.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/gpio.d" -MT"src/gpio.d" -o "src/gpio.o" "../src/gpio.c"
+In file included from ../src/gpio.c:31:0:
+../src/LPC11Uxx.h:99:93: fatal error: core_cm0.h: No such file or directory
+compilation terminated.
+make: *** [src/gpio.o] Error 1
+11:55:00 **** Incremental Build of configuration Debug for project CMSISv2p00_LPC11Uxx ****
+make all 
+make: Nothing to be done for `all'.
+11:55:02 **** Incremental Build of configuration Debug for project LPC11Uxx_Driver_Lib ****
+make all 
+make: Nothing to be done for `all'.
+11:55:04 **** Incremental Build of configuration Debug for project CMSISv2p00_LPC11Uxx ****
+make all 
+make: Nothing to be done for `all'.
+11:55:05 **** Incremental Build of configuration Debug for project LPC11Uxx_Driver_Lib ****
+make all 
+make: Nothing to be done for `all'.
+11:55:08 **** Incremental Build of configuration Debug for project 5lab_UART_BT ****
+make all 
+Building file: ../src/4lab_pmu_fib/startup/cr_startup_lpc11.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC11Uxx -I"Z:\school\3360\workspace\LPC11Uxx_Driver_Lib" -I"Z:\school\3360\workspace\CMSISv2p00_LPC11Uxx\inc" -I"Z:\school\3360\workspace\LPC11Uxx_Driver_Lib\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/4lab_pmu_fib/startup/cr_startup_lpc11.d" -MT"src/4lab_pmu_fib/startup/cr_startup_lpc11.d" -o "src/4lab_pmu_fib/startup/cr_startup_lpc11.o" "../src/4lab_pmu_fib/startup/cr_startup_lpc11.c"
+../src/4lab_pmu_fib/startup/cr_startup_lpc11.c:51:28: fatal error: system_LPC11xx.h: No such file or directory
+compilation terminated.
+make: *** [src/4lab_pmu_fib/startup/cr_startup_lpc11.o] Error 1

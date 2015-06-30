@@ -17,7 +17,7 @@ C_DEPS += \
 startup/%.o: ../startup/%.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU C Compiler'
-	arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"/home/patrick/school/ddl_3360/workspace/pmu_fib/cmsis" -I"/home/patrick/school/ddl_3360/workspace/pmu_fib/config" -I"/home/patrick/school/ddl_3360/workspace/pmu_fib/startup" -I"/home/patrick/school/ddl_3360/workspace/pmu_fib/driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"Z:\school\3360\workspace\pmu_fib\cmsis" -I"Z:\school\3360\workspace\pmu_fib\config" -I"Z:\school\3360\workspace\pmu_fib\startup" -I"Z:\school\3360\workspace\pmu_fib\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

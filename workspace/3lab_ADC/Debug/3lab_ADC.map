@@ -1,6 +1,6 @@
 Archive member included because of file (symbol)
 
-C:\Users\paha5124\school\3360\workspace\CMSISv2p00_LPC11Uxx\Debug\libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
+Z:\school\3360\workspace\CMSISv2p00_LPC11Uxx\Debug\libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
                               ./src/cr_startup_lpc11u.o (SystemInit)
 c:/nxp/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv6-m\libcr_semihost.a(_cr__main.o)
                               ./src/cr_startup_lpc11u.o (__main)
@@ -101,13 +101,13 @@ Discarded input sections
  .text          0x00000000        0x0 ./src/main.o
  .data          0x00000000        0x0 ./src/main.o
  .bss           0x00000000        0x0 ./src/main.o
- .text          0x00000000        0x0 C:\Users\paha5124\school\3360\workspace\CMSISv2p00_LPC11Uxx\Debug\libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
- .data          0x00000000        0x0 C:\Users\paha5124\school\3360\workspace\CMSISv2p00_LPC11Uxx\Debug\libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
- .bss           0x00000000        0x0 C:\Users\paha5124\school\3360\workspace\CMSISv2p00_LPC11Uxx\Debug\libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
+ .text          0x00000000        0x0 Z:\school\3360\workspace\CMSISv2p00_LPC11Uxx\Debug\libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
+ .data          0x00000000        0x0 Z:\school\3360\workspace\CMSISv2p00_LPC11Uxx\Debug\libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
+ .bss           0x00000000        0x0 Z:\school\3360\workspace\CMSISv2p00_LPC11Uxx\Debug\libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
  .text.SystemCoreClockUpdate
-                0x00000000       0x9c C:\Users\paha5124\school\3360\workspace\CMSISv2p00_LPC11Uxx\Debug\libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
+                0x00000000       0x9c Z:\school\3360\workspace\CMSISv2p00_LPC11Uxx\Debug\libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
  .rodata.CSWTCH.8
-                0x00000000       0x3c C:\Users\paha5124\school\3360\workspace\CMSISv2p00_LPC11Uxx\Debug\libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
+                0x00000000       0x3c Z:\school\3360\workspace\CMSISv2p00_LPC11Uxx\Debug\libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
  .text          0x00000000        0x0 c:/nxp/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv6-m\libcr_semihost.a(_cr__main.o)
  .data          0x00000000        0x0 c:/nxp/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv6-m\libcr_semihost.a(_cr__main.o)
  .bss           0x00000000        0x0 c:/nxp/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv6-m\libcr_semihost.a(_cr__main.o)
@@ -280,7 +280,7 @@ LOAD ./src/aeabi_romdiv_patch.o
 LOAD ./src/cr_startup_lpc11u.o
 LOAD ./src/crp.o
 LOAD ./src/main.o
-LOAD C:\Users\paha5124\school\3360\workspace\CMSISv2p00_LPC11Uxx\Debug\libCMSISv2p00_LPC11Uxx.a
+LOAD Z:\school\3360\workspace\CMSISv2p00_LPC11Uxx\Debug\libCMSISv2p00_LPC11Uxx.a
 START GROUP
 LOAD c:/nxp/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv6-m\libcr_semihost.a
 LOAD c:/nxp/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a
@@ -368,7 +368,7 @@ END GROUP
  .text.main     0x000004dc       0x10 ./src/main.o
                 0x000004dc                main
  .text.SystemInit
-                0x000004ec       0xd4 C:\Users\paha5124\school\3360\workspace\CMSISv2p00_LPC11Uxx\Debug\libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
+                0x000004ec       0xd4 Z:\school\3360\workspace\CMSISv2p00_LPC11Uxx\Debug\libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
                 0x000004ec                SystemInit
  .text.__main   0x000005c0       0x12 c:/nxp/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv6-m\libcr_semihost.a(_cr__main.o)
                 0x000005c0                __CR_SEMIHOST
@@ -508,7 +508,7 @@ END GROUP
                 0x10000004        0x4 ./src/main.o
                 0x10000004                duty_cycle
  .data.SystemCoreClock
-                0x10000008        0x4 C:\Users\paha5124\school\3360\workspace\CMSISv2p00_LPC11Uxx\Debug\libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
+                0x10000008        0x4 Z:\school\3360\workspace\CMSISv2p00_LPC11Uxx\Debug\libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
                 0x10000008                SystemCoreClock
                 0x1000000c                . = ALIGN (0x4)
                 0x1000000c                _edata = .
@@ -571,7 +571,7 @@ OUTPUT(3lab_ADC.axf elf32-littlearm)
  .ARM.attributes
                 0x00000083       0x31 ./src/main.o
  .ARM.attributes
-                0x000000b4       0x31 C:\Users\paha5124\school\3360\workspace\CMSISv2p00_LPC11Uxx\Debug\libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
+                0x000000b4       0x31 Z:\school\3360\workspace\CMSISv2p00_LPC11Uxx\Debug\libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
  .ARM.attributes
                 0x000000e5       0x31 c:/nxp/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv6-m\libcr_semihost.a(_cr__main.o)
  .ARM.attributes
@@ -650,7 +650,7 @@ OUTPUT(3lab_ADC.axf elf32-littlearm)
                                  0x71 (size before relaxing)
  .comment       0x00000000       0x71 ./src/crp.o
  .comment       0x00000000       0x71 ./src/main.o
- .comment       0x00000000       0x71 C:\Users\paha5124\school\3360\workspace\CMSISv2p00_LPC11Uxx\Debug\libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
+ .comment       0x00000000       0x71 Z:\school\3360\workspace\CMSISv2p00_LPC11Uxx\Debug\libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
  .comment       0x00000070       0x70 c:/nxp/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv6-m\libcr_semihost.a(_cr__main.o)
                                  0x71 (size before relaxing)
  .comment       0x00000000       0x71 c:/nxp/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(initio.o)
@@ -680,18 +680,18 @@ OUTPUT(3lab_ADC.axf elf32-littlearm)
  .debug_info    0x00000000      0x252 ./src/cr_startup_lpc11u.o
  .debug_info    0x00000252       0x48 ./src/crp.o
  .debug_info    0x0000029a     0x11aa ./src/main.o
- .debug_info    0x00001444      0x5d4 C:\Users\paha5124\school\3360\workspace\CMSISv2p00_LPC11Uxx\Debug\libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
+ .debug_info    0x00001444      0x5d4 Z:\school\3360\workspace\CMSISv2p00_LPC11Uxx\Debug\libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
 
 .debug_abbrev   0x00000000      0x408
  .debug_abbrev  0x00000000       0xe5 ./src/cr_startup_lpc11u.o
  .debug_abbrev  0x000000e5       0x39 ./src/crp.o
  .debug_abbrev  0x0000011e      0x1f1 ./src/main.o
- .debug_abbrev  0x0000030f       0xf9 C:\Users\paha5124\school\3360\workspace\CMSISv2p00_LPC11Uxx\Debug\libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
+ .debug_abbrev  0x0000030f       0xf9 Z:\school\3360\workspace\CMSISv2p00_LPC11Uxx\Debug\libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
 
 .debug_loc      0x00000000      0x471
  .debug_loc     0x00000000      0x28f ./src/cr_startup_lpc11u.o
  .debug_loc     0x0000028f      0x158 ./src/main.o
- .debug_loc     0x000003e7       0x8a C:\Users\paha5124\school\3360\workspace\CMSISv2p00_LPC11Uxx\Debug\libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
+ .debug_loc     0x000003e7       0x8a Z:\school\3360\workspace\CMSISv2p00_LPC11Uxx\Debug\libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
 
 .debug_aranges  0x00000000       0xd8
  .debug_aranges
@@ -699,18 +699,18 @@ OUTPUT(3lab_ADC.axf elf32-littlearm)
  .debug_aranges
                 0x00000060       0x50 ./src/main.o
  .debug_aranges
-                0x000000b0       0x28 C:\Users\paha5124\school\3360\workspace\CMSISv2p00_LPC11Uxx\Debug\libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
+                0x000000b0       0x28 Z:\school\3360\workspace\CMSISv2p00_LPC11Uxx\Debug\libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
 
 .debug_ranges   0x00000000       0xa8
  .debug_ranges  0x00000000       0x50 ./src/cr_startup_lpc11u.o
  .debug_ranges  0x00000050       0x40 ./src/main.o
- .debug_ranges  0x00000090       0x18 C:\Users\paha5124\school\3360\workspace\CMSISv2p00_LPC11Uxx\Debug\libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
+ .debug_ranges  0x00000090       0x18 Z:\school\3360\workspace\CMSISv2p00_LPC11Uxx\Debug\libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
 
-.debug_line     0x00000000      0x9a4
+.debug_line     0x00000000      0x995
  .debug_line    0x00000000       0xa3 ./src/cr_startup_lpc11u.o
  .debug_line    0x000000a3       0xad ./src/crp.o
- .debug_line    0x00000150      0x46c ./src/main.o
- .debug_line    0x000005bc      0x3e8 C:\Users\paha5124\school\3360\workspace\CMSISv2p00_LPC11Uxx\Debug\libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
+ .debug_line    0x00000150      0x45d ./src/main.o
+ .debug_line    0x000005ad      0x3e8 Z:\school\3360\workspace\CMSISv2p00_LPC11Uxx\Debug\libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
 
 .debug_macinfo  0x00000000     0xed0c
  .debug_macinfo
@@ -720,19 +720,19 @@ OUTPUT(3lab_ADC.axf elf32-littlearm)
  .debug_macinfo
                 0x0000455b     0x52df ./src/main.o
  .debug_macinfo
-                0x0000983a     0x54d2 C:\Users\paha5124\school\3360\workspace\CMSISv2p00_LPC11Uxx\Debug\libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
+                0x0000983a     0x54d2 Z:\school\3360\workspace\CMSISv2p00_LPC11Uxx\Debug\libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
 
-.debug_str      0x00000000      0xa99
- .debug_str     0x00000000      0x1af ./src/cr_startup_lpc11u.o
-                                0x1c2 (size before relaxing)
- .debug_str     0x000001af       0x16 ./src/crp.o
-                                 0xa3 (size before relaxing)
- .debug_str     0x000001c5      0x84a ./src/main.o
-                                0x902 (size before relaxing)
- .debug_str     0x00000a0f       0x8a C:\Users\paha5124\school\3360\workspace\CMSISv2p00_LPC11Uxx\Debug\libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
-                                0x3c9 (size before relaxing)
+.debug_str      0x00000000      0xa7b
+ .debug_str     0x00000000      0x1a0 ./src/cr_startup_lpc11u.o
+                                0x1b3 (size before relaxing)
+ .debug_str     0x000001a0       0x16 ./src/crp.o
+                                 0x94 (size before relaxing)
+ .debug_str     0x000001b6      0x84a ./src/main.o
+                                0x8f3 (size before relaxing)
+ .debug_str     0x00000a00       0x7b Z:\school\3360\workspace\CMSISv2p00_LPC11Uxx\Debug\libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
+                                0x3ba (size before relaxing)
 
 .debug_frame    0x00000000      0x220
  .debug_frame   0x00000000       0xec ./src/cr_startup_lpc11u.o
  .debug_frame   0x000000ec       0xe8 ./src/main.o
- .debug_frame   0x000001d4       0x4c C:\Users\paha5124\school\3360\workspace\CMSISv2p00_LPC11Uxx\Debug\libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)
+ .debug_frame   0x000001d4       0x4c Z:\school\3360\workspace\CMSISv2p00_LPC11Uxx\Debug\libCMSISv2p00_LPC11Uxx.a(system_LPC11Uxx.o)

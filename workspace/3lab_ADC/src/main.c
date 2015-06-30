@@ -117,6 +117,7 @@ void TIMER32_0_IRQHandler(void) {
 	// These handle the match events on the timer
   //LPC_GPIO->SET[0] = (0x1<<7);
   tick++;
+  // I can't remove this breakpoint
   if(tick == TEN_SEC){
 	//LED_OFF;
     tick = 0;

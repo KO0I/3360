@@ -3,7 +3,7 @@
  * (C) Code Red Technologies Ltd, 2008-2015
  * Generated linker script file for LPC11U14/201
  * Created from generic_c.ld (vLPCXpresso v5.2 (6 [Build 2137] [2013-07-08] ))
- * By LPCXpresso v5.2.6 [Build 2137] [2013-07-08]  on Sat Jun 27 20:57:35 MDT 2015
+ * By LPCXpresso v5.2.6 [Build 2137] [2013-07-08]  on Tue Jun 30 09:40:35 MDT 2015
  */
 
 

@@ -1,0 +1,341 @@
+Archive member included because of file (symbol)
+
+/home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(system_LPC11Uxx.o)
+                              ./src/uarttest.o (SystemCoreClockUpdate)
+/home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+                              ./src/uarttest.o (UARTBuffer)
+/usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv6-m/libcr_c.a(__weak__main.o)
+                              ./src/cr_startup_lpc11u.o (__main)
+/usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv6-m/libcr_eabihelpers.a(division.o)
+                              /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(system_LPC11Uxx.o) (__aeabi_uidiv)
+
+Allocating common symbols
+Common symbol       size              file
+
+UARTBuffer          0x40              /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+UARTStatus          0x4               /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+
+Discarded input sections
+
+ .text          0x00000000        0x0 ./src/cr_startup_lpc11u.o
+ .data          0x00000000        0x0 ./src/cr_startup_lpc11u.o
+ .bss           0x00000000        0x0 ./src/cr_startup_lpc11u.o
+ .text          0x00000000        0x0 ./src/uarttest.o
+ .data          0x00000000        0x0 ./src/uarttest.o
+ .bss           0x00000000        0x0 ./src/uarttest.o
+ .text          0x00000000        0x0 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(system_LPC11Uxx.o)
+ .data          0x00000000        0x0 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(system_LPC11Uxx.o)
+ .bss           0x00000000        0x0 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(system_LPC11Uxx.o)
+ .text          0x00000000        0x0 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+ .data          0x00000000        0x0 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+ .bss           0x00000000        0x0 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+ .text.uart_set_divisors
+                0x00000000      0x14c /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+ .text.print_string
+                0x00000000       0x3c /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+ .text.get_key  0x00000000       0x50 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+ .text          0x00000000        0x0 /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv6-m/libcr_c.a(__weak__main.o)
+ .data          0x00000000        0x0 /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv6-m/libcr_c.a(__weak__main.o)
+ .bss           0x00000000        0x0 /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv6-m/libcr_c.a(__weak__main.o)
+ .text          0x00000000        0x0 /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv6-m/libcr_eabihelpers.a(division.o)
+ .data          0x00000000        0x0 /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv6-m/libcr_eabihelpers.a(division.o)
+ .bss           0x00000000        0x0 /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv6-m/libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_idivmod
+                0x00000000        0x6 /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv6-m/libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_uldivmod
+                0x00000000       0x5a /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv6-m/libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_ldivmod
+                0x00000000       0x32 /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv6-m/libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_ldiv0
+                0x00000000        0x2 /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv6-m/libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_idivq31+15
+                0x00000000      0x188 /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv6-m/libcr_eabihelpers.a(division.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+MFlash32         0x00000000         0x00008000         xr
+RamLoc4          0x10000000         0x00001000         xrw
+RamUsb2          0x20004000         0x00000800         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ./src/cr_startup_lpc11u.o
+LOAD ./src/uarttest.o
+LOAD /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a
+LOAD /home/patrick/school/ddl_3360/workspace/CMSISv2p00_LPC11Uxx/Debug/libCMSISv2p00_LPC11Uxx.a
+START GROUP
+LOAD /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv6-m/libcr_c.a
+LOAD /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv6-m/libcr_eabihelpers.a
+END GROUP
+                0x00008000                __top_MFlash32 = 0x8000
+                0x10001000                __top_RamLoc4 = 0x10001000
+                0x20004800                __top_RamUsb2 = 0x20004800
+
+.text           0x00000000      0x870
+ FILL mask 0xff
+                0x00000000                __vectors_start__ = ABSOLUTE (.)
+ *(.isr_vector)
+ .isr_vector    0x00000000       0xc0 ./src/cr_startup_lpc11u.o
+                0x00000000                g_pfnVectors
+                0x000000c0                . = ALIGN (0x4)
+                0x000000c0                __section_table_start = .
+                0x000000c0                __data_section_table = .
+                0x000000c0        0x4 LONG 0x870 LOADADDR (.data)
+                0x000000c4        0x4 LONG 0x10000000 ADDR (.data)
+                0x000000c8        0x4 LONG 0x8 SIZEOF (.data)
+                0x000000cc        0x4 LONG 0x870 LOADADDR (.data_RAM2)
+                0x000000d0        0x4 LONG 0x20004000 ADDR (.data_RAM2)
+                0x000000d4        0x4 LONG 0x0 SIZEOF (.data_RAM2)
+                0x000000d8                __data_section_table_end = .
+                0x000000d8                __bss_section_table = .
+                0x000000d8        0x4 LONG 0x10000008 ADDR (.bss)
+                0x000000dc        0x4 LONG 0x48 SIZEOF (.bss)
+                0x000000e0        0x4 LONG 0x20004000 ADDR (.bss_RAM2)
+                0x000000e4        0x4 LONG 0x0 SIZEOF (.bss_RAM2)
+                0x000000e8                __bss_section_table_end = .
+                0x000000e8                __section_table_end = .
+ *(.after_vectors*)
+ .after_vectors
+                0x000000e8       0x80 ./src/cr_startup_lpc11u.o
+                0x000000e8                NMI_Handler
+                0x000000ec                HardFault_Handler
+                0x000000f0                SVC_Handler
+                0x000000f4                PendSV_Handler
+                0x000000f8                SysTick_Handler
+                0x000000fc                data_init
+                0x0000010e                bss_init
+                0x00000120                ResetISR
+                0x00000164                TIMER16_0_IRQHandler
+                0x00000164                TIMER32_0_IRQHandler
+                0x00000164                FLEX_INT7_IRQHandler
+                0x00000164                TIMER32_1_IRQHandler
+                0x00000164                FLEX_INT1_IRQHandler
+                0x00000164                IntDefaultHandler
+                0x00000164                SSP0_IRQHandler
+                0x00000164                USBWakeup_IRQHandler
+                0x00000164                FLEX_INT0_IRQHandler
+                0x00000164                FLEX_INT2_IRQHandler
+                0x00000164                TIMER16_1_IRQHandler
+                0x00000164                USB_FIQHandler
+                0x00000164                FLEX_INT5_IRQHandler
+                0x00000164                ADC_IRQHandler
+                0x00000164                SSP1_IRQHandler
+                0x00000164                FLEX_INT3_IRQHandler
+                0x00000164                USB_IRQHandler
+                0x00000164                BOD_IRQHandler
+                0x00000164                I2C_IRQHandler
+                0x00000164                WDT_IRQHandler
+                0x00000164                GINT0_IRQHandler
+                0x00000164                FLEX_INT4_IRQHandler
+                0x00000164                FLEX_INT6_IRQHandler
+                0x00000164                FMC_IRQHandler
+                0x00000164                GINT1_IRQHandler
+ *(.text*)
+ .text.main     0x00000168       0x4c ./src/uarttest.o
+                0x00000168                main
+ .text.SystemCoreClockUpdate
+                0x000001b4      0x1e0 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(system_LPC11Uxx.o)
+                0x000001b4                SystemCoreClockUpdate
+ .text.SystemInit
+                0x00000394      0x160 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(system_LPC11Uxx.o)
+                0x00000394                SystemInit
+ .text.NVIC_EnableIRQ
+                0x000004f4       0x2c /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+ .text.NVIC_DisableIRQ
+                0x00000520       0x30 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+ .text.UART_IRQHandler
+                0x00000550      0x11c /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+                0x00000550                UART_IRQHandler
+ .text.UARTInit
+                0x0000066c      0x108 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+                0x0000066c                UARTInit
+ .text.UARTSend
+                0x00000774       0x40 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+                0x00000774                UARTSend
+ .text.__weak_main
+                0x000007b4        0x8 /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv6-m/libcr_c.a(__weak__main.o)
+                0x000007b4                __main
+                0x000007b4                __weak_main
+ .text.__aeabi_division_uidivmod
+                0x000007bc       0x72 /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv6-m/libcr_eabihelpers.a(division.o)
+                0x000007bc                __aeabi_uidiv
+                0x000007bc                __aeabi_uidivmod
+ .text.__aeabi_division_idiv0
+                0x0000082e        0x2 /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv6-m/libcr_eabihelpers.a(division.o)
+                0x0000082e                __aeabi_idiv0
+ *(.rodata .rodata.*)
+ .rodata.SystemCoreClockUpdate
+                0x00000830       0x40 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(system_LPC11Uxx.o)
+                0x00000870                . = ALIGN (0x4)
+
+.glue_7         0x00000870        0x0
+ .glue_7        0x00000000        0x0 linker stubs
+
+.glue_7t        0x00000870        0x0
+ .glue_7t       0x00000000        0x0 linker stubs
+
+.vfp11_veneer   0x00000870        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x00000870        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x00000870                __exidx_start = .
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x00000870                __exidx_end = .
+                0x00000870                _etext = .
+
+.data_RAM2      0x20004000        0x0 load address 0x00000870
+ FILL mask 0xff
+ *(.data.$RAM2*)
+ *(.data.$RamUsb2*)
+                0x20004000                . = ALIGN (0x4)
+
+.uninit_RESERVED
+                0x10000000        0x0
+ *(.bss.$RESERVED*)
+                0x10000000                . = ALIGN (0x4)
+                0x10000000                _end_uninit_RESERVED = .
+
+.data           0x10000000        0x8 load address 0x00000870
+ FILL mask 0xff
+                0x10000000                _data = .
+ *(vtable)
+ *(.data*)
+ .data.SystemCoreClock
+                0x10000000        0x4 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(system_LPC11Uxx.o)
+                0x10000000                SystemCoreClock
+ .data.UARTTxEmpty
+                0x10000004        0x1 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+                0x10000004                UARTTxEmpty
+                0x10000008                . = ALIGN (0x4)
+ *fill*         0x10000005        0x3 ff
+                0x10000008                _edata = .
+
+.bss_RAM2       0x20004000        0x0
+ *(.bss.$RAM2*)
+ *(.bss.$RamUsb2*)
+                0x20004000                . = ALIGN (0x4)
+
+.bss            0x10000008       0x48
+                0x10000008                _bss = .
+ *(.bss*)
+ .bss.UARTCount
+                0x10000008        0x4 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+                0x10000008                UARTCount
+ *(COMMON)
+ COMMON         0x1000000c       0x44 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+                0x1000000c                UARTBuffer
+                0x1000004c                UARTStatus
+                0x10000050                . = ALIGN (0x4)
+                0x10000050                _ebss = .
+                0x10000050                PROVIDE (end, .)
+
+.noinit_RAM2    0x20004000        0x0
+ *(.noinit.$RAM2*)
+ *(.noinit.$RamUsb2*)
+                0x20004000                . = ALIGN (0x4)
+
+.noinit         0x10000050        0x0
+                0x10000050                _noinit = .
+ *(.noinit*)
+                0x10000050                . = ALIGN (0x4)
+                0x10000050                _end_noinit = .
+                0x10000050                PROVIDE (_pvHeapStart, .)
+                0x10001000                PROVIDE (_vStackTop, (__top_RamLoc4 - 0x0))
+OUTPUT(UART.axf elf32-littlearm)
+
+.debug_info     0x00000000     0x1a4c
+ .debug_info    0x00000000      0x296 ./src/cr_startup_lpc11u.o
+ .debug_info    0x00000296      0x2a5 ./src/uarttest.o
+ .debug_info    0x0000053b      0x5d2 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(system_LPC11Uxx.o)
+ .debug_info    0x00000b0d      0xf3f /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+
+.debug_abbrev   0x00000000      0x4be
+ .debug_abbrev  0x00000000      0x116 ./src/cr_startup_lpc11u.o
+ .debug_abbrev  0x00000116       0xd1 ./src/uarttest.o
+ .debug_abbrev  0x000001e7       0xf9 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(system_LPC11Uxx.o)
+ .debug_abbrev  0x000002e0      0x1de /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+
+.debug_loc      0x00000000      0x4ed
+ .debug_loc     0x00000000      0x28f ./src/cr_startup_lpc11u.o
+ .debug_loc     0x0000028f       0x2c ./src/uarttest.o
+ .debug_loc     0x000002bb       0x70 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(system_LPC11Uxx.o)
+ .debug_loc     0x0000032b      0x1c2 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+
+.debug_aranges  0x00000000      0x100
+ .debug_aranges
+                0x00000000       0x60 ./src/cr_startup_lpc11u.o
+ .debug_aranges
+                0x00000060       0x20 ./src/uarttest.o
+ .debug_aranges
+                0x00000080       0x28 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(system_LPC11Uxx.o)
+ .debug_aranges
+                0x000000a8       0x58 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+
+.debug_ranges   0x00000000       0xc0
+ .debug_ranges  0x00000000       0x50 ./src/cr_startup_lpc11u.o
+ .debug_ranges  0x00000050       0x10 ./src/uarttest.o
+ .debug_ranges  0x00000060       0x18 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(system_LPC11Uxx.o)
+ .debug_ranges  0x00000078       0x48 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+
+.debug_line     0x00000000     0x121b
+ .debug_line    0x00000000      0x418 ./src/cr_startup_lpc11u.o
+ .debug_line    0x00000418      0x40b ./src/uarttest.o
+ .debug_line    0x00000823      0x49c /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(system_LPC11Uxx.o)
+ .debug_line    0x00000cbf      0x55c /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+
+.debug_macinfo  0x00000000    0x15016
+ .debug_macinfo
+                0x00000000     0x522b ./src/cr_startup_lpc11u.o
+ .debug_macinfo
+                0x0000522b     0x5447 ./src/uarttest.o
+ .debug_macinfo
+                0x0000a672     0x5500 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(system_LPC11Uxx.o)
+ .debug_macinfo
+                0x0000fb72     0x54a4 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+
+.debug_str      0x00000000      0xb0d
+ .debug_str     0x00000000      0x202 ./src/cr_startup_lpc11u.o
+                                0x22a (size before relaxing)
+ .debug_str     0x00000202       0x97 ./src/uarttest.o
+                                0x18c (size before relaxing)
+ .debug_str     0x00000299      0x2ea /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(system_LPC11Uxx.o)
+                                0x3c9 (size before relaxing)
+ .debug_str     0x00000583      0x58a /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+                                0x973 (size before relaxing)
+
+.comment        0x00000000       0x70
+ .comment       0x00000000       0x70 ./src/cr_startup_lpc11u.o
+                                 0x71 (size before relaxing)
+ .comment       0x00000000       0x71 ./src/uarttest.o
+ .comment       0x00000000       0x71 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(system_LPC11Uxx.o)
+ .comment       0x00000000       0x71 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+ .comment       0x00000000       0x71 /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv6-m/libcr_c.a(__weak__main.o)
+
+.ARM.attributes
+                0x00000000       0x2f
+ .ARM.attributes
+                0x00000000       0x31 ./src/cr_startup_lpc11u.o
+ .ARM.attributes
+                0x00000031       0x31 ./src/uarttest.o
+ .ARM.attributes
+                0x00000062       0x31 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(system_LPC11Uxx.o)
+ .ARM.attributes
+                0x00000093       0x31 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
+ .ARM.attributes
+                0x000000c4       0x31 /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv6-m/libcr_c.a(__weak__main.o)
+ .ARM.attributes
+                0x000000f5       0x21 /usr/local/lpcxpresso_5.2.6_2137/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv6-m/libcr_eabihelpers.a(division.o)
+
+.debug_frame    0x00000000      0x278
+ .debug_frame   0x00000000       0xec ./src/cr_startup_lpc11u.o
+ .debug_frame   0x000000ec       0x2c ./src/uarttest.o
+ .debug_frame   0x00000118       0x50 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(system_LPC11Uxx.o)
+ .debug_frame   0x00000168      0x110 /home/patrick/school/ddl_3360/workspace/LPC11Uxx_Driver_Lib/Debug/libLPC11Uxx_Driver_Lib.a(uart.o)
