@@ -28,11 +28,8 @@ endif
 # All Target
 all: pmu_fib.axf
 
-dependents:
-	-cd /home/patrick/school/ddl_3360/workspace/pmu/Debug && $(MAKE) clean all
-
 # Tool invocations
-pmu_fib.axf: $(OBJS) $(USER_OBJS) /home/patrick/school/ddl_3360/workspace/pmu/Debug/pmu.axf
+pmu_fib.axf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MCU Linker'
 	arm-none-eabi-gcc -nostdlib -Xlinker -Map=pmu_fib.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "pmu_fib_Debug.ld" -o "pmu_fib.axf" $(OBJS) $(USER_OBJS) $(LIBS)
@@ -52,6 +49,5 @@ post-build:
 
 .PHONY: all clean dependents
 .SECONDARY: post-build
-/home/patrick/school/ddl_3360/workspace/pmu/Debug/pmu.axf:
 
 -include ../makefile.targets

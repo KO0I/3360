@@ -23,6 +23,17 @@ volatile unsigned long int i;                   //counter variable
 volatile unsigned long int j, k;				//counters vars for blinking loop
 volatile unsigned long int wake_cycles = 0;
 
+volatile uint32_t msTicks = 0;
+
+void SysTick_Handler(void) {
+    msTicks++;
+}
+
+void delay_ms(uint32_t ms) {
+    uint32_t now = msTicks;
+    while ((msTicks-now) < ms);
+}
+
 int fib(int n)
 {
     int c;
@@ -40,6 +51,11 @@ int fib(int n)
 int main (void)
 {
 	GPIOInit();
+	SysTick_Config(SystemCoreClock/1000);// from CMSIS template
+	GPIOSetDir( 0, 7, 1 );
+    GPIOSetBitValue( 0, 7, 1 );
+    for (i = 0; i != 10; i++);
+    GPIOSetBitValue( 0, 7, 0 );
     if((*rom)->pPWRD == (void *)0xFFFFFFFF)
     {
     	// This LPC does not have the power API
@@ -129,6 +145,10 @@ int main (void)
         }
         //for (i = 0; i != 5000000; i++);
         fib(30);
+        GPIOSetBitValue( 0, 7, 1 );
+        //for (i = 0; i != 5000000; i++)
+        delay_ms(1000);
+        GPIOSetBitValue( 0, 7, 0 );
         //48 MHz setup end
 
         //24 MHz setup begin
@@ -152,6 +172,10 @@ int main (void)
         }
         //for (i = 0; i != 2500000; i++);
         fib(30);
+        GPIOSetBitValue( 0, 7, 1 );
+        //for (i = 0; i != 2500000; i++);
+        delay_ms(1000/2);
+        GPIOSetBitValue( 0, 7, 0 );
         //24 MHz setup end
 
         //18 MHz setup begin
@@ -175,7 +199,12 @@ int main (void)
         }
         //for (i = 0; i != 1875000; i++);
         fib(30);
+        GPIOSetBitValue( 0, 7, 1 );
+        //for (i = 0; i != 1875000; i++);
+        delay_ms(1000/4);
+        GPIOSetBitValue( 0, 7, 0 );
         //18 MHz setup end
+
 
         //3 MHz setup begin
         LPC_SYSCON->MAINCLKSEL = 0x01;              //main clock source is the PLL input
@@ -198,16 +227,23 @@ int main (void)
         }
         //for (i = 0; i != 312500; i++);
         fib(30);
+        GPIOSetBitValue( 0, 7, 1 );
+        //for (i = 0; i != 312500; i++);
+        delay_ms(1000/16);
+        GPIOSetBitValue( 0, 7, 0 );
         //3 MHz setup end
 
         PMU_Sleep(2,0);
 
         wake_cycles++;
-        for(j=0; j<wake_cycles; j++){
+
+        for(j=0; j<=wake_cycles; j++){
         	GPIOSetBitValue( 0, 7, 1 );
         	//LPC_GPIO->SET[0] = (1<<7);
-        	for (k = 0; k != 312500; k++);
+        	//for (k = 0; k != 312500; k++);
+        	delay_ms(1000/16);
         	GPIOSetBitValue( 0, 7, 0 );
+        	delay_ms(500/16);
         	//LPC_GPIO->CLR[0] = (1<<7);
         }
 

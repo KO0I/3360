@@ -1,21 +1,6 @@
-16:20:19 **** Incremental Build of configuration Debug for project 3lab_ADC ****
+09:41:06 **** Incremental Build of configuration Debug for project 3lab_ADC ****
 make all 
-Building file: ../src/main.c
-Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC11Uxx -I"C:\Users\paha5124\school\3360\workspace\CMSISv2p00_LPC11Uxx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-Finished building: ../src/main.c
- 
-Building target: 3lab_ADC.axf
-Invoking: MCU Linker
-arm-none-eabi-gcc -nostdlib -L"C:\Users\paha5124\school\3360\workspace\CMSISv2p00_LPC11Uxx\Debug" -Xlinker -Map="3lab_ADC.map" -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "3lab_ADC_Debug.ld" -o "3lab_ADC.axf"  ./src/aeabi_romdiv_patch.o ./src/cr_startup_lpc11u.o ./src/crp.o ./src/main.o   -lCMSISv2p00_LPC11Uxx
-Finished building target: 3lab_ADC.axf
- 
-make --no-print-directory post-build
-Performing post-build steps
-arm-none-eabi-size "3lab_ADC.axf"; # arm-none-eabi-objcopy -O binary "3lab_ADC.axf" "3lab_ADC.bin" ; checksum -p LPC11U14_201 -d "3lab_ADC.bin";
-   text	   data	    bss	    dec	    hex	filename
-   3412	     12	    360	   3784	    ec8	3lab_ADC.axf
- 
+make: Nothing to be done for `all'.
 
-16:20:19 Build Finished (took 319ms)
+09:41:07 Build Finished (took 880ms)
 

@@ -29,7 +29,7 @@ all: 3lab_ADC.axf
 3lab_ADC.axf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MCU Linker'
-	arm-none-eabi-gcc -nostdlib -L"C:\Users\paha5124\school\3360\workspace\CMSISv2p00_LPC11Uxx\Debug" -Xlinker -Map="3lab_ADC.map" -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "3lab_ADC_Debug.ld" -o "3lab_ADC.axf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-gcc -nostdlib -L"Z:\school\3360\workspace\CMSISv2p00_LPC11Uxx\Debug" -Xlinker -Map="3lab_ADC.map" -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "3lab_ADC_Debug.ld" -o "3lab_ADC.axf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 	$(MAKE) --no-print-directory post-build
