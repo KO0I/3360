@@ -1,13 +1,15 @@
 #ifndef CONTROL_H_
 #define CONTROL_H_
 
-volatile extern uint32_t start_of_period;
-volatile extern uint32_t period;
 volatile extern uint32_t led_en;
 volatile extern uint32_t led_freq;
 volatile extern uint32_t led_duty;
 volatile extern uint32_t led_count;
 volatile extern uint32_t led_period;
+
+volatile extern uint32_t adc_en;
+volatile extern uint32_t adc_count;
+volatile extern uint32_t adc_period;
 
 //------------------------------------------------------
 //    Peripheral Control 
@@ -33,7 +35,6 @@ void led_off(){
 //------------------------------------------------------
 //    Timer Initialization
 //------------------------------------------------------
-
 
 void TIMERInit() {
   LPC_SYSCON->SYSAHBCLKCTRL |= (1<<9);
@@ -66,42 +67,41 @@ void TIMERInit() {
 //------------------------------------------------------
 
 void TIMER32_0_IRQHandler(void) {
-
   //tick++;
   led_count++;
-  
-  if((led_count == 1) && (led_en)){
-    // new cycle, start the LED
-    LPC_GPIO->SET[0] = (0x1<<7);
-  }
-  else if((led_count == ((led_duty * led_period)/100)) && led_en){
-    // toggle the LED off
-    LPC_GPIO->CLR[0] = (0x1<<7);
-  }
-  else if(led_count >= led_period && led_en){
-	led_count = 0;
-  }
-
-  // The Following Code is from the original ADC portion
-  /*
-  if(tick == TEN_SEC){
-	//LED_OFF;
-    tick = 0;
-    duty_cycle      = (duty_cycle_mode)?75:25;
-    duty_cycle_mode = (duty_cycle_mode)?0:1;
-  }
-
-  // if the LED is enabled
-  if(led_en){
-    // keep track of how long is on
-    duty_count++;
-    if(duty_count >= time_on){
-      // turn the LED off after enough time elapses
+  adc_count++;
+  if(led_en){ 
+    if(led_count == 1){
+      // new cycle, start the LED
+      LPC_GPIO->SET[0] = (0x1<<7);
+    }
+    else if(led_count == ((led_duty * led_period)/100)){
+      // toggle the LED off
       LPC_GPIO->CLR[0] = (0x1<<7);
-      led_en = 0;
-      duty_count = 0;
+    }
+    else if(led_count >= led_period){
+    led_count = 0;
+    }
+  }
+/*
+  if(adc_en){
+    if(adc_count >= adc_period){
+      // from adc.h
+      //ADCRead(0);
+      //float adc_meas = (3.3*ADCRead(0))/2047;
+    	float adc_meas = 0;
+      char  adc_ascii[10];
+      sprintf(adc_ascii, "%.5f", adc_meas);
+      char* adc_report = "ADC reports: ";
+      UARTSend((uint8_t*)adc_report, strlen(adc_report));
+
+      UARTSend((uint8_t*)adc_ascii, strlen(adc_ascii));
+
+      char* adc_unit   = "[V]\n\r";
+      UARTSend((uint8_t*)adc_unit, strlen(adc_unit));
     }
   }*/
+
   LPC_CT32B0->IR = (0x1<<0); //reset interrupt flag
   return;
 }

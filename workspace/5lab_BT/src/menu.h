@@ -7,6 +7,7 @@ extern uint32_t state;
 //    Print out the menus
 //------------------------------------------------------
 
+
 void print_arm_periph_menu(){
   char* message = "\n\rARM Peripheral Control\n\r  1. Control LED\n\r  2. Control ADC\n\r";
     UARTSend( (uint8_t*)message, strlen(message));
@@ -24,6 +25,16 @@ void print_led_freq_menu(){
 
 void print_led_duty_menu(){
   char* message = "\n\rLED Duty Cycle Menu\n\r  1. 10%\n\r  2. 25%\n\r  3. 50%\n\r  4. 75%\n\r  5. 90%\n\r  6. Go Back\n\r";
+  UARTSend((uint8_t*)message, strlen(message));
+}
+
+void print_adc_ctrl_menu(){
+  char* message = "\n\rADC Control Menu\n\r  1. ADC Reporting ON\n\r  2. ADC Reporting OFF\n\r  3. Set Reporting Frequency\n\r  4. Go Back\n\r";
+  UARTSend((uint8_t*)message, strlen(message));
+}
+
+void print_adc_report_menu(){
+  char* message = "\n\rADC Reporting Frequency Menu\n\r  1. Slow\n\r  2. Medium\n\r  3.  Fast\n\r  4. Very Fast\n\r  5. Go Back\n\r";
   UARTSend((uint8_t*)message, strlen(message));
 }
 
@@ -146,6 +157,66 @@ void led_duty_menu(uint8_t input){
   }
 }
 
+// ADC Control Menu
+void adc_ctrl_menu(input){
+  switch(input){
+    case '1':
+      print_adc_ctrl_menu();
+      adc_en = 1;
+      // enable ADC reporting
+      break;
+    case '2':
+      print_adc_ctrl_menu();
+      adc_en = 0;
+      // disable ADC reporting
+      break;
+    case '3':
+      // Set reporting frequency
+      print_adc_report_menu();
+      state = 5;
+      break;
+    case '4':
+      print_arm_periph_menu();
+      state = 1;
+      break;
+    default:
+      print_error();
+      print_adc_ctrl_menu();
+      break;
+  }
+}
+
+// ADC Reporting Menu
+void adc_report_menu(input){
+  switch(input){
+    case '1':
+      adc_period = 1000;
+      print_adc_report_menu();
+      break;
+    case '2':
+      adc_period = 800;
+      print_adc_report_menu();
+      break;
+    case '3':
+      adc_period = 400;
+      print_adc_report_menu();
+      break;
+    case '4':
+      adc_period = 300;
+      print_adc_report_menu();
+      break;
+    case '5':
+      print_adc_ctrl_menu();
+      print_adc_report_menu();
+      state = 4;
+      break;
+    default:
+      print_error();
+      print_adc_report_menu();
+      break;
+  }
+}
+
 //------------------------------------------------------
 //    Main FSM
 //------------------------------------------------------
@@ -165,8 +236,10 @@ void menuControl(char choice){
       led_duty_menu(choice);
       break;
     case 4: // ADC Control
+      adc_ctrl_menu(choice);
       break;
     case 5: // ADC Report
+      adc_report_menu(choice);
       break;
   }
 }

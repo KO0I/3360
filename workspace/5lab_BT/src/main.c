@@ -1,5 +1,6 @@
 #include "LPC11Uxx.h"
 #include "uart.h"
+//#include "adc.h"
 #include "gpio.h"
 #include "timer32.h"
 
@@ -22,8 +23,9 @@ volatile uint32_t led_duty = 50;
 volatile uint32_t led_count= 0;
 volatile uint32_t led_period = 1000;
 
-volatile uint32_t start_of_period = 0;
-volatile uint32_t period;
+volatile uint32_t adc_en = 0;
+volatile uint32_t adc_period = 1000;
+volatile uint32_t adc_count = 0;
 volatile uint32_t time_on;
 volatile uint32_t duty_cycle = 25;
 volatile uint32_t duty_count;
@@ -33,9 +35,10 @@ volatile uint32_t duty_count;
 
 int main (void) {
   SystemCoreClockUpdate();
-  // LED
+  // LED and ADC input
   GPIOInit();
   GPIOSetDir(0, 7, 1);
+  GPIOSetDir(0, 1, 0);
   TIMERInit();
 
   // UART
