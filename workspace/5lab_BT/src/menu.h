@@ -58,10 +58,12 @@ void led_ctrl_menu(uint8_t input){
   switch(input){
     case '1':
       //start led blink
+      led_on();
       print_led_ctrl_menu();
       break;
     case '2':
       //stop led blink
+      led_off();
       print_led_ctrl_menu();
       break;
     case '3':
@@ -85,52 +87,62 @@ void led_ctrl_menu(uint8_t input){
 void led_freq_menu(uint8_t input){
   switch(input){
     case '1':
-      // slow blink
+      led_period = 1000;
       print_led_freq_menu();
       break;
     case '2':
-      // med blink
+      led_period = 500;
       print_led_freq_menu();
       break;
     case '3':
+      led_period = 200;
       print_led_freq_menu();
       break;
     case '4':
+      led_period = 100;
       print_led_freq_menu();
       break;
     case '5':
       print_led_ctrl_menu();
       state = 1;
       break;
-/*    default:
+    default:
       print_error();
       print_led_freq_menu();
-      break;*/
+      break;
   }
 }
 // LED Duty Cycle Menu
 void led_duty_menu(uint8_t input){
   switch(input){
     case '1':
+      led_duty = 10;
       print_led_duty_menu();
       break;
     case '2':
+      led_duty = 25;
       print_led_duty_menu();
       break;
     case '3':
+      led_duty = 50;
       print_led_duty_menu();
       break;
     case '4':
+      led_duty = 75;
       print_led_duty_menu();
       break;
     case '5':
+      led_duty = 90;
+      print_led_duty_menu();
+      break;
+    case '6':
       print_led_ctrl_menu();
       state = 1;
       break;
-/*    default:
+    default:
       print_error();
       print_led_duty_menu();
-      break;*/
+      break;
   }
 }
 
@@ -138,7 +150,7 @@ void led_duty_menu(uint8_t input){
 //    Main FSM
 //------------------------------------------------------
 void menuControl(char choice){
-  arm_periph_menu(choice);
+  //arm_periph_menu(choice);
   switch(state){
     case 0: // Main Control
       arm_periph_menu(choice);

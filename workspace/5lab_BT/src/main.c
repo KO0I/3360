@@ -6,28 +6,37 @@
 #include <string.h>
 #include <stdio.h>
 
-#include "control.h"
-#include "menu.h"
 
-extern volatile uint32_t timer32_0_counter;
-extern volatile uint32_t timer32_0_capture;
+
+//extern volatile uint32_t timer32_0_counter;
+//extern volatile uint32_t timer32_0_capture;
 
 extern volatile uint32_t UARTCount;
 extern volatile uint8_t UARTBuffer[BUFSIZE];
 
 uint32_t state = 0;
 
-uint32_t led_en = 0;
-uint32_t led_freq = 10;
-uint32_t led_duty = 50;
-uint32_t led_count= 0;
+volatile uint32_t led_en = 0;
+volatile uint32_t led_freq = 10;
+volatile uint32_t led_duty = 50;
+volatile uint32_t led_count= 0;
+volatile uint32_t led_period = 1000;
+
+volatile uint32_t start_of_period = 0;
+volatile uint32_t period;
+volatile uint32_t time_on;
+volatile uint32_t duty_cycle = 25;
+volatile uint32_t duty_count;
+
+#include "control.h"
+#include "menu.h"
 
 int main (void) {
   SystemCoreClockUpdate();
   // LED
   GPIOInit();
   GPIOSetDir(0, 7, 1);
-  // Timer
+  TIMERInit();
 
   // UART
   UARTInit(9600);
